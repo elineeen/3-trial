@@ -16,3 +16,4 @@ app.use(TroisJSVuePlugin);
 app.mount('#app')
 app.config.globalProperties.$d3=d3;
 app.config.globalProperties.lodash=_;
+
