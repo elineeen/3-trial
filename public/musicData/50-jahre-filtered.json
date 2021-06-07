@@ -1,0 +1,804 @@
+{
+  "songs": {
+    "1": {
+      "artist": "Roland W." ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000001.mp3" ,
+      "title": "Monja" ,
+      "tempo": 96.56 ,
+      "valence": 0.446 ,
+      "dance": 0.43
+    } ,
+    "2": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000002.mp3" ,
+      "title": "Massachusetts" ,
+      "tempo": 102.12 ,
+      "valence": 0.506 ,
+      "dance": 0.483
+    } ,
+    "3": {
+      "artist": "Mireille Mathieu" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000003.mp3" ,
+      "title": "La dernière valse" ,
+      "tempo": 106.05 ,
+      "valence": 0.372 ,
+      "dance": 0.495
+    } ,
+    "4": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000004.mp3" ,
+      "title": "Hello, Good Bye" ,
+      "tempo": 105.65 ,
+      "valence": 0.699 ,
+      "dance": 0.565
+    } ,
+    "5": {
+      "artist": "Peggy March" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000005.mp3" ,
+      "title": "Romeo und Julia" ,
+      "tempo": 113.21 ,
+      "valence": 0.862 ,
+      "dance": 0.653
+    } ,
+    "6": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000006.mp3" ,
+      "title": "Magical Mystery Tour" ,
+      "tempo": 138.79 ,
+      "valence": 0.267 ,
+      "dance": 0.291
+    } ,
+    "7": {
+      "artist": "Graham Bonney und die Jay Five" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000007.mp3" ,
+      "title": "Siebenmeilenstiefel" ,
+      "tempo": -1 ,
+      "valence": -0.283 ,
+      "dance": -0.3527
+    } ,
+    "8": {
+      "artist": "Scott McKenzie" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000008.mp3" ,
+      "title": "San Francisco (Be Sure To Wear Some Flowers In Your Hair)" ,
+      "tempo": 113.74 ,
+      "valence": 0.47 ,
+      "dance": 0.549
+    } ,
+    "9": {
+      "artist": "Engelbert Humperdinck" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000009.mp3" ,
+      "title": "The Last Waltz" ,
+      "tempo": 111.15 ,
+      "valence": 0.398 ,
+      "dance": 0.394
+    } ,
+    "10": {
+      "artist": "The Lords" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000010.mp3" ,
+      "title": "Glory Land" ,
+      "tempo": 114.3 ,
+      "valence": 0.21 ,
+      "dance": 0.218
+    } ,
+    "11": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000011.mp3" ,
+      "title": "World" ,
+      "tempo": 87.59 ,
+      "valence": 0.333 ,
+      "dance": 0.305
+    } ,
+    "12": {
+      "artist": "Billy Joe Royal" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000012.mp3" ,
+      "title": "Hush" ,
+      "tempo": 106 ,
+      "valence": 0.632 ,
+      "dance": 0.594
+    } ,
+    "13": {
+      "artist": "The Rolling Stones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000013.mp3" ,
+      "title": "She's A Rainbow" ,
+      "tempo": 108.95 ,
+      "valence": 0.491 ,
+      "dance": 0.451
+    } ,
+    "14": {
+      "artist": "Small Faces" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000014.mp3" ,
+      "title": "Tin Soldier" ,
+      "tempo": 113 ,
+      "valence": 0.398 ,
+      "dance": 0.372
+    } ,
+    "15": {
+      "artist": "The Monkees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000015.mp3" ,
+      "title": "Daydream Believer" ,
+      "tempo": 125.68 ,
+      "valence": 0.678 ,
+      "dance": 0.51
+    } ,
+    "16": {
+      "artist": "John Fred & His Playboy Band" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000016.mp3" ,
+      "title": "Judy In Disguise (With Glasses)" ,
+      "tempo": 82.65 ,
+      "valence": 0.91 ,
+      "dance": 0.634
+    } ,
+    "17": {
+      "artist": "David McWilliams" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000017.mp3" ,
+      "title": "Days Of Pearly Spencer" ,
+      "tempo": 105.39 ,
+      "valence": 0.536 ,
+      "dance": 0.422
+    } ,
+    "18": {
+      "artist": "Georgie Fame" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000018.mp3" ,
+      "title": "The Ballad Of Bonnie And Clyde" ,
+      "tempo": 110.9 ,
+      "valence": 0.642 ,
+      "dance": 0.685
+    } ,
+    "19": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000019.mp3" ,
+      "title": "Words" ,
+      "tempo": 81.97 ,
+      "valence": 0.272 ,
+      "dance": 0.44
+    } ,
+    "20": {
+      "artist": "The Lords" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000020.mp3" ,
+      "title": "John Brown's Body" ,
+      "tempo": 106.17 ,
+      "valence": 0.715 ,
+      "dance": 0.581
+    } ,
+    "21": {
+      "artist": "The Lemon Pipers" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000021.mp3" ,
+      "title": "Green Tambourine" ,
+      "tempo": 111.15 ,
+      "valence": 0.338 ,
+      "dance": 0.503
+    } ,
+    "22": {
+      "artist": "The Love Affair" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000022.mp3" ,
+      "title": "Everlasting Love" ,
+      "tempo": 124.97 ,
+      "valence": 0.711 ,
+      "dance": 0.707
+    } ,
+    "23": {
+      "artist": "Manfred Mann" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000023.mp3" ,
+      "title": "Mighty Quinn" ,
+      "tempo": 100.39 ,
+      "valence": 0.509 ,
+      "dance": 0.38
+    } ,
+    "24": {
+      "artist": "The Moody Blues" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000024.mp3" ,
+      "title": "Nights In White Satin" ,
+      "tempo": 157.85 ,
+      "valence": 0.236 ,
+      "dance": 0.188
+    } ,
+    "25": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000025.mp3" ,
+      "title": "Lady Madonna" ,
+      "tempo": 117.79 ,
+      "valence": 0.936 ,
+      "dance": 0.768
+    } ,
+    "26": {
+      "artist": "Esther & Abi Ofarim" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000026.mp3" ,
+      "title": "Cinderella Rockefella" ,
+      "tempo": 130.19 ,
+      "valence": 0.675 ,
+      "dance": 0.502
+    } ,
+    "27": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000027.mp3" ,
+      "title": "The Singer Sang His Song" ,
+      "tempo": 83.1 ,
+      "valence": 0.371 ,
+      "dance": 0.418
+    } ,
+    "28": {
+      "artist": "Tom Jones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000028.mp3" ,
+      "title": "Delilah" ,
+      "tempo": 95.52 ,
+      "valence": 0.808 ,
+      "dance": 0.533
+    } ,
+    "29": {
+      "artist": "Status Quo" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000029.mp3" ,
+      "title": "Pictures Of Matchstick Men" ,
+      "tempo": 173.13 ,
+      "valence": 0.408 ,
+      "dance": 0.241
+    } ,
+    "30": {
+      "artist": "Otis Redding" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000030.mp3" ,
+      "title": "(Sittin' On) The Dock Of The Bay" ,
+      "tempo": 103.62 ,
+      "valence": 0.535 ,
+      "dance": 0.769
+    } ,
+    "31": {
+      "artist": "Cliff Richard" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000031.mp3" ,
+      "title": "Congratulations" ,
+      "tempo": 186.23 ,
+      "valence": 0.96 ,
+      "dance": 0.341
+    } ,
+    "32": {
+      "artist": "Massiel" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000032.mp3" ,
+      "title": "La la la" ,
+      "tempo": 124.1 ,
+      "valence": 0.546 ,
+      "dance": 0.337
+    } ,
+    "33": {
+      "artist": "1910 Fruitgum Co." ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000033.mp3" ,
+      "title": "Simon Says" ,
+      "tempo": 135.35 ,
+      "valence": 0.985 ,
+      "dance": 0.777
+    } ,
+    "34": {
+      "artist": "Small Faces" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000034.mp3" ,
+      "title": "Lazy Sunday" ,
+      "tempo": 132.82 ,
+      "valence": 0.473 ,
+      "dance": 0.598
+    } ,
+    "35": {
+      "artist": "Engelbert" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000035.mp3" ,
+      "title": "A Man Without Love" ,
+      "tempo": 111.85 ,
+      "valence": 0.445 ,
+      "dance": 0.464
+    } ,
+    "36": {
+      "artist": "The Rolling Stones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000036.mp3" ,
+      "title": "Jumpin' Jack Flash" ,
+      "tempo": 137.29 ,
+      "valence": 0.709 ,
+      "dance": 0.569
+    } ,
+    "37": {
+      "artist": "Louis Armstrong" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000037.mp3" ,
+      "title": "What A Wonderful World" ,
+      "tempo": 77.59 ,
+      "valence": 0.146 ,
+      "dance": 0.273
+    } ,
+    "38": {
+      "artist": "The Union Gap feat. Gary Puckett" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000038.mp3" ,
+      "title": "Young Girl" ,
+      "tempo": -1 ,
+      "valence": -0.3983 ,
+      "dance": -0.2187
+    } ,
+    "39": {
+      "artist": "Simon & Garfunkel" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000039.mp3" ,
+      "title": "Mrs. Robinson" ,
+      "tempo": 92.03 ,
+      "valence": 0.814 ,
+      "dance": 0.606
+    } ,
+    "40": {
+      "artist": "Les Irresistibles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000040.mp3" ,
+      "title": "My Year Is A Day" ,
+      "tempo": -1 ,
+      "valence": -0.2832 ,
+      "dance": -0.3059
+    } ,
+    "41": {
+      "artist": "Aphrodite's Child" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000041.mp3" ,
+      "title": "Rain And Tears" ,
+      "tempo": 73.31 ,
+      "valence": 0.339 ,
+      "dance": 0.304
+    } ,
+    "42": {
+      "artist": "Les Sauterelles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000042.mp3" ,
+      "title": "Heavenly Club" ,
+      "tempo": -1 ,
+      "valence": -0.2616 ,
+      "dance": -0.3455
+    } ,
+    "43": {
+      "artist": "The Box Tops" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000043.mp3" ,
+      "title": "Choo Choo Train" ,
+      "tempo": 112.75 ,
+      "valence": 0.949 ,
+      "dance": 0.683
+    } ,
+    "44": {
+      "artist": "Tom Jones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000044.mp3" ,
+      "title": "Help Yourself" ,
+      "tempo": 90.93 ,
+      "valence": 0.897 ,
+      "dance": 0.61
+    } ,
+    "45": {
+      "artist": "Donovan" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000045.mp3" ,
+      "title": "The Hurdy Gurdy Man" ,
+      "tempo": 120.18 ,
+      "valence": 0.752 ,
+      "dance": 0.665
+    } ,
+    "46": {
+      "artist": "Rita Pavone" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000046.mp3" ,
+      "title": "Arrivederci Hans" ,
+      "tempo": 125.02 ,
+      "valence": 0.864 ,
+      "dance": 0.564
+    } ,
+    "47": {
+      "artist": "Ohio Express" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000047.mp3" ,
+      "title": "Yummy Yummy Yummy" ,
+      "tempo": 131.34 ,
+      "valence": 0.965 ,
+      "dance": 0.738
+    } ,
+    "48": {
+      "artist": "Heintje" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000048.mp3" ,
+      "title": "Du sollst nicht weinen" ,
+      "tempo": 99.97 ,
+      "valence": 0.312 ,
+      "dance": 0.41
+    } ,
+    "49": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000049.mp3" ,
+      "title": "I've Gotta Get A Message To You" ,
+      "tempo": 172.14 ,
+      "valence": 0.771 ,
+      "dance": 0.341
+    } ,
+    "50": {
+      "artist": "Tommy James And The Shondells" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000050.mp3" ,
+      "title": "Mony Mony" ,
+      "tempo": 130.97 ,
+      "valence": 0.799 ,
+      "dance": 0.592
+    } ,
+    "51": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000051.mp3" ,
+      "title": "Hey Jude" ,
+      "tempo": 74.21 ,
+      "valence": 0.617 ,
+      "dance": 0.467
+    } ,
+    "52": {
+      "artist": "The Crazy World Of Arthur Brown" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000052.mp3" ,
+      "title": "Fire" ,
+      "tempo": 136.59 ,
+      "valence": 0.292 ,
+      "dance": 0.433
+    } ,
+    "53": {
+      "artist": "The Rolling Stones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000053.mp3" ,
+      "title": "Street Fighting Man" ,
+      "tempo": 128.04 ,
+      "valence": 0.742 ,
+      "dance": 0.56
+    } ,
+    "54": {
+      "artist": "Canned Heat" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000054.mp3" ,
+      "title": "On The Road Again" ,
+      "tempo": 129.52 ,
+      "valence": 0.195 ,
+      "dance": 0.496
+    } ,
+    "55": {
+      "artist": "The Doors" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000055.mp3" ,
+      "title": "Hello, I Love You, Won't You Tell Me Your Name?" ,
+      "tempo": -1 ,
+      "valence": -0.2156 ,
+      "dance": -0.2015
+    } ,
+    "56": {
+      "artist": "Mary Hopkin" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000056.mp3" ,
+      "title": "Those Were The Days" ,
+      "tempo": 177.48 ,
+      "valence": 0.643 ,
+      "dance": 0.358
+    } ,
+    "57": {
+      "artist": "The Beach Boys" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000057.mp3" ,
+      "title": "Do It Again" ,
+      "tempo": 117.69 ,
+      "valence": 0.828 ,
+      "dance": 0.725
+    } ,
+    "58": {
+      "artist": "Leapy Lee" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000058.mp3" ,
+      "title": "Little Arrows" ,
+      "tempo": 102.84 ,
+      "valence": 0.94 ,
+      "dance": 0.561
+    } ,
+    "59": {
+      "artist": "Heintje" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000059.mp3" ,
+      "title": "Heidschi Bumbeidschi" ,
+      "tempo": 173.49 ,
+      "valence": 0.188 ,
+      "dance": 0.27
+    } ,
+    "60": {
+      "artist": "Deep Purple" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000060.mp3" ,
+      "title": "Hush" ,
+      "tempo": 114.6 ,
+      "valence": 0.453 ,
+      "dance": 0.389
+    } ,
+    "61": {
+      "artist": "The Box Tops" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000061.mp3" ,
+      "title": "I Met Her In Church" ,
+      "tempo": 112.66 ,
+      "valence": 0.536 ,
+      "dance": 0.466
+    } ,
+    "62": {
+      "artist": "The Tremeloes" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000062.mp3" ,
+      "title": "My Little Lady" ,
+      "tempo": 125.36 ,
+      "valence": 0.973 ,
+      "dance": 0.494
+    } ,
+    "63": {
+      "artist": "Joe Cocker" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000063.mp3" ,
+      "title": "With A Little Help From My Friends" ,
+      "tempo": 72.45 ,
+      "valence": 0.302 ,
+      "dance": 0.339
+    } ,
+    "64": {
+      "artist": "Marbles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000064.mp3" ,
+      "title": "Only One Woman" ,
+      "tempo": 150.94 ,
+      "valence": 0.249 ,
+      "dance": 0.352
+    } ,
+    "65": {
+      "artist": "Barry Ryan" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000065.mp3" ,
+      "title": "Eloise" ,
+      "tempo": 131.87 ,
+      "valence": 0.474 ,
+      "dance": 0.426
+    } ,
+    "66": {
+      "artist": "The Marmalade" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000066.mp3" ,
+      "title": "Ob-La-Di Ob-La-Da" ,
+      "tempo": 123.24 ,
+      "valence": 0.935 ,
+      "dance": 0.756
+    } ,
+    "67": {
+      "artist": "Diana Ross & The Supremes" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000067.mp3" ,
+      "title": "Love Child" ,
+      "tempo": 106.63 ,
+      "valence": 0.613 ,
+      "dance": 0.571
+    } ,
+    "68": {
+      "artist": "Tom Jones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000068.mp3" ,
+      "title": "A Minute Of Your Time" ,
+      "tempo": 77.26 ,
+      "valence": 0.586 ,
+      "dance": 0.455
+    } ,
+    "69": {
+      "artist": "Wilson Pickett" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000069.mp3" ,
+      "title": "Hey Jude" ,
+      "tempo": 81.6 ,
+      "valence": 0.647 ,
+      "dance": 0.561
+    } ,
+    "70": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000070.mp3" ,
+      "title": "I Started A Joke" ,
+      "tempo": 146.5 ,
+      "valence": 0.435 ,
+      "dance": 0.305
+    } ,
+    "71": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000071.mp3" ,
+      "title": "Ob-La-Di, Ob-La-Da" ,
+      "tempo": 109.99 ,
+      "valence": 0.887 ,
+      "dance": 0.885
+    } ,
+    "72": {
+      "artist": "Fleetwood Mac" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000072.mp3" ,
+      "title": "Albatross" ,
+      "tempo": 68.4 ,
+      "valence": 0.258 ,
+      "dance": 0.377
+    } ,
+    "73": {
+      "artist": "Donovan" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000073.mp3" ,
+      "title": "Atlantis" ,
+      "tempo": 76.79 ,
+      "valence": 0.349 ,
+      "dance": 0.326
+    } ,
+    "74": {
+      "artist": "Tommy James And The Shondells" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000074.mp3" ,
+      "title": "Crimson And Clover" ,
+      "tempo": 82.5 ,
+      "valence": 0.684 ,
+      "dance": 0.408
+    } ,
+    "75": {
+      "artist": "Dusty Springfield" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000075.mp3" ,
+      "title": "Son-Of-A Preacher Man" ,
+      "tempo": 180.06 ,
+      "valence": 0.639 ,
+      "dance": 0.404
+    } ,
+    "76": {
+      "artist": "The Doors" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000076.mp3" ,
+      "title": "Touch Me" ,
+      "tempo": 108.75 ,
+      "valence": 0.769 ,
+      "dance": 0.425
+    } ,
+    "77": {
+      "artist": "Barry Ryan" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000077.mp3" ,
+      "title": "Love Is Love" ,
+      "tempo": 144.7 ,
+      "valence": 0.216 ,
+      "dance": 0.303
+    } ,
+    "78": {
+      "artist": "Bobby Solo" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000078.mp3" ,
+      "title": "Zingara" ,
+      "tempo": 107.83 ,
+      "valence": 0.285 ,
+      "dance": 0.608
+    } ,
+    "79": {
+      "artist": "Love Sculpture" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000079.mp3" ,
+      "title": "Sabre Dance" ,
+      "tempo": 97.53 ,
+      "valence": 0.484 ,
+      "dance": 0.311
+    } ,
+    "80": {
+      "artist": "Herman's Hermits" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000080.mp3" ,
+      "title": "Something's Happening" ,
+      "tempo": 126.16 ,
+      "valence": 0.819 ,
+      "dance": 0.595
+    } ,
+    "81": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000081.mp3" ,
+      "title": "First Of May" ,
+      "tempo": 125.62 ,
+      "valence": 0.308 ,
+      "dance": 0.306
+    } ,
+    "82": {
+      "artist": "The Hollies" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000082.mp3" ,
+      "title": "Sorry Suzanne" ,
+      "tempo": 123.92 ,
+      "valence": 0.907 ,
+      "dance": 0.635
+    } ,
+    "83": {
+      "artist": "Adamo" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000083.mp3" ,
+      "title": "Es geht eine Träne auf Reisen" ,
+      "tempo": 75.68 ,
+      "valence": 0.556 ,
+      "dance": 0.537
+    } ,
+    "84": {
+      "artist": "Paola" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000084.mp3" ,
+      "title": "Bonjour, bonjour" ,
+      "tempo": 114.04 ,
+      "valence": 0.816 ,
+      "dance": 0.71
+    } ,
+    "85": {
+      "artist": "Heintje" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000085.mp3" ,
+      "title": "Ich sing' ein Lied für dich" ,
+      "tempo": 177.02 ,
+      "valence": 0.556 ,
+      "dance": 0.244
+    } ,
+    "86": {
+      "artist": "Lulu" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000086.mp3" ,
+      "title": "Boom Bang-A-Bang" ,
+      "tempo": 183.24 ,
+      "valence": 0.65 ,
+      "dance": 0.368
+    } ,
+    "87": {
+      "artist": "Creedence Clearwater Revival" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000087.mp3" ,
+      "title": "Proud Mary" ,
+      "tempo": 120.75 ,
+      "valence": 0.709 ,
+      "dance": 0.699
+    } ,
+    "88": {
+      "artist": "The Beatles with Billy Preston" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000088.mp3" ,
+      "title": "Get Back" ,
+      "tempo": 122.09 ,
+      "valence": 0.592 ,
+      "dance": 0.791
+    } ,
+    "89": {
+      "artist": "Mary Hopkin" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000089.mp3" ,
+      "title": "Goodbye" ,
+      "tempo": 95.27 ,
+      "valence": 0.601 ,
+      "dance": 0.629
+    } ,
+    "90": {
+      "artist": "Tommy Roe" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000090.mp3" ,
+      "title": "Dizzy" ,
+      "tempo": 101.86 ,
+      "valence": 0.682 ,
+      "dance": 0.777
+    } ,
+    "91": {
+      "artist": "The 5th Dimension" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000091.mp3" ,
+      "title": "Aquarius / Let The Sunshine In" ,
+      "tempo": 118.23 ,
+      "valence": 0.512 ,
+      "dance": 0.293
+    } ,
+    "92": {
+      "artist": "Joe South" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000092.mp3" ,
+      "title": "Games People Play" ,
+      "tempo": 174.4 ,
+      "valence": 0.697 ,
+      "dance": 0.358
+    } ,
+    "93": {
+      "artist": "Sir Douglas Quintet" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000093.mp3" ,
+      "title": "Mendocino" ,
+      "tempo": 132.87 ,
+      "valence": 0.969 ,
+      "dance": 0.544
+    } ,
+    "94": {
+      "artist": "The Beatles" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000094.mp3" ,
+      "title": "The Ballad Of John And Yoko" ,
+      "tempo": 126.09 ,
+      "valence": 0.921 ,
+      "dance": 0.742
+    } ,
+    "95": {
+      "artist": "The Edwin Hawkins Singers" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000095.mp3" ,
+      "title": "Oh, Happy Day" ,
+      "tempo": 116.7 ,
+      "valence": 0.391 ,
+      "dance": 0.334
+    } ,
+    "96": {
+      "artist": "Desmond Dekker And The Aces" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000096.mp3" ,
+      "title": "Israelites" ,
+      "tempo": 146.94 ,
+      "valence": 0.973 ,
+      "dance": 0.77
+    } ,
+    "97": {
+      "artist": "Bee Gees" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000097.mp3" ,
+      "title": "Tomorrow Tomorrow" ,
+      "tempo": 99.99 ,
+      "valence": 0.493 ,
+      "dance": 0.495
+    } ,
+    "98": {
+      "artist": "Aphrodite's Child" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000098.mp3" ,
+      "title": "I Want To Live" ,
+      "tempo": 78.31 ,
+      "valence": 0.2 ,
+      "dance": 0.275
+    } ,
+    "99": {
+      "artist": "The Rolling Stones" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000099.mp3" ,
+      "title": "Honky Tonk Women" ,
+      "tempo": 119.63 ,
+      "valence": 0.965 ,
+      "dance": 0.562
+    } ,
+    "100": {
+      "artist": "Plastic Ono Band" ,
+      "audio": "http://streamd.hitparade.ch/audio/0000000/0000100.mp3" ,
+      "title": "Give Peace A Chance" ,
+      "tempo": 83.87 ,
+      "valence": 0.202 ,
+      "dance": 0.442
+    }
+  }
+}

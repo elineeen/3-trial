@@ -638,10 +638,10 @@ to-fast-properties@^2.0.0:
   resolved "https://registry.npm.taobao.org/to-fast-properties/download/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
 
-troisjs@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.nlark.com/troisjs/download/troisjs-0.3.0.tgz#652c0a3ac9ff34beea457b6ef02427161fd2a6dc"
-  integrity sha1-ZSwKOsn/NL7qRXtu8CQnFh/Sptw=
+troisjs@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.nlark.com/troisjs/download/troisjs-0.3.1.tgz#0bbb4dfbb57e9b887c5cafbf75cd96338ca2681f"
+  integrity sha1-C7tN+7V+m4h8XK+/dc2WM4yiaB8=
 
 util-deprecate@^1.0.2:
   version "1.0.2"
