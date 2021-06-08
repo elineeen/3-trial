@@ -22,7 +22,7 @@ export default {
           valence2YCoordScale:this.$d3.scaleLinear([0,1],[-15,15]),
           dance2XCoordScale:this.$d3.scaleLinear([0,1],[-20,20]),
           //1到20名取分量
-          relationPoint2CenteringDistanceScale:this.$d3.scaleLinear([1,20],[0,10]),
+          relationPoint2CenteringDistanceScale:this.$d3.scaleLinear([1,20],[0,5]),
         }
       }
     }
@@ -42,12 +42,12 @@ export default {
             .force("link", this.$d3.forceLink(linkList))
             .force("charge", this.$d3.forceManyBody().strength(node=>{
               //关联图的点有自己的斥力，每个中心点设置一个默认为5的引力
-              return node.customStrength||2
+              return node.customStrength||2.3
             }))
             .force("x", this.$d3.forceX())
             .force("y", this.$d3.forceY())
             .velocityDecay(0.7)
-            .tick(5)
+            .tick(3)
             .stop();
         nodeList.forEach((node)=>{
           node.position.set(node.x,node.y,node.position.z)
@@ -117,11 +117,13 @@ export default {
       //生成关联点拓扑图
       const rankingStrengthScale=this.$d3.scaleLinear([1,20],[-2.5,-4])
       let rankingNodeNestingGraphList=centeringNodeList.map((d,i)=>{
-        let {rankList,position}=d;
+        let {rankList,position}=d,indicatorAngle=Math.atan2(d.valence,d.dance);//计算一个方向角
         let relationGraphNodeList= rankList.map((rankData,innerI)=>{
           //距离配旋转生成一个离中心点的随机位置，rank越高离中心点越近
-          let offset=relationPoint2CenteringDistanceScale(rankData.rank),randomAngle=Math.random()*Math.PI*2
-          let [offsetX,offsetY]=[offset*Math.sin(randomAngle),offset*Math.cos(randomAngle)]
+          let offset=relationPoint2CenteringDistanceScale(rankData.rank),
+              randomAngleOffset=Math.random()*Math.PI/2-Math.PI/4,
+              randomAngle=randomAngleOffset+indicatorAngle;//方向角45度两方向偏移
+          let [offsetX,offsetY]=[offset*Math.cos(randomAngle),offset*Math.sin(randomAngle)]
           let relativeNodePosition=new this.THREE.Vector3(position.x+offsetX,position.y+offsetY,timeline2ZoomScale(new Date(rankData.date)));
           return {
             id:`graph-${i}-${innerI}`,

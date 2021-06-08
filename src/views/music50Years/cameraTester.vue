@@ -1,6 +1,6 @@
 <template>
   <Renderer ref="renderer" antialias resize="window" pointer>
-    <Camera :far="500" ref="camera" :position="interact.cameraPosition"  />
+    <Camera :far="500" :fov="50" :aspect="1" ref="camera" :position="interact.cameraPosition" :lookAt="interact.cameraLookatPosition"  />
     <Scene ref="sceneInstance" :background="config.background">
       <PointLight :position="{ y: 0, z: 50 ,x:25}" />
       <Box ref="box" :size="1" :position="{ x: 0, y: 0, z: -30 }  " :rotation="{ y: Math.PI / 4, z: Math.PI / 4 }" >
@@ -29,12 +29,14 @@ export default {
     return {
       config:{
         viewPortSpinRatio:this.$d3.scaleLinear([-1,1],[0,1]),
+        rank2spriteScaleRatio:this.$d3.scaleLinear([0,1,20],[2,1.5,0.6]),
         background:'black',
         orbitControlConfig:{
           enableZoom:true,
           // autoRotate:true,
           zoomSpeed:3,
-          enableRotate:true,
+          enablePan:false,
+          enableRotate:false,
           minDistance :0,
           maxDistance :2000,
           enableDamping:true,
@@ -43,13 +45,13 @@ export default {
           // min
         }
       },
+      control:{
+        orbitControlInstance:null,
+      },
       interact:{
         mousePosition:new THREE.Vector3(),
-        cameraPosition:{
-          x: 0,
-          y: 0,
-          z: 2000
-        },
+        cameraPosition:new THREE.Vector3(0,0,2000),
+        cameraLookatPosition:new THREE.Vector3(0,0,0),
         zoomPos:2000,
         zoom:500,
       },
@@ -61,11 +63,6 @@ export default {
 
     },
   },
-  watch:{
-    // 'interact.mousePosition':function (newVal){
-    //   debugger;object3d
-    // }
-  },
   methods:{
     initOrbitControl(){
       let {renderer}=this.$refs
@@ -76,19 +73,20 @@ export default {
         })
       }
       renderer.onBeforeRender(() => { cameraCtrl.update() })
-      // obj.cameraCtrl = cameraCtrl
+      return cameraCtrl
     },
     //画图，画点+画线
     renderRelationGraph(graphList){
       graphList.forEach((graph)=>{
         let [nodeList,linkList]=graph;
+        nodeList.pop();
         this.renderLink(linkList)
         this.renderNode(nodeList,'white');
       })
     },
     renderLink(linkList,color='white'){
       const sceneInstance=this.$refs.sceneInstance;
-      const material = new this.THREE.LineBasicMaterial({opacity:0.1,transparent:true});
+      const material = new this.THREE.LineBasicMaterial({opacity:0.1,transparent:true,depthWrite:false});
       linkList.forEach((link)=>{
         const points = [link.source.position, link.target.position,];
         const geometry = new THREE.BufferGeometry().setFromPoints( points );
@@ -97,7 +95,7 @@ export default {
       })
     },
     //在我写这个demo的时候，trois还没有出sprite组件，所以只能通过原始scene.add方法添加精灵模型
-    renderNode(nodeList,color='red'){
+    renderNode(nodeList,color='yellow'){
       const sceneInstance=this.$refs.sceneInstance
       const circleSpriteMaterial=new THREE.SpriteMaterial({
         map: new THREE.TextureLoader().load("./musicData/circle.png"),//设置精灵纹理贴图
@@ -105,9 +103,11 @@ export default {
       });
       const instance=new this.THREE.Sprite(circleSpriteMaterial);
       nodeList.forEach((nodeData)=>{
-        let centering= instance.clone();
-        sceneInstance.add(centering)
-        centering.position.copy(nodeData.position)//.copy()
+        let node= instance.clone();
+        let rank=nodeData.rank||0
+        node.scale.setScalar(this.config.rank2spriteScaleRatio(rank));
+        sceneInstance.add(node)
+        node.position.copy(nodeData.position)//.copy()
         // let material=new this.THREE.SpriteMaterial()
       })
     },
@@ -116,34 +116,21 @@ export default {
       texture.wrapT=THREE.RepeatWrapping;
       this.config.background=texture;
     },
-    adjustZoom(event){
-      const minzoom = 0;
-      const maxzoom = 500;
-      let {zoomPos,zoom}=this.interact;
-      this.interact.zoom = THREE.MathUtils.clamp( Math.pow( Math.E, zoomPos ), minzoom, maxzoom );
-      // this.interact.zoomPos = Math.log( zoom );
-      if ( event.deltaY < 0 ) {
-        this.interact.zoomPos -= this.config.orbitControlConfig.zoomSpeed;
-      } else if ( event.deltaY > 0 ) {
-        this.interact.zoomPos += this.config.orbitControlConfig.zoomSpeed;
-      }
-    },
     adjustCameraPosition(){
-      let {renderer} = this.$refs,{zoomPos}=this.interact;
-      let {x,y}=renderer.three.pointer.positionN,{width,height}=renderer.size,{viewPortSpinRatio}=this.config;
-      this.interact.cameraPosition.x= Math.sin( .25 * Math.PI * ( viewPortSpinRatio(x)- .5 ) )*zoomPos
-      this.interact.cameraPosition.y= Math.sin( .25 * Math.PI * ( viewPortSpinRatio(y) - .5 ) )*zoomPos
-      this.interact.cameraPosition.z= Math.cos( .5 * Math.PI * ( viewPortSpinRatio(x) - .5 ) )*zoomPos
+      let {renderer} = this.$refs
+      let {x,y}=renderer.three.pointer.position
+      this.interact.cameraLookatPosition.x=x
+      this.interact.cameraLookatPosition.y=-y
     },
   },
   async mounted() {
     const {renderer,box} = this.$refs
     this.initBackGround();
-    this.initOrbitControl()
+    this.control.orbitControlInstance=this.initOrbitControl()
     let [centerNodeList,graphList]=await this.initFilteredRelationMapData();
     this.renderNode(centerNodeList)
     this.renderRelationGraph(graphList)
-    // window.addEventListener( 'mousemove', this.adjustCameraPosition );
+    window.addEventListener( 'mousemove', this.adjustCameraPosition );
     // window.addEventListener( 'wheel', this.adjustZoom );
     renderer.onBeforeRender(() => {
       box.mesh.rotation.x += 0.01

@@ -159,7 +159,6 @@ const customOrbitControls = function ( object, domElement ) {
 
 			// rotate offset to "y-axis-is-up" space
 			offset.applyQuaternion( quat );
-
 			// angle from z-axis around y-axis
 			spherical.setFromVector3( offset );
 
@@ -226,16 +225,15 @@ const customOrbitControls = function ( object, domElement ) {
 				scope.target.add( panOffset );
 
 			}
-
+			//
 			offset.setFromSpherical( spherical );
-
-			// rotate offset back to "camera-up-vector-is-up" space
+			//
+			// // rotate offset back to "camera-up-vector-is-up" space
 			offset.applyQuaternion( quatInverse );
 
 			position.copy( scope.target ).add( offset );
-
-			scope.object.lookAt( scope.target );
-
+			// scope.object.lookAt( scope.target );
+			scope.object.updateProjectionMatrix();
 			if ( scope.enableDamping === true ) {
 
 				sphericalDelta.theta *= ( 1 - scope.dampingFactor );
@@ -276,7 +274,6 @@ const customOrbitControls = function ( object, domElement ) {
 		};
 
 	}();
-
 	this.dispose = function () {
 
 		scope.domElement.removeEventListener( 'contextmenu', onContextMenu );
@@ -331,6 +328,7 @@ const customOrbitControls = function ( object, domElement ) {
 
 	// current position in spherical coordinates
 	var spherical = new Spherical();
+	var customSphericalForceUpdate=new Spherical();
 	var sphericalDelta = new Spherical();
 
 
@@ -455,7 +453,6 @@ const customOrbitControls = function ( object, domElement ) {
 	}();
 
 	function dollyOut( dollyScale ) {
-
 		if ( scope.object.isPerspectiveCamera ) {
 
 			tweenZoomScale(scope.scale/dollyScale)
@@ -475,6 +472,9 @@ const customOrbitControls = function ( object, domElement ) {
 
 	}
 	function tweenZoomScale(targetScale){
+		if(targetScale>1||targetScale<0)
+			return;
+
 		const tweenObject={scale:scope.scale};
 		const tween = new TWEEN.Tween(tweenObject)
 			.to({scale:targetScale}, 800)
