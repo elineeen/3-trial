@@ -60,3 +60,11 @@ export const initWheelListen=(function(window,document) {
 	}
 
 });
+
+export const asyncTimeout=(timeout)=>{
+	return new Promise((resolve)=>{
+		setTimeout(()=>{
+			resolve();
+		},timeout)
+	})
+}

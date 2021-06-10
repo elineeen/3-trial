@@ -9,6 +9,7 @@
   "dependencies": {
     "@tweenjs/tween.js": "^18.6.4",
     "d3": "^6.7.0",
+    "dayjs": "^1.10.5",
     "lodash": "^4.17.21",
     "three": "^0.127.0",
     "troisjs": "^0.3.1",

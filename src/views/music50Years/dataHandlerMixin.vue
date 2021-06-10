@@ -20,7 +20,7 @@ export default {
           timeline2ZoomScale:this.$d3.scaleLinear([new Date('1968-01-01'),new Date('1970-01-01')]
               ,[2000,0]),
           valence2YCoordScale:this.$d3.scaleLinear([0,1],[-15,15]),
-          dance2XCoordScale:this.$d3.scaleLinear([0,1],[-20,20]),
+          dance2XCoordScale:this.$d3.scaleLinear([0,1],[-30,30]),
           //1到20名取分量
           relationPoint2CenteringDistanceScale:this.$d3.scaleLinear([1,20],[0,5]),
         }
@@ -41,7 +41,7 @@ export default {
         this.$d3.forceSimulation(nodeList)
             .force("link", this.$d3.forceLink(linkList))
             .force("charge", this.$d3.forceManyBody().strength(node=>{
-              //关联图的点有自己的斥力，每个中心点设置一个默认为5的引力
+              //关联图的点有自己的斥力，每个中心点设置一个默认的引力
               return node.customStrength||2.3
             }))
             .force("x", this.$d3.forceX())
@@ -96,6 +96,7 @@ export default {
           if(filteredSongObj[songIndex]){
             let match=filteredSongObj[songIndex];
             match.rankList.push(rankData);
+            match.highestRank=match.highestRank?Math.min(rankData.rank,match.highestRank):rankData.rank;
             match.releaseDate=rankData.date;
           }
       })
