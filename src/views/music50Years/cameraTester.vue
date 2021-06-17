@@ -5,11 +5,12 @@
     </Scene>
   </Renderer>
 </template>
-
 <script>
 import * as THREE from "three";
 import DataHandlerMixin from "./dataHandlerMixin.vue";
 import {customOrbitControls} from "../../components/util/customOrbitControls";
+import useRaycaster from 'troisjs/src/core/useRaycaster'
+import TWEEN from "@tweenjs/tween.js";
 export default {
   name: "cameraTester",
   mixins:[DataHandlerMixin],
@@ -37,6 +38,7 @@ export default {
       },
       control:{
         orbitControlInstance:null,
+        rayCasterInstance:null,
       },
       interact:{
         mousePosition:new THREE.Vector3(),
@@ -88,27 +90,31 @@ export default {
     },
     //画图，画点+画线
     renderRelationGraph(graphList){
+      const sceneInstance=this.$refs.sceneInstance;
       graphList.forEach((graph)=>{
+        //每个图都为一个组，这样可以从每个node的点击事件就可以找到parent的整个拓扑图，从而做到点击动效
+        const graphGroup=new this.THREE.Group();
         let [nodeList,linkList]=graph;
         nodeList.pop();
-        this.renderLinkList(linkList)
-        this.renderNodeList(nodeList,'white');
+        this.renderLinkList(linkList,graphGroup)
+        this.renderNodeList(nodeList,'white',graphGroup);
+        sceneInstance.add(graphGroup);
       })
     },
-
-    renderLinkList(linkList,color='white'){
-      const sceneInstance=this.$refs.sceneInstance;
+    renderLinkList(linkList,group){
       const material = new this.THREE.LineBasicMaterial({opacity:0.1,transparent:true,depthWrite:false});
       linkList.forEach((link)=>{
         const points = [link.source.position, link.target.position,];
         const geometry = new THREE.BufferGeometry().setFromPoints( points );
         let line = new THREE.Line( geometry, material )
-        sceneInstance.add(line)
+        this.$refs.renderer.three.addIntersectObject(line);
+        group.add(line)
       })
     },
     //在我写这个demo的时候，trois还没有出sprite组件，所以只能通过原始scene.add方法添加精灵模型
-    renderNodeList(nodeList,color='yellow'){
-      const sceneInstance=this.$refs.sceneInstance
+    //后话，结果6月中旬更了，没缘分.jpg
+    renderNodeList(nodeList,color='yellow',parentGroup){
+      const {sceneInstance,renderer}=this.$refs
       const circleSpriteMaterial=new THREE.SpriteMaterial({
         map: new THREE.TextureLoader().load("./musicData/circle.png"),//设置精灵纹理贴图
         color:color,
@@ -118,7 +124,14 @@ export default {
         let node= instance.clone();
         let rank=nodeData.rank||0
         node.scale.setScalar(this.config.rank2spriteScaleRatio(rank));
-        sceneInstance.add(node)
+        node.userData=this.lodash.cloneDeep(nodeData);
+        if(parentGroup){
+          parentGroup.add(node)
+          renderer.three.addIntersectObject(node);
+        }
+        else{
+          sceneInstance.add(node)
+        }
         node.position.copy(nodeData.position)//.copy()
         // let material=new this.THREE.SpriteMaterial()
       })
@@ -131,13 +144,26 @@ export default {
       centerNodeList.forEach((songData)=>{
         let cardTexture=this.drawCardCanvas(songData);
         let material=new THREE.SpriteMaterial({map:cardTexture,color:"#ff649f"});
-        // let cardGeo=new THREE.PlaneBufferGeometry(70,40)
         let cardInstance=new THREE.Sprite(material);
         cardInstance.position.copy(songData.position)
         sceneInstance.add(cardInstance);
-        debugger;
         cardInstance.scale.set(21,12,1);
       })
+    },
+    //生成一个带rank数字的node CanvasTexture
+    generateNodeCanvasTexture(nodeData){
+      const canvas = document.createElement('canvas');
+      let ctx = canvas.getContext('2d');
+      canvas.width = 100;
+      canvas.height = 100;
+      ctx.beginPath();
+      ctx.arc(50, 50, 50, 0, 2 * Math.PI, false);
+      ctx.fillStyle = 'white';
+      ctx.fill();
+      ctx.fillStyle = 'black';
+      ctx.font='bold 56px Avenir,Helvetica';
+      ctx.fillText(nodeData?.rank, 32.5, 65);
+      return new THREE.CanvasTexture(canvas);
     },
     //根据数据画一个2d canvas，
     drawCardCanvas(songData){
@@ -189,17 +215,90 @@ export default {
       let {x,y}=renderer.three.pointer.position
       this.interact.cameraLookatPosition.x=x
       this.interact.cameraLookatPosition.y=-y
-      console.dir(renderer.camera.position.x);
     },
+    //本来想着是颜色渐变，转念一想直接改透明度他不香吗
+    activateGraphLinkEffect(linkInstanceList){
+      return linkInstanceList.map((instance)=>{
+        const opacityTweenObj={opacity:0.1};
+        const tween = new TWEEN.Tween(opacityTweenObj)
+            .to({opacity:1}, 400)
+            .onUpdate(() => {
+              instance.material.opacity=opacityTweenObj.opacity
+            })
+            .repeat(Infinity)
+            .yoyo(true)
+            .start();
+      })
+    },
+    /**
+     * @todo 点击其他位置时消失
+     * @param group
+     */
+    activateGraphNodeEffect(nodeInstanceList){
+      // let nodeInstanceList=group.children;
+      const sceneInstance=this.$refs.sceneInstance;
+      let tweenList=nodeInstanceList.map((nodeInstance)=>{
+        let {userData}=nodeInstance
+        let texture=this.generateNodeCanvasTexture(userData)
+        let material=new THREE.SpriteMaterial({map:texture});
+        let instance=new THREE.Sprite(material);
+        instance.position.copy(userData.position)
+        const scale={x:0.5,y:0.5,z:0.5};
+        const tweenExpand = new TWEEN.Tween(scale)
+            .easing(TWEEN.Easing.Cubic.Out)
+            .to({x:3,y:3}, 400)
+            .onUpdate(() => {
+              instance.scale.set(scale.x,scale.y,scale.z);
+            })
+        const tweenShrink = new TWEEN.Tween(scale)
+            .easing(TWEEN.Easing.Cubic.Out)
+            .to({x:2,y:2}, 400)
+            .onUpdate(() => {
+              instance.scale.set(scale.x,scale.y,scale.z);
+            })
+        tweenExpand.chain(tweenShrink)
+        return {tweenExpand,instance}
+      })
+      tweenList.forEach(({tweenExpand,instance},index)=>{
+        sceneInstance.add(instance);
+        tweenExpand.delay(index*150).start();
+      })
+    },
+    dispatchRelationExpansion(){
+      let {pointer}=this.$refs.renderer.three;
+      if(this.control.rayCasterInstance){
+        let intersect=this.control.rayCasterInstance.intersect(pointer.positionN,pointer.intersectObjects,false)
+        if(intersect.length>0){
+          debugger;
+          let closestNode=intersect[0].object;
+          let isNode
+          if(closestNode?.parent instanceof this.THREE.Group){
+            let nodeInstanceList=[],linkInstanceList=[],instanceList=closestNode?.parent?.children;
+            instanceList.forEach((instance)=>{
+              if(instance instanceof THREE.Line)
+                linkInstanceList.push(instance)
+              else if(instance instanceof  THREE.Sprite)
+                nodeInstanceList.push(instance);
+            })
+            this.activateGraphLinkEffect(linkInstanceList)
+            this.activateGraphNodeEffect(nodeInstanceList)
+          }
+        }
+      }
+
+    }
   },
   async mounted() {
     await this.initLoader();
     this.control.orbitControlInstance=this.initOrbitControl()
+    //建议使用sprite组件的@click事件，这里是当时用的原生的sprite，所以只能扒拉出来源码的useraycaster来用
+    this.control.rayCasterInstance=new useRaycaster({camera:this.$refs.camera?.camera});
     let [centerNodeList,graphList]=await this.initFilteredRelationMapData();
     this.renderNodeCardList(centerNodeList)
     this.renderRelationGraph(graphList)
     this.renderYearText();
     window.addEventListener( 'mousemove', this.adjustCameraLookAtPosition );
+    window.addEventListener( 'click', this.dispatchRelationExpansion );
   }
 }
 </script>

@@ -39,5 +39,5 @@ At that time i just added features based on other ppl's work,
 but now i tried to do all this work on my own.
 this work is combined with usage of d3 simulation & base canvas api,
 i also customized the orbitControl module in order to provide the mouse event & tween effect support.
-Learned a lot about camera\sprite\textures during imitating.
+Learned a lot about camera\sprite\textures during imitating, i may give it a try on v3 compostion api in next work. 
 ```

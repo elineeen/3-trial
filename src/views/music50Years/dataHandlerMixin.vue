@@ -29,13 +29,6 @@ export default {
   },
   methods:{
     _rankingGraphPositionSimulation(graphList){
-
-        // let nestedNodeList=[],nestedLinkList=[];
-        // graphList.forEach(singleGraph=>{
-        //   nestedNodeList.push(singleGraph[0])
-        //   nestedLinkList.push(singleGraph[1])
-        // })
-      // let [nodeList,linkList]=[nestedNodeList.flat(),nestedLinkList.flat()]
       graphList.forEach(graph=>{
         let [nodeList,linkList]=graph;
         this.$d3.forceSimulation(nodeList)
@@ -53,7 +46,6 @@ export default {
           node.position.set(node.x,node.y,node.position.z)
         })
       })
-      debugger;
       return graphList;
     },
     /**
@@ -127,6 +119,7 @@ export default {
           let [offsetX,offsetY]=[offset*Math.cos(randomAngle),offset*Math.sin(randomAngle)]
           let relativeNodePosition=new this.THREE.Vector3(position.x+offsetX,position.y+offsetY,timeline2ZoomScale(new Date(rankData.date)));
           return {
+            ...rankData,
             id:`graph-${i}-${innerI}`,
             position:relativeNodePosition,
             x:position.x,
@@ -139,7 +132,7 @@ export default {
           if(i>=1)
             linkList.push({source:i-1,target:i})
         })
-        //包含生成的关联图和中心点
+        //包含生成的关联图和中心点、排名
         let nodeList=[...relationGraphNodeList,{...d,fx:d.x,fy:d.y}]
         return [nodeList,linkList];
       })

@@ -476,7 +476,7 @@ const customOrbitControls = function ( object, domElement ) {
 			return;
 
 		const tweenObject={scale:scope.scale};
-		const tween = new TWEEN.Tween(tweenObject)
+		return new TWEEN.Tween(tweenObject)
 			.to({scale:targetScale}, 800)
 			.easing(TWEEN.Easing.Cubic.Out)
 			.onUpdate(() => {
