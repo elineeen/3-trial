@@ -46,6 +46,10 @@ export default {
         cameraLookatPosition:new THREE.Vector3(0,0,0),
         zoomPos:2000,
         zoom:500,
+        clickEffect:{
+          activatedNodeInstanceList:null,
+          activatedLineTweenList:null,
+        }
       },
       adaptedSongList:[],
     }
@@ -228,6 +232,7 @@ export default {
             .repeat(Infinity)
             .yoyo(true)
             .start();
+        return tween
       })
     },
     /**
@@ -237,11 +242,14 @@ export default {
     activateGraphNodeEffect(nodeInstanceList){
       // let nodeInstanceList=group.children;
       const sceneInstance=this.$refs.sceneInstance;
+      //他只保存节点示例，不能作为一个group去add
+      let tempGroup=[]
       let tweenList=nodeInstanceList.map((nodeInstance)=>{
         let {userData}=nodeInstance
         let texture=this.generateNodeCanvasTexture(userData)
         let material=new THREE.SpriteMaterial({map:texture});
         let instance=new THREE.Sprite(material);
+        tempGroup.push(instance);
         instance.position.copy(userData.position)
         const scale={x:0.5,y:0.5,z:0.5};
         const tweenExpand = new TWEEN.Tween(scale)
@@ -263,6 +271,38 @@ export default {
         sceneInstance.add(instance);
         tweenExpand.delay(index*150).start();
       })
+      return tempGroup;
+    },
+    _checkNodeInactivatedNodeInstanceList(node){
+      let flag=false,{activatedNodeInstanceList}=this.interact.clickEffect;
+      if(activatedNodeInstanceList&&node){
+        flag=activatedNodeInstanceList.find((activatedNode)=>{
+          return node===activatedNode
+        })
+      }
+      return flag;
+    },
+    //解除当前生效的点击动效，包含line和node 两部分
+    deactivateClickEffects(){
+      let {activatedNodeInstanceList,activatedLineTweenList}=this.interact.clickEffect;
+      if(activatedNodeInstanceList&&activatedLineTweenList){
+        //so this part of code do not work
+        // debugger;
+        // activatedNodeInstanceList.forEach(node=>{
+        //   this.$refs.sceneInstance.remove(node);
+        // })
+        // debugger;
+
+        //directly use removeFromParent api works fine
+        activatedNodeInstanceList.forEach(node=>{
+          node.removeFromParent();
+        })
+        activatedLineTweenList.forEach(tween=>{
+          TWEEN.remove(tween);
+        })
+        this.lodash.assign(this.interact.clickEffect,{activatedNodeInstanceList:null,activatedLineTweenList:null});
+      }
+      // this.activateGraphNodeEffect()
     },
     dispatchRelationExpansion(){
       let {pointer}=this.$refs.renderer.three;
@@ -271,17 +311,23 @@ export default {
         if(intersect.length>0){
           debugger;
           let closestNode=intersect[0].object;
-          let isNode
-          if(closestNode?.parent instanceof this.THREE.Group){
-            let nodeInstanceList=[],linkInstanceList=[],instanceList=closestNode?.parent?.children;
-            instanceList.forEach((instance)=>{
-              if(instance instanceof THREE.Line)
-                linkInstanceList.push(instance)
-              else if(instance instanceof  THREE.Sprite)
-                nodeInstanceList.push(instance);
-            })
-            this.activateGraphLinkEffect(linkInstanceList)
-            this.activateGraphNodeEffect(nodeInstanceList)
+          let isValidResponseNode=closestNode?.parent instanceof this.THREE.Group;
+          let isInactivatedNodeInstanceList=this._checkNodeInactivatedNodeInstanceList(closestNode);
+          //先判断点击点是否在已有动效group中，再判断是否是可触发动效点，如果是则关闭老特效后触发新动效，如果不是则只关闭老特效
+          if(!isInactivatedNodeInstanceList){
+            this.deactivateClickEffects();
+            if(isValidResponseNode){
+              let nodeInstanceList=[],linkInstanceList=[],instanceList=closestNode?.parent?.children;
+              instanceList.forEach((instance)=>{
+                if(instance instanceof THREE.Line)
+                  linkInstanceList.push(instance)
+                else if(instance instanceof  THREE.Sprite)
+                  nodeInstanceList.push(instance);
+              })
+              let activatedLineTweenList=this.activateGraphLinkEffect(linkInstanceList)
+              let activatedNodeInstanceList =this.activateGraphNodeEffect(nodeInstanceList)
+              this.lodash.assign(this.interact.clickEffect,{activatedNodeInstanceList,activatedLineTweenList})
+            }
           }
         }
       }
