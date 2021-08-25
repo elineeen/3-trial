@@ -1,10 +1,12 @@
 <template>
   <div ref="tester">
-    <Renderer ref="renderer" antialias orbit-ctrl pointer resize="window">
-      <Camera ref="camera" :position="{ z: 10 }"/>
+    <Renderer ref="renderer" antialias orbit-ctrl pointer resize="window" >
+      <Camera ref="camera" :lookAt="{x:0,y:0,z:-10}"  :position="{ z: 10 }"/>
       <Scene ref="scene">
-        <PointLight :position="{ y: 50, z: 50 ,x:25}"/>
+        <AmbientLight></AmbientLight>
+<!--        <PointLight :position="{ y: 50, z: 50 ,x:25}"/>-->
         <Group ref="cbillGroup"
+               :rotation="rotateCntl"
                :position="{x:0,y:0,z:-10}"
                :scale="{x:0.25,y:0.25,z:0.25}">
         </Group>
@@ -57,7 +59,9 @@ export default {
       rayCasterInstance = new useRaycaster({ camera: renderer.value.camera })
       window.addEventListener('mousemove', dispatchRelationExpansion)
       renderer.value.onBeforeRender(() => {
-        rotateCntl.y += 0.005
+        // console.dir(cbillGroup.value)
+        // debugger;
+        // rotateCntl.y += 0.005
       })
     })
     return {

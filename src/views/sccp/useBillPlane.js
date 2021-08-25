@@ -5,6 +5,16 @@ export default function useBillPlane() {
   const plane = ref(null)
   const instanceList=[];
   const instanceMap=new WeakMap();
+  const inputPlacementPositionList=[
+    [-13.4, 13.4, 21, 2.2],
+    [-13.4, 11.4, 21, 2.2],
+    [-13.4, 9.4, 21, 2.2],
+    [-13.4, 7.4, 21, 2.2],
+    [21.4, 13.4, 21, 2.2],
+    [21.4, 11.4, 21, 2.2],
+    [21.4, 9.4, 21, 2.2],
+    [21.4, 7.4, 21, 2.2],
+  ];
   const createPlaneInstance=async (instance) => {
     let geometry = new THREE.PlaneGeometry(108, 80); //矩形平面
     let backPlaneMaterial = new THREE.MeshBasicMaterial({
@@ -29,7 +39,9 @@ export default function useBillPlane() {
     // instanceList.push(frontPlaneMesh);
     // instanceList.push(backPlaneMesh);
     const selectorFactory = await useBillTextSelector(instance,instanceMap);
-    instanceList.push(selectorFactory.createTextSelectorInstance(-44, 0, 10, 5))
+    inputPlacementPositionList.forEach((args)=>{
+      instanceList.push(selectorFactory.createTextSelectorInstance.apply(selectorFactory, args));
+    })
     return instanceList;
   };
 
