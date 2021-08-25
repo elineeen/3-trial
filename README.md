@@ -2,7 +2,7 @@
 ```
  trials with three&trois js
  mainly focus in webgl 3D effects experiments,if u r interested in 2d visiualization,
- you can 
+ you can visit https://github.com/elineeen/d3Trial for more infomation about d3&2d works
 ```
 ## Project setup
 ```
@@ -32,8 +32,6 @@ first step to meshes\points,geometries&material, also glsl
 ### [music 50 years demo](https://elineeen.github.io/3-trial/#/cameraTester)
 origin:https://50-jahre-hitparade.ch/
 ```
-this work still misses lots of original details,
-that why i call it a demo & i'll keep updating in the next few weeks.
 the original work reminds me of the first intern job in data visulization.
 At that time i just added features based on other ppl's work, 
 but now i tried to do all this work on my own.

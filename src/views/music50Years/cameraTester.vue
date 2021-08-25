@@ -242,7 +242,7 @@ export default {
     activateGraphNodeEffect(nodeInstanceList){
       // let nodeInstanceList=group.children;
       const sceneInstance=this.$refs.sceneInstance;
-      //他只保存节点示例，不能作为一个group去add
+      //好像还是应该作为three.group添加好一点，并不会卡生成
       let tempGroup=[]
       let tweenList=nodeInstanceList.map((nodeInstance)=>{
         let {userData}=nodeInstance
@@ -291,12 +291,13 @@ export default {
         // activatedNodeInstanceList.forEach(node=>{
         //   this.$refs.sceneInstance.remove(node);
         // })
-        // debugger;
 
+        debugger;
         //directly use removeFromParent api works fine
         activatedNodeInstanceList.forEach(node=>{
           node.removeFromParent();
         })
+
         activatedLineTweenList.forEach(tween=>{
           TWEEN.remove(tween);
         })
