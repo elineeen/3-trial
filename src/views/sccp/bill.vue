@@ -2,8 +2,14 @@
   <div class="container">
     <div class="control-block">
       <input class="hidden-input" ref="hiddenInput"  v-model="userInput"/>
-      <a href="#" @click="toggleMode($event,'edit')">edit mode</a>
-      <a href="#" @click="toggleMode($event,'display')">display mode</a>
+      <div v-if="!typeControl">
+        loading texture image data...
+      </div>
+      <div v-else>
+        <a href="#" @click="toggleMode($event,'edit')">edit mode</a>
+        <a href="#" @click="toggleMode($event,'display')">display mode</a>
+      </div>
+
     </div>
     <Renderer ref="renderer" antialias :orbit-ctrl="{target:orbitTarget}" pointer resize="window" >
       <Camera ref="camera" :lookAt="orbitTarget"  :position="{ z: 10 }"/>
@@ -34,7 +40,7 @@ export default {
     const renderer = ref(null)
     const hiddenInput=ref(null)
     const userInput=ref('');
-    const typeControl=ref('display')
+    const typeControl=ref(null)
     const rotateCntl = reactive({ x: 0, y: 0, z: 0 })
     const isEditMode=computed(()=>typeControl.value==='edit')
     const isDisplayMode=computed(()=>typeControl.value==='display')
@@ -128,7 +134,8 @@ export default {
       userInput,
       hiddenInput,
       toggleMode,
-      orbitTarget
+      orbitTarget,
+      typeControl,
     }
 
   },

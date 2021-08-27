@@ -30,15 +30,25 @@ export default function useBillPlane() {
     [-7, -14.5, 58, 2.2,true],
     [-7, -16.5, 58, 2.2,true],
   ];
+  //
+  const wrappedTextureLoader=(src)=>{
+    return new Promise((resolve,reject) => {
+      new THREE.TextureLoader().load(src,(texture)=>{
+        resolve(texture)
+      },undefined,(err)=>{
+        reject(err)
+      })
+    })
+  }
   const createPlaneInstance=async (instance) => {
     let geometry = new THREE.PlaneGeometry(108, 80); //矩形平面
     let backPlaneMaterial = new THREE.MeshBasicMaterial({
-      map: new THREE.TextureLoader().load("./cbill/bill-back.png"),//设置精灵纹理贴图
+      map: await wrappedTextureLoader('./cbill/bill-back.png'),
       side: THREE.FrontSide,
       depthWrite: false
     })
     let frontPlaneMaterial = new THREE.MeshBasicMaterial({
-      map: new THREE.TextureLoader().load("./cbill/bill-front.png"),//设置精灵纹理贴图
+      map: await wrappedTextureLoader('./cbill/bill-front.png'),
       side: THREE.FrontSide,
       depthWrite: false
     });
