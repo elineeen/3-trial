@@ -22,12 +22,14 @@ yarn build
 ## try demos online(用的vite默认打包配置，不关心兼容问题，学新技术用什么浏览器自己没点逼数吗)
 
 ### [3D editable bill](https://elineeen.github.io/3-trial/#/cbill)
+<font color='#f73131'>warning: the texture picture is fairly large(about 2M) 
+and i'm not interested in compressing the img, so be patient lol</font>
 ```
  An original work, resources get from daily work,with editable contents & orbitcontrol.
  I've made my words to do this in vue 3, it was quite confusing in first time and my code seem to be suck,
  but it's fun using compositon api, and i'll keep using this in future 3D work.
  I'm not so satisfied with the state mathcine and how code is arranged,
- so i may take some time to do some refactoring on the code & add some annotaions.
+ so i may take some time to do some refactori``ng on the code & add some annotaions.
 ```
 
 ### [music 50 years demo](https://elineeen.github.io/3-trial/#/cameraTester)
