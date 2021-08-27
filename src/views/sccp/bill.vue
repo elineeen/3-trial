@@ -5,11 +5,10 @@
       <div v-if="!typeControl">
         loading texture image data...
       </div>
-      <div v-else>
+      <div  class="control-block" v-else>
         <a href="#" @click="toggleMode($event,'edit')">edit mode</a>
         <a href="#" @click="toggleMode($event,'display')">display mode</a>
       </div>
-
     </div>
     <Renderer ref="renderer" antialias :orbit-ctrl="{target:orbitTarget}" pointer resize="window" >
       <Camera ref="camera" :lookAt="orbitTarget"  :position="{ z: 10 }"/>
@@ -111,6 +110,7 @@ export default {
     }
     onMounted(() => {
       createPlaneInstance(cbillGroup.value).then((instanceList) => {
+        typeControl.value='display';
         instanceList.forEach((instance) => {
           renderer.value.three.addIntersectObject(instance)
         })
@@ -154,10 +154,12 @@ export default {
     background: black;
   }
   .control-block{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background: black;
-    a{
+    a,div{
+      margin-top: 20px;
       color: white;
       font-size: 40px;
     }
