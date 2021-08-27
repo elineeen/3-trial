@@ -5,7 +5,7 @@ export default function useBillPlane() {
   const plane = ref(null)
   const instanceList=[];
   const instanceMap=new WeakMap();
-  const inputPlacementPositionList=[
+  const inputPositionList=[
     [-13.4, 13.4, 21, 2.2],
     [-13.4, 11.4, 21, 2.2],
     [-13.4, 9.4, 21, 2.2],
@@ -14,20 +14,34 @@ export default function useBillPlane() {
     [21.4, 11.4, 21, 2.2],
     [21.4, 9.4, 21, 2.2],
     [21.4, 7.4, 21, 2.2],
+
+    [-7, 5.8, 58, 2.2,true],
+    [-7, 7.8, 58, 2.2,true],
+    [-7, 9.8, 58, 2.2,true],
+    [-7, 11.8, 58, 2.2,true],
+
+    [-7, 0.7, 58, 2.2,true],
+    [-7, -1.3, 58, 2.2,true],
+    [-7, -3.3, 58, 2.2,true],
+    [-7, -5.3, 58, 2.2,true],
+
+    [-7, -10.5, 58, 2.2,true],
+    [-7, -12.5, 58, 2.2,true],
+    [-7, -14.5, 58, 2.2,true],
+    [-7, -16.5, 58, 2.2,true],
   ];
   const createPlaneInstance=async (instance) => {
     let geometry = new THREE.PlaneGeometry(108, 80); //矩形平面
     let backPlaneMaterial = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load("./cbill/bill-back.png"),//设置精灵纹理贴图
-      side: THREE.DoubleSide,
+      side: THREE.FrontSide,
       depthWrite: false
     })
     let frontPlaneMaterial = new THREE.MeshBasicMaterial({
       map: new THREE.TextureLoader().load("./cbill/bill-front.png"),//设置精灵纹理贴图
       side: THREE.FrontSide,
       depthWrite: false
-    }); //材质对象Material
-// 设置几何体的材质索引(对于PlaneGeometry而言所有Face3的材质索引默认0)
+    });
     let frontPlaneMesh = new THREE.Mesh(geometry.clone(), frontPlaneMaterial); //网格模型对象Mesh
     let backPlaneMesh = new THREE.Mesh(geometry.clone(), backPlaneMaterial); //网格模型对象Mesh
     frontPlaneMesh.position.set(0, 0, 0)
@@ -35,11 +49,8 @@ export default function useBillPlane() {
     backPlaneMesh.geometry.rotateY(Math.PI)
     instance.add(frontPlaneMesh);
     instance.add(backPlaneMesh);
-
-    // instanceList.push(frontPlaneMesh);
-    // instanceList.push(backPlaneMesh);
     const selectorFactory = await useBillTextSelector(instance,instanceMap);
-    inputPlacementPositionList.forEach((args)=>{
+    inputPositionList.forEach((args)=>{
       instanceList.push(selectorFactory.createTextSelectorInstance.apply(selectorFactory, args));
     })
     return instanceList;
