@@ -1,6 +1,12 @@
-import { computed, ref, watch, watchEffect } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
 import * as THREE from 'three'
 
+/**
+ *
+ * @param groupInstance
+ * @param map 该weakmap用于赋值，<实例元素，自定义功能>的二元组，用于最外层事件判断时获取功能函数
+ * @returns {Promise<{createTextSelectorInstance: (function(*=, *=, *=, *=, *=): Mesh)}>}
+ */
 export default async function useBillTextSelector (groupInstance, map) {
   let fontLoader = null
   const stateEnumMap = Object.freeze({
@@ -34,7 +40,15 @@ export default async function useBillTextSelector (groupInstance, map) {
     ctx.fillText(text, fontSize / 2, canvas.height / 2 - fontSize / 2)
     return canvas
   }
-  const updateCanvas = (canvas, groupInstance, text, placementSetting,borderColor) => {
+  /**
+   * 一个更新画布的函数，参数写的贼多，但是又不想放函数体里贼难看.jpg
+   * @param canvas 画布示例
+   * @param groupInstance group实例，需要调用里面needupdate变量手动进行更新
+   * @param text 渲染文字
+   * @param placementSetting 位置，xywh
+   * @param borderColor 边框颜色
+   */
+  const updateCanvas = (canvas, groupInstance, text, placementSetting, borderColor) => {
     let ctx = canvas.getContext('2d')
     if (ctx) {
       ctx.clearRect(0, 0, placementSetting.w * 10, placementSetting.h * 10)
@@ -48,6 +62,15 @@ export default async function useBillTextSelector (groupInstance, map) {
       groupInstance.needsUpdate = true
     }
   }
+  /**
+   *
+   * @param x
+   * @param y
+   * @param w
+   * @param h
+   * @param isBackSide 是否是背面信息
+   * @returns {Mesh}
+   */
   const createTextSelectorInstance = (x, y, w, h, isBackSide = false) => {
     const selector = new THREE.Group()
     let displayText = ref('')
@@ -67,8 +90,9 @@ export default async function useBillTextSelector (groupInstance, map) {
     let planeInstance = new THREE.Mesh(backGround.geometry, backGround.material)
     if (isBackSide)
       planeInstance.rotateY(Math.PI)
-  
+
     let state = ref(stateEnumMap.INITIAL)
+    //根据状态控制边框颜色与显示
     const borderColor = computed(() => {
       const color2StateMap = Object.freeze({
         [stateEnumMap.HOVER]: 'green',
@@ -79,9 +103,10 @@ export default async function useBillTextSelector (groupInstance, map) {
       return color2StateMap[state.value] || 'white'
     })
     //watch displaytext\state 二合一
-    watchEffect(()=>{
-      updateCanvas(canvasInstance,textureInstance,displayText.value || defaultText,placementSetting,borderColor.value)
+    watchEffect(() => {
+      updateCanvas(canvasInstance, textureInstance, displayText.value || defaultText, placementSetting, borderColor.value)
     })
+    //传入功能函数,闭包访问内部私有变量，一个简单的状态机
     map.set(selector, {
       focus: () => {
         state.value = stateEnumMap.HOVER
@@ -89,7 +114,7 @@ export default async function useBillTextSelector (groupInstance, map) {
       clear: () => {
         state.value = stateEnumMap.INITIAL
       },
-      activate:()=>{
+      activate: () => {
         state.value = stateEnumMap.ACTIVATE
         return displayText.value
       },
