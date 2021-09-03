@@ -53,13 +53,14 @@ export default function useBillPlane () {
    */
   const createPlaneInstance = async (instance) => {
     let geometry = new THREE.PlaneGeometry(108, 80) //矩形平面
+    let [backTexture,frontTexture]=await Promise.all([wrappedTextureLoader('./cbill/bill-back.png'),wrappedTextureLoader('./cbill/bill-front.png')])
     let backPlaneMaterial = new THREE.MeshBasicMaterial({
-      map: await wrappedTextureLoader('./cbill/bill-back.png'),
+      map: backTexture,
       side: THREE.FrontSide,
       depthWrite: false
     })
     let frontPlaneMaterial = new THREE.MeshBasicMaterial({
-      map: await wrappedTextureLoader('./cbill/bill-front.png'),
+      map: frontTexture,
       side: THREE.FrontSide,
       depthWrite: false
     })
