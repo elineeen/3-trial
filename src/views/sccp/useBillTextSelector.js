@@ -55,7 +55,9 @@ export default async function useBillTextSelector (groupInstance, map) {
       ctx.fillStyle = 'black'
       ctx.textBaseline = 'top'
       ctx.font = `${fontSize}px Avenir,Helvetica`
-      ctx.fillText(text, fontSize / 2, canvas.height / 2 - fontSize / 2)
+      ctx.textAlign='center';
+      ctx.textBaseline='middle'
+      ctx.fillText(text, canvas.width /2, canvas.height / 2)
       ctx.lineWidth = 5
       ctx.strokeStyle = borderColor
       ctx.strokeRect(0, 0, canvas.width, canvas.height)
