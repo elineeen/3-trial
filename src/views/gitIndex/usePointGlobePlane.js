@@ -1,10 +1,14 @@
 import { globeImgData } from './globeImgData'
 import * as THREE from 'three'
+import * as d3 from 'd3';
 import { BufferGeometryUtils } from 'three/examples/jsm/utils/BufferGeometryUtils'
+import useGitCommitTransitions from './useGitCommitTransitions'
 export default function usePointGlobePlane(){
   const globalOrthodoxImg = new Image();
   const [globeCanvasWidth,globeCanvasHeight]=[360,181]
   const geometryFragmentList=[]
+  let commitList=[]//提交数据
+  let {generateCommitTween}=useGitCommitTransitions();
   const _initImgData=()=>{
     return new Promise(resolve => {
       globalOrthodoxImg.src = '/gitIndex/globalMap.png';
@@ -14,10 +18,38 @@ export default function usePointGlobePlane(){
       };
     })
   }
-  
+  const _initCommitList=async ()=>{
+    commitList=await d3.json('./gitIndex/github-index.json')
+  }
+  const _initCommitAnimations=(instance)=>{
+    let animationIndex=0;
+    return generateCommitTween(instance,commitList.slice(0,10))
+    // d3.interval(()=>{
+    //   animationIndex=animationIndex<commitList.length?animationIndex+10:animationIndex%commitList.length+10;
+    //   let animateCommitList=commitList.slice(animationIndex-10,animationIndex);
+    //
+    //
+    //   // //回收collect态
+    //   // this.loopData.renderList=arcList=arcList.filter(d=>d.state!=='collect');
+    //   // if(counterIndex>=githubCommits.length-2)
+    //   //   counterIndex=counterIndex%githubCommits.length
+    //   // counterIndex++;
+    //   // let gitCommitObj=githubCommits[counterIndex];
+    //   // let {gm,gop}=gitCommitObj
+    //   // let srcCoordinate=[gop.lon,gop.lat],targetCoordinate=[gm.lon,gm.lat]
+    //   // let geoLines = d3.geoInterpolate(srcCoordinate, targetCoordinate);
+    //   //
+    //   //
+    //   // //state内置 extend=>transfer=>shrink
+    //   // arcList.push({srcCoordinate,targetCoordinate,geoLines,t:0,state:'extend'});
+    //   // //可以考虑重叠canvas与svg来解决问题？
+    //
+    // },1000)
+  }
 
   const initCompositeGlobePlane=async (instance)=>{
     await _initImgData()
+    await _initCommitList();
     let globeCanvas = document.createElement("canvas");
     globeCanvas.width = globeCanvasWidth;
     globeCanvas.height = globeCanvasHeight;
@@ -39,7 +71,7 @@ export default function usePointGlobePlane(){
           let fragmentPositionArr=fragmentPositionVector.toArray();
           dummyObj.lookAt(fragmentPositionVector);
           dummyObj.updateMatrix();
-          let planeSize = 0.015;
+          let planeSize = 0.03;
           let minSize = 0;
           let geometryFragment = new THREE.PlaneBufferGeometry(planeSize, planeSize) //矩形平面
           geometryFragment.applyMatrix4(dummyObj.matrix)
@@ -58,8 +90,11 @@ export default function usePointGlobePlane(){
     })
     // material.defines = {"USE_UV":""};
     const compositePlaneInstance=new THREE.Mesh(compositeGeometries,material)
-    debugger;
     instance.add(compositePlaneInstance);
+
+
+
+    _initCommitAnimations(instance);
     return compositePlaneInstance
   }
   return {
