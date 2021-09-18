@@ -8,7 +8,7 @@ export default function usePointGlobePlane(){
   const [globeCanvasWidth,globeCanvasHeight]=[360,181]
   const geometryFragmentList=[]
   let commitList=[]//提交数据
-  let {generateCommitTween}=useGitCommitTransitions();
+  let {generateCommitTweenList}=useGitCommitTransitions();
   const _initImgData=()=>{
     return new Promise(resolve => {
       globalOrthodoxImg.src = '/gitIndex/globalMap.png';
@@ -21,30 +21,16 @@ export default function usePointGlobePlane(){
   const _initCommitList=async ()=>{
     commitList=await d3.json('./gitIndex/github-index.json')
   }
-  const _initCommitAnimations=(instance)=>{
+  const _initCommitAnimations=async (instance)=>{
     let animationIndex=0;
-    return generateCommitTween(instance,commitList.slice(0,10))
-    // d3.interval(()=>{
-    //   animationIndex=animationIndex<commitList.length?animationIndex+10:animationIndex%commitList.length+10;
-    //   let animateCommitList=commitList.slice(animationIndex-10,animationIndex);
-    //
-    //
-    //   // //回收collect态
-    //   // this.loopData.renderList=arcList=arcList.filter(d=>d.state!=='collect');
-    //   // if(counterIndex>=githubCommits.length-2)
-    //   //   counterIndex=counterIndex%githubCommits.length
-    //   // counterIndex++;
-    //   // let gitCommitObj=githubCommits[counterIndex];
-    //   // let {gm,gop}=gitCommitObj
-    //   // let srcCoordinate=[gop.lon,gop.lat],targetCoordinate=[gm.lon,gm.lat]
-    //   // let geoLines = d3.geoInterpolate(srcCoordinate, targetCoordinate);
-    //   //
-    //   //
-    //   // //state内置 extend=>transfer=>shrink
-    //   // arcList.push({srcCoordinate,targetCoordinate,geoLines,t:0,state:'extend'});
-    //   // //可以考虑重叠canvas与svg来解决问题？
-    //
-    // },1000)
+    let tweenList=await generateCommitTweenList(instance)
+
+    d3.interval(()=>{
+      animationIndex=(animationIndex>=tweenList.length)?animationIndex%tweenList.length+5:animationIndex+5
+      let activateList=tweenList.slice(animationIndex-5,animationIndex)
+      activateList.forEach(tweenObj=>tweenObj.start())
+    },1500)
+    // return generateCommitTween(instance,curveList.slice(0,10))
   }
 
   const initCompositeGlobePlane=async (instance)=>{

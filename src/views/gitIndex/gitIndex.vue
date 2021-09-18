@@ -33,15 +33,12 @@ export default {
     const scene=ref(null)
     const parentGroup=ref(null)
     const renderer=ref(null)
-    const rotateCntl=reactive({x:0,y:0,z:0})
+    const rotateCntl=reactive({x:0,y:Math.PI/3,z:0})
     onMounted(async ()=>{
       await initCompositeGlobePlane(parentGroup.value);
       renderer.value.onBeforeRender(() => {
         TWEEN.update()
-        // console.dir(renderer?.value?.three?.cameraCtrl.position)
-        // if (isDisplayMode.value) {
-        //   rotateCntl.y += 0.001
-        // }
+          rotateCntl.y += 0.001
       })
     })
     return {
