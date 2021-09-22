@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Renderer ref="renderer" antialias resize="window" orbit-ctrl>
-      <Camera :position="{ x:0, y:5, z:15 }" :fov="50" :far="50" />
+    <Renderer ref="renderer" antialias resize="window" orbit-ctrl >
+      <Camera :position="{ x:0, y:5, z:12 }" :fov="50" :far="50" />
       <Scene ref="scene">
         <PointLight ref="light1" color="#0E09DC" :intensity="0.3" :position="{ x: -35, y: 35, z: -10 }" />
         <PointLight ref="light2" color="#1CD1E1" :intensity="0.3" :position="{ x: -25, y: 25, z: -10 }" />

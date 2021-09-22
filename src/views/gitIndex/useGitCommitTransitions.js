@@ -2,6 +2,7 @@ import * as THREE from 'three'
 import { Vector3 } from 'three'
 import TWEEN from '@tweenjs/tween.js'
 import * as d3 from 'd3'
+import { ref } from 'vue'
 
 export default function useGitCommitTransitions(){
   const distance2OpalRadiusScale=d3.scaleLinear([0,15],[5,15])
@@ -12,7 +13,6 @@ export default function useGitCommitTransitions(){
   const generateOrderedCommitCurveList=async ()=>{
     let commitList=await d3.json('./gitIndex/github-index.json')
     //排序，靠近x初始位置的优先动画展示
-    //  let p=
        return commitList
       .map((d)=>{
       let {gm,gop}=d;
@@ -75,11 +75,53 @@ export default function useGitCommitTransitions(){
     let [startSph,endSph]=[new THREE.Spherical().setFromVector3(startVec),new THREE.Spherical().setFromVector3(endVec)];
     return new THREE.Vector3().setFromSphericalCoords(curveRadius,(startSph.phi+endSph.phi)/2,(startSph.theta+endSph.theta)/2)
   }
-  const generateCommitTweenList=async (instance)=>{
+  /**
+   * 生成一个复合的commit tween list 包括曲线处理和impact设置
+   *
+   * @todo 这块nodeList和tween得想办法解耦
+   * @param instance
+   * @returns {Promise<Tween<{counter: number}>[]>}
+   */
+  const generateCommitTweenList=async (instance,impactNodeRef=ref([]))=>{
     let curveList=await generateOrderedCommitCurveList();
-    return generateCommitTween(instance,curveList)
+    let [impactTweenList,uniformImpactNodeList]=generateImpactTweenList(curveList);
+    let compositeTweenList=generateCompositeCurveTweenList(instance,curveList,impactTweenList)
+    //解耦啊解耦
+    impactNodeRef.value=uniformImpactNodeList
+    return compositeTweenList
   }
-  const generateCommitTween=(instance,curveList=[])=>{
+  const generateImpactTweenList=(curveList)=>{
+    let uniformImpactNodeList=[]
+    curveList.forEach((d,i)=>{
+      const [,curvePoints]=d;
+      let startImpactVec=curvePoints[0],endImpactVec=curvePoints[curvePoints.length-1];
+      //这里面暂时不做成pair形式，要不然shader uniform里传入后里面处理很麻烦,所以现在uniformImpactNodeList一定是2的倍数，暂不考虑边界处理
+      uniformImpactNodeList.push(
+        {
+            impactPosition: startImpactVec,
+          //@todo 根据curve长度调整impact radius
+            impactMaxRadius: 5 * THREE.Math.randFloat(0.5, 0.75),
+            impactRatio: 0,
+            isStart:true
+        },
+        {
+          impactPosition: endImpactVec,
+          impactMaxRadius:5 * THREE.Math.randFloat(0.5, 0.75),
+          impactRatio: 0
+        }
+      )
+    })
+    let impactTweenList=uniformImpactNodeList.map((d,i)=>{
+      // const [curveObject,curvePoints]=curveList[i];
+      return new TWEEN.Tween(d)
+        .to({ impactRatio: 1 }, THREE.Math.randInt(2500, 5000))
+        .onComplete(()=>{
+          d.impactRatio=0;
+        })
+    })
+    return [impactTweenList,uniformImpactNodeList]
+  }
+  const generateCompositeCurveTweenList=(instance,curveList=[])=>{
     return curveList.map(d=>{
       const [curveObject,curvePoints]=d;
       instance.add(curveObject);

@@ -3,10 +3,19 @@ import * as THREE from 'three'
 import * as d3 from 'd3';
 import { BufferGeometryUtils } from 'three/examples/jsm/utils/BufferGeometryUtils'
 import useGitCommitTransitions from './useGitCommitTransitions'
+import { ref } from 'vue'
 export default function usePointGlobePlane(){
   const globalOrthodoxImg = new Image();
   const [globeCanvasWidth,globeCanvasHeight]=[360,181]
   const geometryFragmentList=[]
+  // const impactConfig={
+  //   maxImpactCount:
+  //   uniformImpactNodeList
+  // }
+  const impactNodeList=ref([]);
+  // const pointUniforms={
+  //   impacts: {value: impacts}
+  // }
   let commitList=[]//提交数据
   let {generateCommitTweenList}=useGitCommitTransitions();
   const _initImgData=()=>{
@@ -23,7 +32,7 @@ export default function usePointGlobePlane(){
   }
   const _initCommitAnimations=async (instance)=>{
     let animationIndex=0;
-    let tweenList=await generateCommitTweenList(instance)
+    let tweenList=await generateCommitTweenList(instance,impactNodeList)
     d3.interval(()=>{
       animationIndex=(animationIndex>=tweenList.length)?animationIndex%tweenList.length+5:animationIndex+5
       let activateList=tweenList.slice(animationIndex-5,animationIndex)
@@ -67,18 +76,54 @@ export default function usePointGlobePlane(){
         }
       }
     }
+    await _initCommitAnimations(instance);
     let compositeGeometries=BufferGeometryUtils.mergeBufferGeometries(geometryFragmentList,true)
     let material=new THREE.MeshBasicMaterial({
-      side:THREE.FrontSide,
-      color:0x6633aa
+      side:THREE.DoubleSide,
+      color:0x6633aa,
+      // onBeforeCompile: shader => {
+      //   shader.uniforms.impacts = [];
+      //   shader.uniforms.impacts = impactNodeList.value;
+      //   debugger;
+      //   shader.vertexShader = `
+      // 	struct impact {
+      //     vec3 impactPosition;
+      //     float impactMaxRadius;
+      //     float impactRatio;
+      //   };
+      // 	uniform impact impacts[${impactNodeList.value.length}];
+      //
+      //   attribute vec3 center;
+      //   attribute float scale;
+      //
+      //   varying float vFinalStep;
+      //
+      //   ${shader.vertexShader}
+      // `.replace(
+      //     `#include <begin_vertex>`,
+      //     `#include <begin_vertex>
+      //   float finalStep = 0.0;
+      //   for (int i = 0; i < ${maxImpactAmount};i++){
+      //
+      //     float dist = distance(center, impacts[i].impactPosition);
+      //     float curRadius = impacts[i].impactMaxRadius * impacts[i].impactRatio;
+      //     float sstep = smoothstep(0., curRadius, dist) - smoothstep(curRadius - ( 0.25 * impacts[i].impactRatio ), curRadius, dist);
+      //     sstep *= 1. - impacts[i].impactRatio;
+      //     finalStep += sstep;
+      //
+      //   }
+      //   finalStep = clamp(finalStep, 0., 1.);
+      //   vFinalStep = finalStep;
+      //   transformed = (position - center) * mix(1., scale * 1.25, finalStep) + center; // scale on wave
+      //   transformed += normal * finalStep * 0.125; // lift on wave
+      //   `
+      //   );
+      // }
     })
-    // material.defines = {"USE_UV":""};
+    material.defines = {"USE_UV":""};
+
     const compositePlaneInstance=new THREE.Mesh(compositeGeometries,material)
     instance.add(compositePlaneInstance);
-
-
-
-    _initCommitAnimations(instance);
     return compositePlaneInstance
   }
   return {
