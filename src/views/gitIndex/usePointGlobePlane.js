@@ -24,13 +24,11 @@ export default function usePointGlobePlane(){
   const _initCommitAnimations=async (instance)=>{
     let animationIndex=0;
     let tweenList=await generateCommitTweenList(instance)
-
     d3.interval(()=>{
       animationIndex=(animationIndex>=tweenList.length)?animationIndex%tweenList.length+5:animationIndex+5
       let activateList=tweenList.slice(animationIndex-5,animationIndex)
       activateList.forEach(tweenObj=>tweenObj.start())
     },1500)
-    // return generateCommitTween(instance,curveList.slice(0,10))
   }
 
   const initCompositeGlobePlane=async (instance)=>{

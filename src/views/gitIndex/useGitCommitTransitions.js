@@ -21,19 +21,28 @@ export default function useGitCommitTransitions(){
       let centerVector=_generateCenter(startVector,endVector)
       return [startVector,centerVector,endVector]
     })
-    // debugger
       .sort((el1,el2)=>{
         let [startVec1,startVec2]=[el1[0],el2[1]];
         return Math.abs(startVec1.x)>Math.abs(startVec2.x)
-      // let [startSph1,startSph2]=[new THREE.Spherical().setFromVector3(el1[0]),new THREE.Spherical().setFromVector3(el2[1])];
-      // return Math.abs(startSph1.phi-Math.PI)>Math.abs(startSph2.phi-Math.PI)
     })
       .map(d=>{
         let [startVector,centerVector,endVector]=d;
         let curvePath=new THREE.QuadraticBezierCurve3(startVector,centerVector,endVector);
         const curvePoints=curvePath.getPoints(200);
         const geometry = new THREE.BufferGeometry().setFromPoints( [curvePoints[0],curvePoints[1]] );
-        const material = new THREE.LineBasicMaterial( { color : 'white',linewidth:10 } );
+        const material = new THREE.LineBasicMaterial( {
+          color : 'lightGreen',
+          linewidth:10,
+          opacity:0.5,
+          polygonOffset :true,
+          precision:'lowp',
+          shadowSide:THREE.DoubleSide,
+          transparent:true,
+        } );
+        // const geometry = new THREE.TubeBufferGeometry(curvePath,200,10,1,0).setFromPoints([curvePoints[0],curvePoints[1]]);
+        // const material = new THREE.MeshBasicMaterial( {
+        //   color: 'lightGreen', opacity: 0.3
+        // });
         const curveObject=new THREE.Line( geometry, material );
         curveObject.lookAt.apply(curveObject,centerVector.toArray())
         return [curveObject,curvePoints]

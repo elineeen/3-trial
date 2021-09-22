@@ -1,22 +1,25 @@
 <template>
   <div>
     <Renderer ref="renderer" antialias resize="window" orbit-ctrl>
-      <Camera :position="{ x:0, y:5, z:10 }" :fov="50" :far="50" />
+      <Camera :position="{ x:0, y:5, z:15 }" :fov="50" :far="50" />
       <Scene ref="scene">
-        <PointLight ref="light1" color="#0E09DC" :intensity="0.85" :position="{ x: -35, y: 35, z: -10 }" />
-        <PointLight ref="light2" color="#1CD1E1" :intensity="0.85" :position="{ x: -25, y: 25, z: -10 }" />
-        <PointLight ref="light3" color="#18C02C" :intensity="0.85" :position="{ x: -15, y: 15, z: -10 }" />
-        <PointLight ref="light4" color="#ee3bcf" :intensity="0.85" :position="{ x: -5, y: 5, z: -10 }" />
+        <PointLight ref="light1" color="#0E09DC" :intensity="0.3" :position="{ x: -35, y: 35, z: -10 }" />
+        <PointLight ref="light2" color="#1CD1E1" :intensity="0.3" :position="{ x: -25, y: 25, z: -10 }" />
+        <PointLight ref="light3" color="#18C02C" :intensity="0.3" :position="{ x: -15, y: 15, z: -10 }" />
+        <PointLight ref="light4" color="#ee3bcf" :intensity="0.3" :position="{ x: -5, y: 5, z: -10 }" />
+        <PointLight ref="light5" color="white" :intensity="2" :position="{ x: -9, y: 11, z: -15 }" />
         <Group ref="parentGroup"     :rotation="rotateCntl">
           <Mesh>
             <SphereGeometry :radius="5" :widthSegments="100" :heightSegments="100"></SphereGeometry>
-            <PhongMaterial color="lightGray"/>
-            <!--          <StandardMaterial color="#ffffff" :props="{ metalness: 1, roughness: 0, flatShading: true }" />-->
+            <PhongMaterial  :props="{  emissive:'#043a8a',emissiveIntensity:0.3}" color="white"/>
           </Mesh >
         </Group>
-
-<!--        <PointLight color="#ffffff" :position="{ y: 50, z: 50 ,x:25}" :intensity="0.5" />-->
       </Scene>
+      <EffectComposer>
+        <RenderPass />
+        <FXAAPass />
+        <UnrealBloomPass :strength=".8" />
+      </EffectComposer>
     </Renderer>
   </div>
 </template>
