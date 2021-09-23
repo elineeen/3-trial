@@ -20,7 +20,7 @@ export default function usePointGlobePlane(){
   let {generateCommitTweenList}=useGitCommitTransitions();
   const _initImgData=()=>{
     return new Promise(resolve => {
-      globalOrthodoxImg.src = '/gitIndex/globalMap.png';
+      globalOrthodoxImg.src = './gitIndex/globalMap.png';
       // globalOrthodoxImg.src = globeImgData;
       globalOrthodoxImg.onload = () => {
         resolve();
