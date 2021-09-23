@@ -592,6 +592,13 @@ merge-source-map@^1.1.0:
   dependencies:
     source-map "^0.6.1"
 
+meshline@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.npmmirror.com/meshline/download/meshline-2.0.3.tgz#2652e430cf2ea309a027a9d41bca28a6fa27c69f"
+  integrity sha1-JlLkMM8uowmgJ6nUG8oopvonxp8=
+  dependencies:
+    three "^0.129.0"
+
 minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"

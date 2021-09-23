@@ -3,7 +3,7 @@ import { Vector3 } from 'three'
 import TWEEN from '@tweenjs/tween.js'
 import * as d3 from 'd3'
 import { ref } from 'vue'
-
+import { MeshLine, MeshLineMaterial } from 'meshline';
 export default function useGitCommitTransitions(){
   const distance2OpalRadiusScale=d3.scaleLinear([0,15],[5,15])
   /**
@@ -29,21 +29,17 @@ export default function useGitCommitTransitions(){
         let [startVector,centerVector,endVector]=d;
         let curvePath=new THREE.QuadraticBezierCurve3(startVector,centerVector,endVector);
         const curvePoints=curvePath.getPoints(200);
-        const geometry = new THREE.BufferGeometry().setFromPoints( [curvePoints[0],curvePoints[1]] );
-        const material = new THREE.LineBasicMaterial( {
+        const meshLine=new MeshLine()
+        meshLine.setPoints([curvePoints[0],curvePoints[1]] )
+        const material = new MeshLineMaterial( {
           color : 'lightGreen',
-          linewidth:10,
-          opacity:0.5,
-          polygonOffset :true,
-          precision:'lowp',
-          shadowSide:THREE.DoubleSide,
-          transparent:true,
+          lineWidth:.04,
+          useAlphaMap:0,
+          resolution:new THREE.Vector2(1920,1080)
+          // opacity:0.5,
+          // transparent:true,
         } );
-        // const geometry = new THREE.TubeBufferGeometry(curvePath,200,10,1,0).setFromPoints([curvePoints[0],curvePoints[1]]);
-        // const material = new THREE.MeshBasicMaterial( {
-        //   color: 'lightGreen', opacity: 0.3
-        // });
-        const curveObject=new THREE.Line( geometry, material );
+        const curveObject=new THREE.Mesh( meshLine, material );
         curveObject.lookAt.apply(curveObject,centerVector.toArray())
         return [curveObject,curvePoints]
       })
@@ -112,7 +108,6 @@ export default function useGitCommitTransitions(){
       )
     })
     let impactTweenList=uniformImpactNodeList.map((d,i)=>{
-      // const [curveObject,curvePoints]=curveList[i];
       return new TWEEN.Tween(d)
         .to({ impactRatio: 1 }, THREE.Math.randInt(2500, 5000))
         .onComplete(()=>{
@@ -132,7 +127,7 @@ export default function useGitCommitTransitions(){
         .to({ counter:200}, 5000)
         .onUpdate((tweenObject)=>{
           let renderPoints=curvePoints.slice(tweenObject.counter,200)
-          curveObject.geometry.setFromPoints(renderPoints);
+          curveObject.geometry.setPoints(renderPoints);
           curveObject.updateMatrix()
         })
       let extendTween= new TWEEN.Tween(tweenObject)
@@ -141,10 +136,7 @@ export default function useGitCommitTransitions(){
         .to({ counter:200}, 5000)
         .onUpdate(()=>{
           let renderPoints=curvePoints.slice(0,tweenObject.counter)
-          curveObject.geometry.setFromPoints(renderPoints);
-          curveObject.updateMatrix()
-        })
-        .onComplete(()=>{
+          curveObject.geometry.setPoints(renderPoints);
         })
       extendTween.chain(elapseTween);
       return extendTween

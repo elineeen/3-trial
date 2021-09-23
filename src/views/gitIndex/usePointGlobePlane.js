@@ -79,7 +79,6 @@ export default function usePointGlobePlane(){
     await _initCommitAnimations(instance);
     let compositeGeometries=BufferGeometryUtils.mergeBufferGeometries(geometryFragmentList,true)
     let material=new THREE.MeshBasicMaterial({
-      side:THREE.DoubleSide,
       color:0x6633aa,
       // onBeforeCompile: shader => {
       //   shader.uniforms.impacts = [];
