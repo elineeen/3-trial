@@ -28,7 +28,7 @@ export default function useGitCommitTransitions(){
       .map(d=>{
         let [startVector,centerVector,endVector]=d;
         let curvePath=new THREE.QuadraticBezierCurve3(startVector,centerVector,endVector);
-        const curvePoints=curvePath.getPoints(200);
+        const curvePoints=curvePath.getPoints(100);
         const meshLine=new MeshLine()
         meshLine.setPoints([curvePoints[0],curvePoints[1]] )
         const material = new MeshLineMaterial( {
@@ -116,30 +116,81 @@ export default function useGitCommitTransitions(){
     })
     return [impactTweenList,uniformImpactNodeList]
   }
+  const _generateCommitMarkTween=(instance,curvePoints)=>{
+    let markGroup=new THREE.Group();
+    let groupEndSpherical=new THREE.Spherical().setFromVector3(curvePoints[0])
+    let groupStartSpherical=groupEndSpherical.clone()
+    groupStartSpherical.radius=4.3//magic number 5-0.6
+    let lineEndSpherical=groupEndSpherical.clone()
+    lineEndSpherical.radius=0.5
+    let pointSpherical=groupEndSpherical.clone()
+    pointSpherical.radius=0.6
+    let pointDistanceVec=new THREE.Vector3().setFromSpherical(pointSpherical)
+    let lineDistanceVec=new THREE.Vector3().setFromSpherical(lineEndSpherical)
+    const  markLine=new MeshLine();
+    markLine.setPoints([
+      new THREE.Vector3(0,0,0),
+      lineDistanceVec
+    ])
+    const lineMaterial = new MeshLineMaterial( {
+      color : 'lightBlue',
+      lineWidth:.02,
+      useAlphaMap:0,
+    } );
+    const pointGeo=new THREE.BufferGeometry().setFromPoints([pointDistanceVec]);
+    const pointMaterial=new THREE.PointsMaterial({size:.1})
+    const markLineObj= new THREE.Mesh(markLine,lineMaterial);
+    const markPointObj=new THREE.Points(pointGeo,pointMaterial)
+    markGroup.add(markLineObj,markPointObj)
+    instance.add(markGroup);
+
+    const elapseTween= new TWEEN.Tween(new THREE.Vector3().setFromSpherical(groupEndSpherical))
+      .delay(5000)
+      .easing(TWEEN.Easing.Cubic.InOut)
+      .to(new THREE.Vector3().setFromSpherical(groupStartSpherical), 3000)
+      .onUpdate((positionVec)=>{
+        markGroup.position.set(positionVec.x,positionVec.y,positionVec.z)
+      })
+    const extendTween= new TWEEN.Tween(new THREE.Vector3().setFromSpherical(groupStartSpherical))
+      .delay(Math.random()*2000)
+      .easing(TWEEN.Easing.Cubic.InOut)
+      .to(new THREE.Vector3().setFromSpherical(groupEndSpherical), 3000)
+      .onUpdate((positionVec)=>{
+        markGroup.position.set(positionVec.x,positionVec.y,positionVec.z)
+      })
+    extendTween.chain(elapseTween);
+    return extendTween
+  }
+  const _generateCommitLineTween=(instance,curveObject,curvePoints)=>{
+    instance.add(curveObject);
+    let tweenObject={ counter:0 }
+    let elapseTween=new TWEEN.Tween({ counter:0 })
+      .delay(5000)
+      .easing(TWEEN.Easing.Cubic.InOut)
+      .to({ counter:curvePoints.length}, 5000)
+      .onUpdate((tweenObject)=>{
+        let renderPoints=curvePoints.slice(tweenObject.counter-1,curvePoints.length)
+        curveObject.geometry.setPoints(renderPoints);
+        curveObject.updateMatrix()
+      })
+    let extendTween= new TWEEN.Tween(tweenObject)
+      .delay(Math.random()*2000)
+      .easing(TWEEN.Easing.Cubic.InOut)
+      .to({ counter:curvePoints.length}, 5000)
+      .onUpdate(()=>{
+        let renderPoints=curvePoints.slice(0,tweenObject.counter)
+        curveObject.geometry.setPoints(renderPoints);
+      })
+    extendTween.chain(elapseTween);
+    return extendTween
+  }
   const generateCompositeCurveTweenList=(instance,curveList=[])=>{
     return curveList.map(d=>{
       const [curveObject,curvePoints]=d;
-      instance.add(curveObject);
-      let tweenObject={ counter:0 }
-      let elapseTween=new TWEEN.Tween({ counter:0 })
-        .delay(5000)
-        .easing(TWEEN.Easing.Cubic.InOut)
-        .to({ counter:200}, 5000)
-        .onUpdate((tweenObject)=>{
-          let renderPoints=curvePoints.slice(tweenObject.counter,200)
-          curveObject.geometry.setPoints(renderPoints);
-          curveObject.updateMatrix()
-        })
-      let extendTween= new TWEEN.Tween(tweenObject)
-        .delay(Math.random()*2000)
-        .easing(TWEEN.Easing.Cubic.InOut)
-        .to({ counter:200}, 5000)
-        .onUpdate(()=>{
-          let renderPoints=curvePoints.slice(0,tweenObject.counter)
-          curveObject.geometry.setPoints(renderPoints);
-        })
-      extendTween.chain(elapseTween);
-      return extendTween
+      let isMark=curvePoints[0].equals(curvePoints[curvePoints.length-1])
+      return isMark?
+        _generateCommitMarkTween(instance,curvePoints):
+        _generateCommitLineTween(instance,curveObject,curvePoints)
     })
   }
   return {
