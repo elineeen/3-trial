@@ -3,11 +3,11 @@ import { Vector3 } from 'three'
 import TWEEN from '@tweenjs/tween.js'
 import * as d3 from 'd3'
 import { ref } from 'vue'
-import { MeshLine, MeshLineMaterial } from 'meshline'
+import { MeshLine, MeshLineMaterial,MeshLineRaycast } from 'meshline'
 
 export default function useGitCommitTransitions () {
-  const distance2OpalRadiusScale = d3.scaleLinear([0, 1,15], [5,10, 15])
-  const distance2ImpactRadiusScale=d3.scaleLinear([0,15],[1,2])
+  const distance2OpalRadiusScale = d3.scaleLinear([0, 1, 15], [5, 8, 12])
+  const distance2ImpactRadiusScale = d3.scaleLinear([0, 15], [1, 2])
   /**
    * 四件事：获取原始数据-》根据原始数据转换成三个向量点-》根据x坐标排序展示顺序-》生成curve实例及对应曲线点阵并返回
    * @returns {Promise<void>}
@@ -21,30 +21,30 @@ export default function useGitCommitTransitions () {
         let srcCoordinate = [gop.lon, gop.lat], targetCoordinate = [gm.lon, gm.lat]
         let [startVector, endVector] = [_transformCoord2Vec(srcCoordinate), _transformCoord2Vec(targetCoordinate)]
         let centerVector = _generateCenter(startVector, endVector)
-        return [startVector, centerVector, endVector]
+        return [startVector, centerVector, endVector,d]
       })
       .sort((el1, el2) => {
         let [startVec1, startVec2] = [el1[0], el2[1]]
         return Math.abs(startVec1.x) > Math.abs(startVec2.x)
       })
       .map(d => {
-        let [startVector, centerVector, endVector] = d
+        let [startVector, centerVector, endVector,rawData] = d
         let curvePath = new THREE.QuadraticBezierCurve3(startVector, centerVector, endVector)
-        const curvePoints = curvePath.getPoints(200)
+        const curvePoints = curvePath.getPoints(100)
         const meshLine = new MeshLine()
         meshLine.setPoints([])
         const material = new MeshLineMaterial({
           color: 'lightGreen',
-          lineWidth: .04,
+          lineWidth: .05,
           useAlphaMap: 0,
-          resolution: new THREE.Vector2(1920, 1080)
-          // opacity:0.5,
-          // transparent:true,
+          // sizeAttenuation:0,
+          // resolution: new THREE.Vector2(1920, 1080)
         })
         const curveObject = new THREE.Mesh(meshLine, material)
+        curveObject.userData=rawData;
+        curveObject.raycast=MeshLineRaycast;
         // curveObject.lookAt.apply(curveObject, centerVector.toArray())
-        // curveObject.lookAt.apply(curveObject,[0,0,12])
-        return [curveObject, curvePoints]
+        return [curveObject, curvePoints,rawData]
       })
   }
   /**
@@ -117,11 +117,20 @@ export default function useGitCommitTransitions () {
     })
     return [impactTweenList, uniformImpactNodeList]
   }
-  const _generateCommitMarkTween = (instance, curvePoints,impactTween) => {
+  /**
+   *
+   * @param instance
+   * @param rawData 由于这里不适用原来的曲线obj3D，所以需要重新复写一遍userData值,我写的真烂.jpg
+   * @param curvePoints 曲线点数组，其实只需要起点
+   * @param impactTween 对应冲击动画
+   * @returns {Tween<Vector3>}
+   * @private
+   */
+  const _generateCommitMarkTween = (instance,rawData, curvePoints, impactTween) => {
     let markGroup = new THREE.Group()
     let groupEndSpherical = new THREE.Spherical().setFromVector3(curvePoints[0])
     let groupStartSpherical = groupEndSpherical.clone()
-    groupStartSpherical.radius = 4.3//magic number 5-0.6
+    groupStartSpherical.radius = 4.3//magic number 5-0.6-0.1pointsize
     let lineEndSpherical = groupEndSpherical.clone()
     lineEndSpherical.radius = 0.5
     let pointSpherical = groupEndSpherical.clone()
@@ -134,13 +143,16 @@ export default function useGitCommitTransitions () {
       lineDistanceVec
     ])
     const lineMaterial = new MeshLineMaterial({
-      color: 'lightBlue',
-      lineWidth: .02,
+      color: 'blue',
+      lineWidth: .03,
       useAlphaMap: 0,
     })
     const pointGeo = new THREE.BufferGeometry().setFromPoints([pointDistanceVec])
-    const pointMaterial = new THREE.PointsMaterial({ size: .1 })
+    const pointMaterial = new THREE.PointsMaterial({ size: .2 })
     const markLineObj = new THREE.Mesh(markLine, lineMaterial)
+    //mesh line 光追精度实在是太低了，把mark的commit关了.jpg
+    // markLineObj.raycast=MeshLineRaycast
+    markLineObj.userData=rawData
     const markPointObj = new THREE.Points(pointGeo, pointMaterial)
     markGroup.add(markLineObj, markPointObj)
     markGroup.position.set(new THREE.Vector3().setFromSpherical(groupStartSpherical))
@@ -148,64 +160,69 @@ export default function useGitCommitTransitions () {
 
     const elapseTween = new TWEEN.Tween(new THREE.Vector3().setFromSpherical(groupEndSpherical))
       .delay(5000)
-      .easing(TWEEN.Easing.Cubic.InOut)
       .to(new THREE.Vector3().setFromSpherical(groupStartSpherical), 3000)
+      .onStart(()=>{
+        markLineObj.userData.enableDisplayCommit=false;
+      })
       .onUpdate((positionVec) => {
         markGroup.position.set(positionVec.x, positionVec.y, positionVec.z)
       })
     const extendTween = new TWEEN.Tween(new THREE.Vector3().setFromSpherical(groupStartSpherical))
       .delay(Math.random() * 2000)
-      .easing(TWEEN.Easing.Cubic.InOut)
-      .onStart(()=>{
-        if(impactTween){
-          impactTween.start();
+      .onStart(() => {
+        if (impactTween) {
+          impactTween.start()
         }
       })
       .to(new THREE.Vector3().setFromSpherical(groupEndSpherical), 3000)
       .onUpdate((positionVec) => {
         markGroup.position.set(positionVec.x, positionVec.y, positionVec.z)
       })
+      .onComplete(()=>{
+        markLineObj.userData.enableDisplayCommit=true;
+      })
     extendTween.chain(elapseTween)
     return extendTween
   }
-  const _generateCommitLineTween = (instance, curveObject, curvePoints,startImpactTween,endImpactTween) => {
+  const _generateCommitLineTween = (instance, curveObject, curvePoints, startImpactTween, endImpactTween) => {
     instance.add(curveObject)
     let tweenObject = { counter: 0 }
     let elapseTween = new TWEEN.Tween({ counter: 0 })
       .delay(5000)
       .easing(TWEEN.Easing.Cubic.InOut)
-      .to({ counter: curvePoints.length }, 5000)
+      .to({ counter: curvePoints.length }, 2500)
+      .onStart(()=>{
+        curveObject.userData.enableDisplayCommit=false;
+      })
       .onUpdate((tweenObject) => {
         let renderPoints = curvePoints.slice(tweenObject.counter - 1, curvePoints.length)
         curveObject.geometry.setPoints(renderPoints)
-        curveObject.updateMatrix()
       })
     let extendTween = new TWEEN.Tween(tweenObject)
       .delay(Math.random() * 2000)
-      .easing(TWEEN.Easing.Cubic.InOut)
-      .onStart(()=>{
-        if(startImpactTween)
-          startImpactTween.start();
+      .onStart(() => {
+        if (startImpactTween)
+          startImpactTween.start()
       })
-      .to({ counter: curvePoints.length }, 5000)
+      .to({ counter: curvePoints.length }, 2500)
       .onUpdate(() => {
         let renderPoints = curvePoints.slice(0, tweenObject.counter)
         curveObject.geometry.setPoints(renderPoints)
       })
-      .onComplete(()=>{
-        if(endImpactTween)
-          endImpactTween.start();
+      .onComplete(() => {
+        curveObject.userData.enableDisplayCommit=true;
+        endImpactTween.start()
       })
     extendTween.chain(elapseTween)
     return extendTween
   }
-  const generateCompositeCurveTweenList = (instance, curveList = [],impactTweenList=[]) => {
-    return curveList.map((d,i) => {
-      const [curveObject, curvePoints] = d
+  const generateCompositeCurveTweenList = (instance, curveList = [], impactTweenList = []) => {
+    return curveList.map((d, i) => {
+      const [curveObject, curvePoints,rawData] = d
       let isMark = curvePoints[0].equals(curvePoints[curvePoints.length - 1])
       return isMark ?
-        _generateCommitMarkTween(instance, curvePoints, impactTweenList[i*2]) :
-        _generateCommitLineTween(instance, curveObject, curvePoints,impactTweenList[i*2],impactTweenList[i*2+1])
+        _generateCommitMarkTween(instance, rawData,curvePoints, impactTweenList[i * 2]) :
+        _generateCommitLineTween(instance, curveObject, curvePoints, impactTweenList[i * 2], impactTweenList[i * 2 + 1])
     })
   }
   return {

@@ -3,19 +3,12 @@ import * as d3 from 'd3'
 import { BufferGeometryUtils } from 'three/examples/jsm/utils/BufferGeometryUtils'
 import useGitCommitTransitions from './useGitCommitTransitions'
 import { ref } from 'vue'
-import {impactVertexShader,impactFragmentShader} from '../../components/impactShaders'
+
 export default function usePointGlobePlane () {
   const globalOrthodoxImg = new Image()
   const [globeCanvasWidth, globeCanvasHeight] = [360, 181]
   const geometryFragmentList = []
-  // const impactConfig={
-  //   maxImpactCount:
-  //   uniformImpactNodeList
-  // }
   const impactNodeList = ref([])
-  // const pointUniforms={
-  //   impacts: {value: impacts}
-  // }
   let commitList = []//提交数据
   let { generateCommitTweenList } = useGitCommitTransitions()
   const _initImgData = () => {
@@ -34,10 +27,10 @@ export default function usePointGlobePlane () {
     let animationIndex = 0
     let tweenList = await generateCommitTweenList(instance, impactNodeList)
     d3.interval(() => {
-      animationIndex = (animationIndex >= tweenList.length) ? animationIndex % tweenList.length + 5 : animationIndex + 5
-      let activateList = tweenList.slice(animationIndex - 5, animationIndex)
+      animationIndex = (animationIndex >= tweenList.length) ? animationIndex % tweenList.length + 3 : animationIndex + 3
+      let activateList = tweenList.slice(animationIndex - 3, animationIndex)
       activateList.forEach(tweenObj => tweenObj.start())
-    }, 1500)
+    }, 1000)
   }
 
   const initCompositeGlobePlane = async (instance) => {
@@ -65,7 +58,6 @@ export default function usePointGlobePlane () {
           dummyObj.lookAt(fragmentPositionVector)
           dummyObj.updateMatrix()
           let planeSize = 0.03
-          let minSize = 0
           let geometryFragment = new THREE.PlaneBufferGeometry(planeSize, planeSize) //矩形平面
           geometryFragment.applyMatrix4(dummyObj.matrix)
           geometryFragment.translate.apply(geometryFragment, fragmentPositionArr)
@@ -80,8 +72,8 @@ export default function usePointGlobePlane () {
     let material = new THREE.MeshBasicMaterial({
       color: 0x6633aa,
       onBeforeCompile: shader => {
-        let maxImpactAmount=impactNodeList.value.length;
-        shader.uniforms.impacts = {value:impactNodeList.value};
+        let maxImpactAmount = impactNodeList.value.length
+        shader.uniforms.impacts = { value: impactNodeList.value }
         shader.vertexShader = `
       	struct impact {
           vec3 impactPosition;
@@ -114,7 +106,7 @@ export default function usePointGlobePlane () {
         transformed = (position - center) * mix(1., scale * 1.25, finalStep) + center; // scale on wave
         transformed += normal * finalStep * 0.125; // lift on wave
         `
-        );
+        )
         shader.fragmentShader = `
         varying float vFinalStep;
         ${shader.fragmentShader}
@@ -126,7 +118,7 @@ export default function usePointGlobePlane () {
         vec3 col = mix(diffuse, grad, vFinalStep); // color on wave
         vec4 diffuseColor = vec4( col , opacity ); 
         `
-        );
+        )
       }
     })
     material.defines = { 'USE_UV': '' }
