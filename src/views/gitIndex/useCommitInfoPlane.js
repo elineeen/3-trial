@@ -12,9 +12,6 @@ export default function useCommitInfoPlane () {
 
   let planeCanvas=_generateTextCanvas();
   let canvasTexture=new THREE.CanvasTexture(planeCanvas)
-  // let planeInstance=new THREE.Mesh(new THREE.PlaneGeometry(6.7,1.5),new THREE.MeshBasicMaterial({
-  //   map:canvasTexture,
-  // }));
   let planeInstance=new THREE.Sprite(new THREE.SpriteMaterial({
     map:canvasTexture,
     depthTest:false,

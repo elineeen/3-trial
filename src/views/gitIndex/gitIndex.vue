@@ -3,7 +3,7 @@
     <Renderer ref="renderer"
               :orbit-ctrl="{enableRotate:false}"
               pointer resize="window">
-      <Camera :far="20" :fov="50" :position="{ x:0, y:5, z:15 }"/>
+      <Camera :far="20" :fov="50" :position="{ x:0, y:5, z:12 }"/>
       <Scene ref="scene">
         <PointLight ref="light1" :intensity="0.3" :position="{ x: -35, y: 35, z: -10 }" color="#0E09DC"/>
         <PointLight ref="light2" :intensity="0.3" :position="{ x: -25, y: 25, z: -10 }" color="#1CD1E1"/>
@@ -48,13 +48,12 @@ export default {
       let { pointer } = renderer.value?.three
         let intersect = rayCasterInstance.intersect(pointer.positionN, pointer.intersectObjects, false)
 
-        if (intersect.length > 0 ) {
+        if (intersect.length > 0) {
           let closestNode = intersect[0].object;
           if(closestNode?.userData?.enableDisplayCommit){
             rotateSpeed.value=0;
             toggleCommitInfoPlane(true,closestNode?.userData,pointer.positionV3)
           }
-
         }
         else {
           rotateSpeed.value=0.001;
@@ -63,11 +62,11 @@ export default {
     }
     onMounted(async () => {
       initCommitInfoPlane(scene.value)
-      //remove sphere listener
       let sphereInstance=parentGroup.value?.o3d?.children[0]
       let planeInstance=await initCompositeGlobePlane(parentGroup.value)
-
+      //需要将响应实例加入trois的intersect中
       parentGroup.value?.o3d?.children.forEach(o3d=>{
+        //meshline精度太差了，关了
         if(o3d.children.length>0){
           // renderer.value.three.addIntersectObject(o3d.children[0])
           // o3d.children.forEach(d=> renderer.value.three.addIntersectObject(d))

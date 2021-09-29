@@ -1,0 +1,4082 @@
+[
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "C++" ,
+    "nwo": "brave/brave-core" ,
+    "pr": 10283 ,
+    "ma": "2021-09-28T23:23:48Z" ,
+    "oa": "2021-09-28T00:09:56Z"
+  } ,
+  {
+    "uml": "Victoria" ,
+    "gm": {
+      "lat": -37 ,
+      "lon": 144
+    } ,
+    "uol": "Victoria" ,
+    "gop": {
+      "lat": -37 ,
+      "lon": 144
+    } ,
+    "l": "Java" ,
+    "nwo": "geoserver/geoserver" ,
+    "pr": 5305 ,
+    "ma": "2021-09-28T22:52:09Z" ,
+    "oa": "2021-09-28T00:11:35Z"
+  } ,
+  {
+    "uml": "Boise" ,
+    "gm": {
+      "lat": 43.615 ,
+      "lon": -116.2044
+    } ,
+    "uol": "Boise" ,
+    "gop": {
+      "lat": 43.615 ,
+      "lon": -116.2044
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "Tzahi12345/YoutubeDL-Material" ,
+    "pr": 468 ,
+    "ma": "2021-09-29T02:34:05Z" ,
+    "oa": "2021-09-28T00:13:36Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "C" ,
+    "nwo": "emscripten-core/emscripten" ,
+    "pr": 15154 ,
+    "ma": "2021-09-28T23:31:34Z" ,
+    "oa": "2021-09-28T00:20:56Z"
+  } ,
+  {
+    "uml": "Brazil" ,
+    "gm": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "uol": "Brazil" ,
+    "gop": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "Emurgo/yoroi-mobile" ,
+    "pr": 1632 ,
+    "ma": "2021-09-29T00:24:50Z" ,
+    "oa": "2021-09-28T01:11:40Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "C++" ,
+    "nwo": "StarRocks/starrocks" ,
+    "pr": 471 ,
+    "ma": "2021-09-29T04:22:11Z" ,
+    "oa": "2021-09-28T03:22:24Z"
+  } ,
+  {
+    "uml": "San Diego" ,
+    "gm": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "uol": "San Diego" ,
+    "gop": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "l": "C" ,
+    "nwo": "commaai/openpilot" ,
+    "pr": 22360 ,
+    "ma": "2021-09-29T00:37:31Z" ,
+    "oa": "2021-09-28T03:23:45Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "People's Republic of China" ,
+    "gop": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "l": "Rust" ,
+    "nwo": "starcoinorg/starcoin" ,
+    "pr": 2921 ,
+    "ma": "2021-09-29T01:50:18Z" ,
+    "oa": "2021-09-28T03:51:44Z"
+  } ,
+  {
+    "uml": "Auckland" ,
+    "gm": {
+      "lat": -36.85 ,
+      "lon": 174.78333
+    } ,
+    "uol": "Auckland" ,
+    "gop": {
+      "lat": -36.85 ,
+      "lon": 174.78333
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "portainer/portainer" ,
+    "pr": 5770 ,
+    "ma": "2021-09-29T02:54:26Z" ,
+    "oa": "2021-09-28T04:01:39Z"
+  } ,
+  {
+    "uml": "Vietnam" ,
+    "gm": {
+      "lat": 14.3154241771087 ,
+      "lon": 108.339537475899
+    } ,
+    "uol": "Vietnam" ,
+    "gop": {
+      "lat": 14.3154241771087 ,
+      "lon": 108.339537475899
+    } ,
+    "l": "Go" ,
+    "nwo": "ledgerwatch/erigon" ,
+    "pr": 2738 ,
+    "ma": "2021-09-29T01:36:26Z" ,
+    "oa": "2021-09-28T04:07:25Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "Shell" ,
+    "nwo": "buildkite/elastic-ci-stack-for-aws" ,
+    "pr": 932 ,
+    "ma": "2021-09-29T04:34:31Z" ,
+    "oa": "2021-09-28T04:51:44Z"
+  } ,
+  {
+    "uml": "Canberra" ,
+    "gm": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "uol": "Canberra" ,
+    "gop": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "l": "Python" ,
+    "nwo": "opendatacube/datacube-ows" ,
+    "pr": 729 ,
+    "ma": "2021-09-28T23:26:24Z" ,
+    "oa": "2021-09-28T05:08:16Z"
+  } ,
+  {
+    "uml": "Copenhagen" ,
+    "gm": {
+      "lat": 55.67611 ,
+      "lon": 12.56889
+    } ,
+    "uol": "Copenhagen" ,
+    "gop": {
+      "lat": 55.67611 ,
+      "lon": 12.56889
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "abaplint/transpiler" ,
+    "pr": 525 ,
+    "ma": "2021-09-29T04:36:41Z" ,
+    "oa": "2021-09-28T05:26:01Z"
+  } ,
+  {
+    "uml": "Hong Kong" ,
+    "gm": {
+      "lat": 22.27833 ,
+      "lon": 114.15861
+    } ,
+    "uol": "Poland" ,
+    "gop": {
+      "lat": 52.1246099075455 ,
+      "lon": 19.30063630556
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "louislam/uptime-kuma" ,
+    "pr": 500 ,
+    "ma": "2021-09-29T04:16:52Z" ,
+    "oa": "2021-09-28T05:29:42Z"
+  } ,
+  {
+    "uml": "Bangalore" ,
+    "gm": {
+      "lat": 12.96991 ,
+      "lon": 77.59796
+    } ,
+    "uol": "India" ,
+    "gop": {
+      "lat": 22.1991660760527 ,
+      "lon": 78.476681027237
+    } ,
+    "l": "Ruby" ,
+    "nwo": "inspec/inspec-aws" ,
+    "pr": 649 ,
+    "ma": "2021-09-29T03:24:28Z" ,
+    "oa": "2021-09-28T05:42:40Z"
+  } ,
+  {
+    "uml": "Melbourne" ,
+    "gm": {
+      "lat": -37.8142 ,
+      "lon": 144.9632
+    } ,
+    "uol": "Melbourne" ,
+    "gop": {
+      "lat": -37.8142 ,
+      "lon": 144.9632
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "seek-oss/braid-design-system" ,
+    "pr": 1010 ,
+    "ma": "2021-09-28T22:58:59Z" ,
+    "oa": "2021-09-28T05:58:15Z"
+  } ,
+  {
+    "uml": "Finland" ,
+    "gm": {
+      "lat": 62.7777539652943 ,
+      "lon": 26.199539005192
+    } ,
+    "uol": "Finland" ,
+    "gop": {
+      "lat": 62.7777539652943 ,
+      "lon": 26.199539005192
+    } ,
+    "l": "Python" ,
+    "nwo": "City-of-Helsinki/open-city-profile" ,
+    "pr": 362 ,
+    "ma": "2021-09-29T05:21:44Z" ,
+    "oa": "2021-09-28T06:20:18Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "People's Republic of China" ,
+    "gop": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "l": "Python" ,
+    "nwo": "bazelbuild/continuous-integration" ,
+    "pr": 1234 ,
+    "ma": "2021-09-29T02:59:07Z" ,
+    "oa": "2021-09-28T06:37:32Z"
+  } ,
+  {
+    "uml": "Hangzhou" ,
+    "gm": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "uol": "Hangzhou" ,
+    "gop": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "l": "Go" ,
+    "nwo": "oam-dev/kubevela" ,
+    "pr": 2378 ,
+    "ma": "2021-09-29T02:05:13Z" ,
+    "oa": "2021-09-28T06:52:50Z"
+  } ,
+  {
+    "uml": "Singapore" ,
+    "gm": {
+      "lat": 1.3516161224392 ,
+      "lon": 103.808052586332
+    } ,
+    "uol": "Singapore" ,
+    "gop": {
+      "lat": 1.3516161224392 ,
+      "lon": 103.808052586332
+    } ,
+    "l": "Ruby" ,
+    "nwo": "discourse/discourse" ,
+    "pr": 14453 ,
+    "ma": "2021-09-29T02:18:56Z" ,
+    "oa": "2021-09-28T07:06:39Z"
+  } ,
+  {
+    "uml": "Whangarei" ,
+    "gm": {
+      "lat": -35.725 ,
+      "lon": 174.32361
+    } ,
+    "uol": "Whangarei" ,
+    "gop": {
+      "lat": -35.725 ,
+      "lon": 174.32361
+    } ,
+    "l": "PHP" ,
+    "nwo": "civicrm/civicrm-core" ,
+    "pr": 21652 ,
+    "ma": "2021-09-29T04:03:58Z" ,
+    "oa": "2021-09-28T07:26:17Z"
+  } ,
+  {
+    "uml": "Shenzhen" ,
+    "gm": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "uol": "Shenzhen" ,
+    "gop": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "l": "Java" ,
+    "nwo": "WeBankFinTech/WeBASE-Front" ,
+    "pr": 653 ,
+    "ma": "2021-09-29T02:22:54Z" ,
+    "oa": "2021-09-28T07:55:58Z"
+  } ,
+  {
+    "uml": "Shenzhen" ,
+    "gm": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "uol": "Shenzhen" ,
+    "gop": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "l": "Vue" ,
+    "nwo": "WeBankFinTech/WeBASE-Web" ,
+    "pr": 393 ,
+    "ma": "2021-09-29T02:23:03Z" ,
+    "oa": "2021-09-28T07:57:36Z"
+  } ,
+  {
+    "uml": "Los Angeles" ,
+    "gm": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "uol": "Los Angeles" ,
+    "gop": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "l": "C#" ,
+    "nwo": "modernuo/ModernUO" ,
+    "pr": 810 ,
+    "ma": "2021-09-29T05:09:35Z" ,
+    "oa": "2021-09-28T08:01:33Z"
+  } ,
+  {
+    "uml": "Tokyo" ,
+    "gm": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "uol": "Tokyo" ,
+    "gop": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "l": "Python" ,
+    "nwo": "dmm-com/airone" ,
+    "pr": 266 ,
+    "ma": "2021-09-29T02:36:21Z" ,
+    "oa": "2021-09-28T08:02:14Z"
+  } ,
+  {
+    "uml": "Indonesia" ,
+    "gm": {
+      "lat": -2.352 ,
+      "lon": 116.348
+    } ,
+    "uol": "Indonesia" ,
+    "gop": {
+      "lat": -2.352 ,
+      "lon": 116.348
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "kartoza/django-bims" ,
+    "pr": 2800 ,
+    "ma": "2021-09-29T00:55:28Z" ,
+    "oa": "2021-09-28T09:04:11Z"
+  } ,
+  {
+    "uml": "Canberra" ,
+    "gm": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "uol": "Canberra" ,
+    "gop": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "l": "Python" ,
+    "nwo": "GeoscienceAustralia/dea-airflow" ,
+    "pr": 531 ,
+    "ma": "2021-09-29T00:23:53Z" ,
+    "oa": "2021-09-28T09:41:51Z"
+  } ,
+  {
+    "uml": "Madrid" ,
+    "gm": {
+      "lat": 40.41889 ,
+      "lon": -3.69194
+    } ,
+    "uol": "Zaragoza" ,
+    "gop": {
+      "lat": 41.65 ,
+      "lon": -0.88333
+    } ,
+    "l": "Go" ,
+    "nwo": "okteto/okteto" ,
+    "pr": 1790 ,
+    "ma": "2021-09-29T04:16:29Z" ,
+    "oa": "2021-09-28T09:47:44Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Melbourne" ,
+    "gop": {
+      "lat": -37.8142 ,
+      "lon": 144.9632
+    } ,
+    "l": "Python" ,
+    "nwo": "home-assistant/core" ,
+    "pr": 56736 ,
+    "ma": "2021-09-29T01:01:35Z" ,
+    "oa": "2021-09-28T10:28:13Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Chengdu" ,
+    "gop": {
+      "lat": 30.66361 ,
+      "lon": 104.06667
+    } ,
+    "l": "Java" ,
+    "nwo": "apache/shardingsphere" ,
+    "pr": 12794 ,
+    "ma": "2021-09-29T03:16:29Z" ,
+    "oa": "2021-09-28T10:51:31Z"
+  } ,
+  {
+    "uml": "Bishkek" ,
+    "gm": {
+      "lat": 42.86667 ,
+      "lon": 74.56667
+    } ,
+    "uol": "Bishkek" ,
+    "gop": {
+      "lat": 42.86667 ,
+      "lon": 74.56667
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "maddevsio/maddevs" ,
+    "pr": 1486 ,
+    "ma": "2021-09-29T04:22:10Z" ,
+    "oa": "2021-09-28T11:14:51Z"
+  } ,
+  {
+    "uml": "Sweden" ,
+    "gm": {
+      "lat": 64.9648751621697 ,
+      "lon": 17.6754094331351
+    } ,
+    "uol": "Sweden" ,
+    "gop": {
+      "lat": 64.9648751621697 ,
+      "lon": 17.6754094331351
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "nrkno/tv-automation-server-core" ,
+    "pr": 586 ,
+    "ma": "2021-09-29T04:58:51Z" ,
+    "oa": "2021-09-28T11:21:17Z"
+  } ,
+  {
+    "uml": "Shanghai" ,
+    "gm": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "uol": "Shanghai" ,
+    "gop": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "l": "Rust" ,
+    "nwo": "bifrost-finance/bifrost" ,
+    "pr": 321 ,
+    "ma": "2021-09-29T03:47:11Z" ,
+    "oa": "2021-09-28T11:49:18Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "C++" ,
+    "nwo": "EdgeTX/edgetx" ,
+    "pr": 828 ,
+    "ma": "2021-09-28T23:12:45Z" ,
+    "oa": "2021-09-28T12:03:44Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Warsaw" ,
+    "gop": {
+      "lat": 52.21667 ,
+      "lon": 21.03333
+    } ,
+    "l": "Rust" ,
+    "nwo": "bokuweb/docx-rs" ,
+    "pr": 346 ,
+    "ma": "2021-09-29T00:03:40Z" ,
+    "oa": "2021-09-28T12:17:33Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "lcnem/telescope" ,
+    "pr": 147 ,
+    "ma": "2021-09-29T05:19:12Z" ,
+    "oa": "2021-09-28T12:17:49Z"
+  } ,
+  {
+    "uml": "Nizhny Novgorod" ,
+    "gm": {
+      "lat": 56.32694 ,
+      "lon": 44.0075
+    } ,
+    "uol": "Nizhny Novgorod" ,
+    "gop": {
+      "lat": 56.32694 ,
+      "lon": 44.0075
+    } ,
+    "l": "C++" ,
+    "nwo": "openvinotoolkit/openvino" ,
+    "pr": 7711 ,
+    "ma": "2021-09-29T04:00:13Z" ,
+    "oa": "2021-09-28T12:35:22Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "Accenture/sfpowerscripts" ,
+    "pr": 711 ,
+    "ma": "2021-09-29T01:25:45Z" ,
+    "oa": "2021-09-28T12:46:19Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "People's Republic of China" ,
+    "gop": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "l": "Go" ,
+    "nwo": "kubesphere/ks-devops" ,
+    "pr": 280 ,
+    "ma": "2021-09-29T01:30:35Z" ,
+    "oa": "2021-09-28T12:52:38Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "C++" ,
+    "nwo": "brave/brave-core" ,
+    "pr": 10291 ,
+    "ma": "2021-09-29T02:43:17Z" ,
+    "oa": "2021-09-28T13:11:20Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "Python" ,
+    "nwo": "PaddlePaddle/Paddle" ,
+    "pr": 36197 ,
+    "ma": "2021-09-29T02:22:18Z" ,
+    "oa": "2021-09-28T13:12:20Z"
+  } ,
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "C++" ,
+    "nwo": "brave/brave-core" ,
+    "pr": 10292 ,
+    "ma": "2021-09-29T00:00:34Z" ,
+    "oa": "2021-09-28T13:16:32Z"
+  } ,
+  {
+    "uml": "Nanjing" ,
+    "gm": {
+      "lat": 32.05 ,
+      "lon": 118.76667
+    } ,
+    "uol": "Democratic Republic of the Congo" ,
+    "gop": {
+      "lat": -1.17291850148401 ,
+      "lon": 23.1668993658996
+    } ,
+    "l": "Java" ,
+    "nwo": "apache/shardingsphere" ,
+    "pr": 12796 ,
+    "ma": "2021-09-29T00:31:44Z" ,
+    "oa": "2021-09-28T13:17:28Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "C++" ,
+    "nwo": "StarRocks/starrocks" ,
+    "pr": 488 ,
+    "ma": "2021-09-29T02:51:55Z" ,
+    "oa": "2021-09-28T13:28:02Z"
+  } ,
+  {
+    "uml": "Boston" ,
+    "gm": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "uol": "London" ,
+    "gop": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "l": "C#" ,
+    "nwo": "DynamoDS/Dynamo" ,
+    "pr": 12077 ,
+    "ma": "2021-09-29T04:35:50Z" ,
+    "oa": "2021-09-28T13:33:50Z"
+  } ,
+  {
+    "uml": "New Orleans" ,
+    "gm": {
+      "lat": 29.9499 ,
+      "lon": -90.0701
+    } ,
+    "uol": "New Orleans" ,
+    "gop": {
+      "lat": 29.9499 ,
+      "lon": -90.0701
+    } ,
+    "l": "C++" ,
+    "nwo": "transmission/transmission" ,
+    "pr": 1851 ,
+    "ma": "2021-09-29T00:09:02Z" ,
+    "oa": "2021-09-28T13:59:04Z"
+  } ,
+  {
+    "uml": "Bangalore" ,
+    "gm": {
+      "lat": 12.96991 ,
+      "lon": 77.59796
+    } ,
+    "uol": "Bangalore" ,
+    "gop": {
+      "lat": 12.96991 ,
+      "lon": 77.59796
+    } ,
+    "l": "Python" ,
+    "nwo": "red-hat-storage/ceph-qe-scripts" ,
+    "pr": 177 ,
+    "ma": "2021-09-29T03:44:51Z" ,
+    "oa": "2021-09-28T14:00:40Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "strapi/strapi" ,
+    "pr": 11109 ,
+    "ma": "2021-09-29T03:23:18Z" ,
+    "oa": "2021-09-28T14:17:43Z"
+  } ,
+  {
+    "uml": "Boston" ,
+    "gm": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "uol": "Boston" ,
+    "gop": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "l": "C#" ,
+    "nwo": "dotnet/runtime" ,
+    "pr": 59699 ,
+    "ma": "2021-09-29T04:04:18Z" ,
+    "oa": "2021-09-28T14:43:24Z"
+  } ,
+  {
+    "uml": "Austin" ,
+    "gm": {
+      "lat": 30.2711 ,
+      "lon": -97.7437
+    } ,
+    "uol": "Austin" ,
+    "gop": {
+      "lat": 30.2711 ,
+      "lon": -97.7437
+    } ,
+    "l": "C" ,
+    "nwo": "deislabs/mystikos" ,
+    "pr": 834 ,
+    "ma": "2021-09-29T02:23:41Z" ,
+    "oa": "2021-09-28T14:44:28Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "C" ,
+    "nwo": "emscripten-core/emscripten" ,
+    "pr": 15160 ,
+    "ma": "2021-09-28T22:50:51Z" ,
+    "oa": "2021-09-28T15:23:56Z"
+  } ,
+  {
+    "uml": "Nanjing" ,
+    "gm": {
+      "lat": 32.05 ,
+      "lon": 118.76667
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "Java" ,
+    "nwo": "apache/shardingsphere" ,
+    "pr": 12802 ,
+    "ma": "2021-09-29T00:30:26Z" ,
+    "oa": "2021-09-28T15:24:34Z"
+  } ,
+  {
+    "uml": "Saint Petersburg" ,
+    "gm": {
+      "lat": 59.95 ,
+      "lon": 30.31667
+    } ,
+    "uol": "Saint Petersburg" ,
+    "gop": {
+      "lat": 59.95 ,
+      "lon": 30.31667
+    } ,
+    "l": "1C Enterprise" ,
+    "nwo": "1c-syntax/bsl-parser" ,
+    "pr": 142 ,
+    "ma": "2021-09-29T04:33:59Z" ,
+    "oa": "2021-09-28T15:29:56Z"
+  } ,
+  {
+    "uml": "Greece" ,
+    "gm": {
+      "lat": 38.5890212896367 ,
+      "lon": 23.8285537394706
+    } ,
+    "uol": "Greece" ,
+    "gop": {
+      "lat": 38.5890212896367 ,
+      "lon": 23.8285537394706
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "twbs/bootstrap" ,
+    "pr": 35074 ,
+    "ma": "2021-09-29T04:41:08Z" ,
+    "oa": "2021-09-28T15:43:14Z"
+  } ,
+  {
+    "uml": "Boston" ,
+    "gm": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "uol": "Boston" ,
+    "gop": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "l": "Python" ,
+    "nwo": "alteryx/evalml" ,
+    "pr": 2851 ,
+    "ma": "2021-09-28T22:51:23Z" ,
+    "oa": "2021-09-28T16:33:01Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "Go" ,
+    "nwo": "pachyderm/pachyderm" ,
+    "pr": 6948 ,
+    "ma": "2021-09-28T23:12:27Z" ,
+    "oa": "2021-09-28T17:09:21Z"
+  } ,
+  {
+    "uml": "Switzerland" ,
+    "gm": {
+      "lat": 46.8024955829499 ,
+      "lon": 8.23439191387853
+    } ,
+    "uol": "Switzerland" ,
+    "gop": {
+      "lat": 46.8024955829499 ,
+      "lon": 8.23439191387853
+    } ,
+    "l": "Python" ,
+    "nwo": "ansible-collections/community.crypto" ,
+    "pr": 288 ,
+    "ma": "2021-09-29T04:44:32Z" ,
+    "oa": "2021-09-28T17:27:57Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "brimdata/brim" ,
+    "pr": 1852 ,
+    "ma": "2021-09-28T22:51:03Z" ,
+    "oa": "2021-09-28T17:37:37Z"
+  } ,
+  {
+    "uml": "Nepal" ,
+    "gm": {
+      "lat": 28.2530072798101 ,
+      "lon": 83.9385480132428
+    } ,
+    "uol": "Vienna" ,
+    "gop": {
+      "lat": 48.20833 ,
+      "lon": 16.37306
+    } ,
+    "l": "Shell" ,
+    "nwo": "owncloud/docs" ,
+    "pr": 4088 ,
+    "ma": "2021-09-29T03:03:43Z" ,
+    "oa": "2021-09-28T17:39:18Z"
+  } ,
+  {
+    "uml": "Los Angeles" ,
+    "gm": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "uol": "Los Angeles" ,
+    "gop": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "l": "Python" ,
+    "nwo": "anchore/anchore-engine" ,
+    "pr": 1258 ,
+    "ma": "2021-09-29T00:10:36Z" ,
+    "oa": "2021-09-28T17:40:23Z"
+  } ,
+  {
+    "uml": "Ontario" ,
+    "gm": {
+      "lat": 49.4515636581 ,
+      "lon": -84.2539813003493
+    } ,
+    "uol": "Ontario" ,
+    "gop": {
+      "lat": 49.4515636581 ,
+      "lon": -84.2539813003493
+    } ,
+    "l": "C++" ,
+    "nwo": "brave/brave-core" ,
+    "pr": 10297 ,
+    "ma": "2021-09-29T00:55:44Z" ,
+    "oa": "2021-09-28T17:43:14Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Pune" ,
+    "gop": {
+      "lat": 18.52361 ,
+      "lon": 73.84778
+    } ,
+    "l": "Vue" ,
+    "nwo": "moreta/vue-search-select" ,
+    "pr": 155 ,
+    "ma": "2021-09-29T00:38:57Z" ,
+    "oa": "2021-09-28T18:00:42Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "California City" ,
+    "gop": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "l": "HCL" ,
+    "nwo": "utoronto-2i2c/jupyterhub-deploy" ,
+    "pr": 122 ,
+    "ma": "2021-09-28T23:28:25Z" ,
+    "oa": "2021-09-28T18:01:10Z"
+  } ,
+  {
+    "uml": "Canada" ,
+    "gm": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "uol": "Canada" ,
+    "gop": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "firebase/firebase-admin-node" ,
+    "pr": 1442 ,
+    "ma": "2021-09-28T22:55:45Z" ,
+    "oa": "2021-09-28T18:06:31Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "brimdata/brim" ,
+    "pr": 1853 ,
+    "ma": "2021-09-28T22:52:33Z" ,
+    "oa": "2021-09-28T18:17:23Z"
+  } ,
+  {
+    "uml": "Boston" ,
+    "gm": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "uol": "Boston" ,
+    "gop": {
+      "lat": 42.3605 ,
+      "lon": -71.0596
+    } ,
+    "l": "Shell" ,
+    "nwo": "conda-forge/evalml-core-feedstock" ,
+    "pr": 79 ,
+    "ma": "2021-09-29T00:53:19Z" ,
+    "oa": "2021-09-28T18:48:38Z"
+  } ,
+  {
+    "uml": "Mountain View" ,
+    "gm": {
+      "lat": 37.3856 ,
+      "lon": -122.082
+    } ,
+    "uol": "Mountain View" ,
+    "gop": {
+      "lat": 37.3856 ,
+      "lon": -122.082
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "grpc/grpc-web" ,
+    "pr": 1142 ,
+    "ma": "2021-09-29T01:44:19Z" ,
+    "oa": "2021-09-28T19:04:23Z"
+  } ,
+  {
+    "uml": "Nizhny Novgorod" ,
+    "gm": {
+      "lat": 56.32694 ,
+      "lon": 44.0075
+    } ,
+    "uol": "Russia" ,
+    "gop": {
+      "lat": 61.9945734073292 ,
+      "lon": 96.6697054604756
+    } ,
+    "l": "C++" ,
+    "nwo": "openvinotoolkit/openvino" ,
+    "pr": 7723 ,
+    "ma": "2021-09-29T03:31:37Z" ,
+    "oa": "2021-09-28T19:27:01Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "C++" ,
+    "nwo": "microsoft/react-native-windows" ,
+    "pr": 8728 ,
+    "ma": "2021-09-29T03:23:31Z" ,
+    "oa": "2021-09-28T19:33:22Z"
+  } ,
+  {
+    "uml": "United States" ,
+    "gm": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "uol": "United States" ,
+    "gop": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "nexxtway/react-native-rainbow" ,
+    "pr": 106 ,
+    "ma": "2021-09-29T02:00:51Z" ,
+    "oa": "2021-09-28T19:35:06Z"
+  } ,
+  {
+    "uml": "Sweden" ,
+    "gm": {
+      "lat": 64.9648751621697 ,
+      "lon": 17.6754094331351
+    } ,
+    "uol": "Sweden" ,
+    "gop": {
+      "lat": 64.9648751621697 ,
+      "lon": 17.6754094331351
+    } ,
+    "l": "C#" ,
+    "nwo": "mariotoffia/FluentDocker" ,
+    "pr": 217 ,
+    "ma": "2021-09-29T05:10:50Z" ,
+    "oa": "2021-09-28T19:44:55Z"
+  } ,
+  {
+    "uml": "Canada" ,
+    "gm": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "uol": "Canada" ,
+    "gop": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "Seneca-CDOT/telescope" ,
+    "pr": 2319 ,
+    "ma": "2021-09-29T01:28:06Z" ,
+    "oa": "2021-09-28T19:47:42Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Germany" ,
+    "gop": {
+      "lat": 51.1334813439932 ,
+      "lon": 10.0183432948567
+    } ,
+    "l": "Python" ,
+    "nwo": "home-assistant/core" ,
+    "pr": 56751 ,
+    "ma": "2021-09-28T23:59:41Z" ,
+    "oa": "2021-09-28T19:57:54Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Germany" ,
+    "gop": {
+      "lat": 51.1334813439932 ,
+      "lon": 10.0183432948567
+    } ,
+    "l": "Python" ,
+    "nwo": "home-assistant/core" ,
+    "pr": 56752 ,
+    "ma": "2021-09-28T23:56:59Z" ,
+    "oa": "2021-09-28T19:58:04Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Germany" ,
+    "gop": {
+      "lat": 51.1334813439932 ,
+      "lon": 10.0183432948567
+    } ,
+    "l": "Python" ,
+    "nwo": "home-assistant/core" ,
+    "pr": 56753 ,
+    "ma": "2021-09-29T00:00:20Z" ,
+    "oa": "2021-09-28T19:58:28Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Germany" ,
+    "gop": {
+      "lat": 51.1334813439932 ,
+      "lon": 10.0183432948567
+    } ,
+    "l": "Python" ,
+    "nwo": "home-assistant/core" ,
+    "pr": 56754 ,
+    "ma": "2021-09-28T23:58:37Z" ,
+    "oa": "2021-09-28T19:58:37Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "elastic/kibana" ,
+    "pr": 113331 ,
+    "ma": "2021-09-28T23:14:25Z" ,
+    "oa": "2021-09-28T20:49:07Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "elastic/kibana" ,
+    "pr": 113333 ,
+    "ma": "2021-09-28T22:52:59Z" ,
+    "oa": "2021-09-28T20:49:48Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23385 ,
+    "ma": "2021-09-29T01:36:41Z" ,
+    "oa": "2021-09-28T21:02:58Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23386 ,
+    "ma": "2021-09-29T01:36:16Z" ,
+    "oa": "2021-09-28T21:03:17Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23387 ,
+    "ma": "2021-09-29T01:35:37Z" ,
+    "oa": "2021-09-28T21:03:34Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "California City" ,
+    "gop": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "l": "Go" ,
+    "nwo": "magma/magma" ,
+    "pr": 9330 ,
+    "ma": "2021-09-29T04:53:04Z" ,
+    "oa": "2021-09-28T21:04:08Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23388 ,
+    "ma": "2021-09-29T01:34:57Z" ,
+    "oa": "2021-09-28T21:04:13Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23389 ,
+    "ma": "2021-09-29T01:34:31Z" ,
+    "oa": "2021-09-28T21:04:31Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "Dongguan" ,
+    "gop": {
+      "lat": 23.04749 ,
+      "lon": 113.74928
+    } ,
+    "l": "Shell" ,
+    "nwo": "LCTT/TranslateProject" ,
+    "pr": 23390 ,
+    "ma": "2021-09-29T01:34:11Z" ,
+    "oa": "2021-09-28T21:04:50Z"
+  } ,
+  {
+    "uml": "Berlin" ,
+    "gm": {
+      "lat": 52.51667 ,
+      "lon": 13.38333
+    } ,
+    "uol": "Berlin" ,
+    "gop": {
+      "lat": 52.51667 ,
+      "lon": 13.38333
+    } ,
+    "l": "HTML" ,
+    "nwo": "matthiaskoenig/sbmlutils" ,
+    "pr": 352 ,
+    "ma": "2021-09-28T23:20:10Z" ,
+    "oa": "2021-09-28T21:18:42Z"
+  } ,
+  {
+    "uml": "Whangarei" ,
+    "gm": {
+      "lat": -35.725 ,
+      "lon": 174.32361
+    } ,
+    "uol": "Whangarei" ,
+    "gop": {
+      "lat": -35.725 ,
+      "lon": 174.32361
+    } ,
+    "l": "PHP" ,
+    "nwo": "civicrm/civicrm-core" ,
+    "pr": 21656 ,
+    "ma": "2021-09-28T23:10:20Z" ,
+    "oa": "2021-09-28T21:22:02Z"
+  } ,
+  {
+    "uml": "Berlin" ,
+    "gm": {
+      "lat": 52.51667 ,
+      "lon": 13.38333
+    } ,
+    "uol": "Berlin" ,
+    "gop": {
+      "lat": 52.51667 ,
+      "lon": 13.38333
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "garden-io/garden" ,
+    "pr": 2600 ,
+    "ma": "2021-09-29T01:36:51Z" ,
+    "oa": "2021-09-28T21:27:00Z"
+  } ,
+  {
+    "uml": "Mountain View" ,
+    "gm": {
+      "lat": 37.3856 ,
+      "lon": -122.082
+    } ,
+    "uol": "Mountain View" ,
+    "gop": {
+      "lat": 37.3856 ,
+      "lon": -122.082
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "tensorflow/tfjs" ,
+    "pr": 5675 ,
+    "ma": "2021-09-28T23:35:15Z" ,
+    "oa": "2021-09-28T21:33:21Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Python" ,
+    "nwo": "getsentry/sentry" ,
+    "pr": 28918 ,
+    "ma": "2021-09-28T22:55:33Z" ,
+    "oa": "2021-09-28T21:47:15Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "rocicorp/replicache" ,
+    "pr": 593 ,
+    "ma": "2021-09-29T01:04:07Z" ,
+    "oa": "2021-09-28T21:49:57Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "Python" ,
+    "nwo": "awslabs/amazon-qldb-shell" ,
+    "pr": 204 ,
+    "ma": "2021-09-28T23:30:01Z" ,
+    "oa": "2021-09-28T21:52:12Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Go" ,
+    "nwo": "open-telemetry/opentelemetry-collector-contrib" ,
+    "pr": 5486 ,
+    "ma": "2021-09-28T23:34:22Z" ,
+    "oa": "2021-09-28T21:56:50Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "California City" ,
+    "gop": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "l": "Go" ,
+    "nwo": "magma/magma" ,
+    "pr": 9335 ,
+    "ma": "2021-09-29T02:42:16Z" ,
+    "oa": "2021-09-28T22:13:13Z"
+  } ,
+  {
+    "uml": "Columbus" ,
+    "gm": {
+      "lat": 39.9623 ,
+      "lon": -83.0007
+    } ,
+    "uol": "Columbus" ,
+    "gop": {
+      "lat": 39.9623 ,
+      "lon": -83.0007
+    } ,
+    "l": "Python" ,
+    "nwo": "panther-labs/panther-analysis" ,
+    "pr": 337 ,
+    "ma": "2021-09-28T22:56:17Z" ,
+    "oa": "2021-09-28T22:17:08Z"
+  } ,
+  {
+    "uml": "San Diego" ,
+    "gm": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "uol": "San Diego" ,
+    "gop": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "l": "PHP" ,
+    "nwo": "tighten/novapackages" ,
+    "pr": 148 ,
+    "ma": "2021-09-28T23:36:44Z" ,
+    "oa": "2021-09-28T22:18:44Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "scality/werelogs" ,
+    "pr": 130 ,
+    "ma": "2021-09-28T23:59:27Z" ,
+    "oa": "2021-09-28T22:23:10Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "scality/werelogs" ,
+    "pr": 131 ,
+    "ma": "2021-09-28T23:59:26Z" ,
+    "oa": "2021-09-28T22:23:11Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "scality/werelogs" ,
+    "pr": 132 ,
+    "ma": "2021-09-28T23:59:26Z" ,
+    "oa": "2021-09-28T22:23:14Z"
+  } ,
+  {
+    "uml": "Nigeria" ,
+    "gm": {
+      "lat": 9.59395988695573 ,
+      "lon": 8.10530640960786
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "sourcegraph/about" ,
+    "pr": 4867 ,
+    "ma": "2021-09-28T23:03:34Z" ,
+    "oa": "2021-09-28T22:26:49Z"
+  } ,
+  {
+    "uml": "Oregon City" ,
+    "gm": {
+      "lat": 45.3573 ,
+      "lon": -122.6068
+    } ,
+    "uol": "Oregon City" ,
+    "gop": {
+      "lat": 45.3573 ,
+      "lon": -122.6068
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "microsoft/pxt-arcade" ,
+    "pr": 4089 ,
+    "ma": "2021-09-28T22:48:09Z" ,
+    "oa": "2021-09-28T22:28:40Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "reviewdog/action-golangci-lint" ,
+    "pr": 139 ,
+    "ma": "2021-09-29T00:27:18Z" ,
+    "oa": "2021-09-28T22:32:28Z"
+  } ,
+  {
+    "uml": "United States" ,
+    "gm": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "uol": "United States" ,
+    "gop": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "l": "C#" ,
+    "nwo": "PowerShell/PowerShell" ,
+    "pr": 16170 ,
+    "ma": "2021-09-28T23:58:27Z" ,
+    "oa": "2021-09-28T22:40:14Z"
+  } ,
+  {
+    "uml": "Shanghai" ,
+    "gm": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "uol": "Israel" ,
+    "gop": {
+      "lat": 31.8472608144505 ,
+      "lon": 34.8419985253627
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "milvus-io/milvus-docs" ,
+    "pr": 710 ,
+    "ma": "2021-09-29T02:08:28Z" ,
+    "oa": "2021-09-28T22:40:44Z"
+  } ,
+  {
+    "uml": "California" ,
+    "gm": {
+      "lat": 37.0743595873 ,
+      "lon": -119.699375153073
+    } ,
+    "uol": "California" ,
+    "gop": {
+      "lat": 37.0743595873 ,
+      "lon": -119.699375153073
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "PipedreamHQ/pipedream" ,
+    "pr": 1745 ,
+    "ma": "2021-09-29T03:49:43Z" ,
+    "oa": "2021-09-28T22:41:02Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "C#" ,
+    "nwo": "Azure/azure-functions-host" ,
+    "pr": 7709 ,
+    "ma": "2021-09-28T23:30:40Z" ,
+    "oa": "2021-09-28T22:42:01Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "Santa Fe" ,
+    "gop": {
+      "lat": -33.72278 ,
+      "lon": -62.24611
+    } ,
+    "l": "C++" ,
+    "nwo": "pytorch/pytorch" ,
+    "pr": 65787 ,
+    "ma": "2021-09-28T22:48:33Z" ,
+    "oa": "2021-09-28T22:47:07Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "shogo82148/actions-upload-release-asset" ,
+    "pr": 385 ,
+    "ma": "2021-09-28T22:53:55Z" ,
+    "oa": "2021-09-28T22:47:51Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "keystonejs/keystone" ,
+    "pr": 6671 ,
+    "ma": "2021-09-29T00:33:30Z" ,
+    "oa": "2021-09-28T22:48:45Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "shogo82148/actions-goveralls" ,
+    "pr": 291 ,
+    "ma": "2021-09-28T22:53:48Z" ,
+    "oa": "2021-09-28T22:49:46Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "deepsourcelabs/good-first-issue" ,
+    "pr": 326 ,
+    "ma": "2021-09-28T22:54:16Z" ,
+    "oa": "2021-09-28T22:50:37Z"
+  } ,
+  {
+    "uml": "Sydney" ,
+    "gm": {
+      "lat": -33.868 ,
+      "lon": 151.21
+    } ,
+    "uol": "Sydney" ,
+    "gop": {
+      "lat": -33.868 ,
+      "lon": 151.21
+    } ,
+    "l": "Go" ,
+    "nwo": "simonmittag/j8a" ,
+    "pr": 190 ,
+    "ma": "2021-09-28T23:33:17Z" ,
+    "oa": "2021-09-28T22:52:35Z"
+  } ,
+  {
+    "uml": "Manchester" ,
+    "gm": {
+      "lat": 53.47948920000002 ,
+      "lon": -2.2451148
+    } ,
+    "uol": "Manchester" ,
+    "gop": {
+      "lat": 53.47948920000002 ,
+      "lon": -2.2451148
+    } ,
+    "l": "Ruby" ,
+    "nwo": "TheOdinProject/theodinproject" ,
+    "pr": 2270 ,
+    "ma": "2021-09-29T00:21:21Z" ,
+    "oa": "2021-09-28T22:52:47Z"
+  } ,
+  {
+    "uml": "Mauritius" ,
+    "gm": {
+      "lat": -20.2518681763579 ,
+      "lon": 57.8707553244112
+    } ,
+    "uol": "Ghana" ,
+    "gop": {
+      "lat": 6.88085426914622 ,
+      "lon": -1.16759442759906
+    } ,
+    "l": "HTML" ,
+    "nwo": "FlaskCon/traveller" ,
+    "pr": 112 ,
+    "ma": "2021-09-29T03:52:57Z" ,
+    "oa": "2021-09-28T22:53:31Z"
+  } ,
+  {
+    "uml": "Costa Rica" ,
+    "gm": {
+      "lat": 10.2577944410312 ,
+      "lon": -84.2009147613538
+    } ,
+    "uol": "Costa Rica" ,
+    "gop": {
+      "lat": 10.2577944410312 ,
+      "lon": -84.2009147613538
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "ORCID/orcid-angular" ,
+    "pr": 1174 ,
+    "ma": "2021-09-28T23:14:35Z" ,
+    "oa": "2021-09-28T22:54:38Z"
+  } ,
+  {
+    "uml": "Santa Barbara" ,
+    "gm": {
+      "lat": 34.4098 ,
+      "lon": -119.697
+    } ,
+    "uol": "Santa Barbara" ,
+    "gop": {
+      "lat": 34.4098 ,
+      "lon": -119.697
+    } ,
+    "l": "Python" ,
+    "nwo": "SpatioTemporal/STAREPandas" ,
+    "pr": 50 ,
+    "ma": "2021-09-28T22:57:50Z" ,
+    "oa": "2021-09-28T22:55:25Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Go" ,
+    "nwo": "kubernetes/minikube" ,
+    "pr": 12618 ,
+    "ma": "2021-09-28T23:37:58Z" ,
+    "oa": "2021-09-28T22:55:41Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Python" ,
+    "nwo": "getsentry/sentry" ,
+    "pr": 28921 ,
+    "ma": "2021-09-28T23:48:01Z" ,
+    "oa": "2021-09-28T22:56:00Z"
+  } ,
+  {
+    "uml": "London" ,
+    "gm": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "uol": "London" ,
+    "gop": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "l": "Rust" ,
+    "nwo": "PolymathNetwork/Polymesh" ,
+    "pr": 1132 ,
+    "ma": "2021-09-28T22:57:50Z" ,
+    "oa": "2021-09-28T22:57:40Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "California City" ,
+    "gop": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "l": "PureBasic" ,
+    "nwo": "cov-lineages/pangoLEARN" ,
+    "pr": 28 ,
+    "ma": "2021-09-28T23:06:50Z" ,
+    "oa": "2021-09-28T22:58:01Z"
+  } ,
+  {
+    "uml": "London" ,
+    "gm": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "uol": "London" ,
+    "gop": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "l": "Rust" ,
+    "nwo": "PolymathNetwork/Polymesh" ,
+    "pr": 1133 ,
+    "ma": "2021-09-28T22:59:09Z" ,
+    "oa": "2021-09-28T22:58:45Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "Elixir" ,
+    "nwo": "tzumby/ex_keccak" ,
+    "pr": 17 ,
+    "ma": "2021-09-28T23:04:22Z" ,
+    "oa": "2021-09-28T23:00:39Z"
+  } ,
+  {
+    "uml": "Los Angeles" ,
+    "gm": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "uol": "Los Angeles" ,
+    "gop": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "l": "Go" ,
+    "nwo": "ipfs/go-graphsync" ,
+    "pr": 227 ,
+    "ma": "2021-09-29T00:12:36Z" ,
+    "oa": "2021-09-28T23:01:02Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "Kotlin" ,
+    "nwo": "amzn/ion-schema-kotlin" ,
+    "pr": 177 ,
+    "ma": "2021-09-29T00:05:16Z" ,
+    "oa": "2021-09-28T23:01:56Z"
+  } ,
+  {
+    "uml": "California City" ,
+    "gm": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "uol": "California City" ,
+    "gop": {
+      "lat": 35.1258 ,
+      "lon": -117.9859
+    } ,
+    "l": "Go" ,
+    "nwo": "magma/magma" ,
+    "pr": 9337 ,
+    "ma": "2021-09-29T00:59:12Z" ,
+    "oa": "2021-09-28T23:02:56Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "Python" ,
+    "nwo": "MicrosoftDocs/visualstudio-docs" ,
+    "pr": 7089 ,
+    "ma": "2021-09-28T23:04:47Z" ,
+    "oa": "2021-09-28T23:04:27Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "Elixir" ,
+    "nwo": "tzumby/ex_keccak" ,
+    "pr": 18 ,
+    "ma": "2021-09-28T23:10:47Z" ,
+    "oa": "2021-09-28T23:08:43Z"
+  } ,
+  {
+    "uml": "Oklahoma City" ,
+    "gm": {
+      "lat": 35.473 ,
+      "lon": -97.5171
+    } ,
+    "uol": "Mexico City" ,
+    "gop": {
+      "lat": 19.41944 ,
+      "lon": -99.14556
+    } ,
+    "l": "Python" ,
+    "nwo": "WikipediaLibrary/TWLight" ,
+    "pr": 834 ,
+    "ma": "2021-09-29T01:40:59Z" ,
+    "oa": "2021-09-28T23:18:10Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "C++" ,
+    "nwo": "chipsalliance/Surelog" ,
+    "pr": 1959 ,
+    "ma": "2021-09-28T23:51:50Z" ,
+    "oa": "2021-09-28T23:21:07Z"
+  } ,
+  {
+    "uml": "San Diego" ,
+    "gm": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "uol": "San Diego" ,
+    "gop": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "l": "C" ,
+    "nwo": "commaai/openpilot" ,
+    "pr": 22368 ,
+    "ma": "2021-09-28T23:31:12Z" ,
+    "oa": "2021-09-28T23:21:15Z"
+  } ,
+  {
+    "uml": "Sydney" ,
+    "gm": {
+      "lat": -33.868 ,
+      "lon": 151.21
+    } ,
+    "uol": "Sydney" ,
+    "gop": {
+      "lat": -33.868 ,
+      "lon": 151.21
+    } ,
+    "l": "C" ,
+    "nwo": "Jonimoose/libfxcg" ,
+    "pr": 67 ,
+    "ma": "2021-09-29T05:20:25Z" ,
+    "oa": "2021-09-28T23:21:54Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "Kotlin" ,
+    "nwo": "stripe/stripe-android" ,
+    "pr": 4238 ,
+    "ma": "2021-09-29T00:55:27Z" ,
+    "oa": "2021-09-28T23:22:11Z"
+  } ,
+  {
+    "uml": "United Kingdom" ,
+    "gm": {
+      "lat": 54.2379333607472 ,
+      "lon": -2.36966957036279
+    } ,
+    "uol": "United Kingdom" ,
+    "gop": {
+      "lat": 54.2379333607472 ,
+      "lon": -2.36966957036279
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "peterkvt80/Muttlee" ,
+    "pr": 12 ,
+    "ma": "2021-09-28T23:25:58Z" ,
+    "oa": "2021-09-28T23:25:16Z"
+  } ,
+  {
+    "uml": "Brazil" ,
+    "gm": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "uol": "Brazil" ,
+    "gop": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "pythonprobr/pythonpro-website" ,
+    "pr": 4091 ,
+    "ma": "2021-09-29T01:02:05Z" ,
+    "oa": "2021-09-28T23:25:18Z"
+  } ,
+  {
+    "uml": "Paris" ,
+    "gm": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "uol": "Paris" ,
+    "gop": {
+      "lat": 48.85658 ,
+      "lon": 2.35183
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "scality/Zenko" ,
+    "pr": 1282 ,
+    "ma": "2021-09-29T00:05:52Z" ,
+    "oa": "2021-09-28T23:28:57Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "London" ,
+    "gop": {
+      "lat": 51.507321899999994 ,
+      "lon": -0.12764739999999997
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "Codesee-io/oss-port" ,
+    "pr": 114 ,
+    "ma": "2021-09-29T01:05:13Z" ,
+    "oa": "2021-09-28T23:30:49Z"
+  } ,
+  {
+    "uml": "South" ,
+    "gm": {
+      "lat": 39.2654 ,
+      "lon": -76.6118
+    } ,
+    "uol": "South" ,
+    "gop": {
+      "lat": 39.2654 ,
+      "lon": -76.6118
+    } ,
+    "l": "Python" ,
+    "nwo": "SwissTierrasColombia/Asistente-LADM-COL" ,
+    "pr": 489 ,
+    "ma": "2021-09-29T00:15:34Z" ,
+    "oa": "2021-09-28T23:32:09Z"
+  } ,
+  {
+    "uml": "Nashville" ,
+    "gm": {
+      "lat": 36.1622 ,
+      "lon": -86.7744
+    } ,
+    "uol": "Oregon City" ,
+    "gop": {
+      "lat": 45.3573 ,
+      "lon": -122.6068
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "VandyHacks/vaken" ,
+    "pr": 856 ,
+    "ma": "2021-09-28T23:38:02Z" ,
+    "oa": "2021-09-28T23:32:54Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "C" ,
+    "nwo": "emscripten-core/emscripten" ,
+    "pr": 15164 ,
+    "ma": "2021-09-29T01:10:14Z" ,
+    "oa": "2021-09-28T23:34:18Z"
+  } ,
+  {
+    "uml": "Boulder" ,
+    "gm": {
+      "lat": 40.015 ,
+      "lon": -105.2705
+    } ,
+    "uol": "Boulder" ,
+    "gop": {
+      "lat": 40.015 ,
+      "lon": -105.2705
+    } ,
+    "l": "Java" ,
+    "nwo": "salesforce/bazel-eclipse" ,
+    "pr": 323 ,
+    "ma": "2021-09-29T04:12:01Z" ,
+    "oa": "2021-09-28T23:34:22Z"
+  } ,
+  {
+    "uml": "Stockholm" ,
+    "gm": {
+      "lat": 59.32944 ,
+      "lon": 18.06861
+    } ,
+    "uol": "Germany" ,
+    "gop": {
+      "lat": 51.1334813439932 ,
+      "lon": 10.0183432948567
+    } ,
+    "l": "Python" ,
+    "nwo": "marcelm/radonwave" ,
+    "pr": 10 ,
+    "ma": "2021-09-28T23:51:53Z" ,
+    "oa": "2021-09-28T23:37:04Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 507 ,
+    "ma": "2021-09-28T23:38:35Z" ,
+    "oa": "2021-09-28T23:38:29Z"
+  } ,
+  {
+    "uml": "Nigeria" ,
+    "gm": {
+      "lat": 9.59395988695573 ,
+      "lon": 8.10530640960786
+    } ,
+    "uol": "Nigeria" ,
+    "gop": {
+      "lat": 9.59395988695573 ,
+      "lon": 8.10530640960786
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "zurichat/zc_plugin_company_files" ,
+    "pr": 514 ,
+    "ma": "2021-09-28T23:46:36Z" ,
+    "oa": "2021-09-28T23:43:52Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "Python" ,
+    "nwo": "awslabs/amazon-qldb-shell" ,
+    "pr": 207 ,
+    "ma": "2021-09-29T04:08:30Z" ,
+    "oa": "2021-09-28T23:44:37Z"
+  } ,
+  {
+    "uml": "Tokyo" ,
+    "gm": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "uol": "Tokyo" ,
+    "gop": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "l": "Go" ,
+    "nwo": "vulsio/gost" ,
+    "pr": 86 ,
+    "ma": "2021-09-28T23:46:23Z" ,
+    "oa": "2021-09-28T23:44:59Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "C#" ,
+    "nwo": "Azure/azure-functions-host" ,
+    "pr": 7711 ,
+    "ma": "2021-09-29T00:59:23Z" ,
+    "oa": "2021-09-28T23:49:16Z"
+  } ,
+  {
+    "uml": "Mauritius" ,
+    "gm": {
+      "lat": -20.2518681763579 ,
+      "lon": 57.8707553244112
+    } ,
+    "uol": "Ghana" ,
+    "gop": {
+      "lat": 6.88085426914622 ,
+      "lon": -1.16759442759906
+    } ,
+    "l": "HTML" ,
+    "nwo": "FlaskCon/traveller" ,
+    "pr": 113 ,
+    "ma": "2021-09-29T03:54:09Z" ,
+    "oa": "2021-09-28T23:50:33Z"
+  } ,
+  {
+    "uml": "Connecticut" ,
+    "gm": {
+      "lat": 41.6261419326 ,
+      "lon": -72.7262428031069
+    } ,
+    "uol": "Connecticut" ,
+    "gop": {
+      "lat": 41.6261419326 ,
+      "lon": -72.7262428031069
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "aws-amplify/docs" ,
+    "pr": 3629 ,
+    "ma": "2021-09-29T00:02:08Z" ,
+    "oa": "2021-09-28T23:51:47Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "C" ,
+    "nwo": "Azure/azure-sdk-for-c" ,
+    "pr": 1942 ,
+    "ma": "2021-09-29T00:35:45Z" ,
+    "oa": "2021-09-28T23:53:49Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Swift" ,
+    "nwo": "kyleve/Listable" ,
+    "pr": 333 ,
+    "ma": "2021-09-29T01:26:45Z" ,
+    "oa": "2021-09-28T23:54:28Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "microsoft/vscode" ,
+    "pr": 134071 ,
+    "ma": "2021-09-29T01:54:41Z" ,
+    "oa": "2021-09-28T23:56:02Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "pinterest/gestalt" ,
+    "pr": 1715 ,
+    "ma": "2021-09-29T00:49:07Z" ,
+    "oa": "2021-09-29T00:00:31Z"
+  } ,
+  {
+    "uml": "Texas" ,
+    "gm": {
+      "lat": 31.8039734986 ,
+      "lon": -98.8223185136653
+    } ,
+    "uol": "Texas" ,
+    "gop": {
+      "lat": 31.8039734986 ,
+      "lon": -98.8223185136653
+    } ,
+    "l": "Rust" ,
+    "nwo": "ordian/toml_edit" ,
+    "pr": 219 ,
+    "ma": "2021-09-29T00:22:05Z" ,
+    "oa": "2021-09-29T00:01:46Z"
+  } ,
+  {
+    "uml": "Portland" ,
+    "gm": {
+      "lat": 45.5202 ,
+      "lon": -122.6742
+    } ,
+    "uol": "Portland" ,
+    "gop": {
+      "lat": 45.5202 ,
+      "lon": -122.6742
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "newrelic/docs-website" ,
+    "pr": 4098 ,
+    "ma": "2021-09-29T01:21:21Z" ,
+    "oa": "2021-09-29T00:12:54Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "C++" ,
+    "nwo": "envoyproxy/envoy" ,
+    "pr": 18301 ,
+    "ma": "2021-09-29T02:12:05Z" ,
+    "oa": "2021-09-29T00:13:03Z"
+  } ,
+  {
+    "uml": "Tokyo" ,
+    "gm": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "uol": "Tokyo" ,
+    "gop": {
+      "lat": 35.68 ,
+      "lon": 139.77
+    } ,
+    "l": "C++" ,
+    "nwo": "PointCloudLibrary/pcl" ,
+    "pr": 4961 ,
+    "ma": "2021-09-29T00:15:33Z" ,
+    "oa": "2021-09-29T00:13:46Z"
+  } ,
+  {
+    "uml": "Berkeley" ,
+    "gm": {
+      "lat": 37.8708 ,
+      "lon": -122.2729
+    } ,
+    "uol": "Berkeley" ,
+    "gop": {
+      "lat": 37.8708 ,
+      "lon": -122.2729
+    } ,
+    "l": "Python" ,
+    "nwo": "erdos-project/pylot" ,
+    "pr": 219 ,
+    "ma": "2021-09-29T00:21:44Z" ,
+    "oa": "2021-09-29T00:19:45Z"
+  } ,
+  {
+    "uml": "Ohio" ,
+    "gm": {
+      "lat": 40.4174201146 ,
+      "lon": -82.7114488167578
+    } ,
+    "uol": "Ohio" ,
+    "gop": {
+      "lat": 40.4174201146 ,
+      "lon": -82.7114488167578
+    } ,
+    "l": "C" ,
+    "nwo": "urbit/urbit" ,
+    "pr": 5264 ,
+    "ma": "2021-09-29T00:24:06Z" ,
+    "oa": "2021-09-29T00:19:46Z"
+  } ,
+  {
+    "uml": "Seattle" ,
+    "gm": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "uol": "Seattle" ,
+    "gop": {
+      "lat": 47.6038 ,
+      "lon": -122.3301
+    } ,
+    "l": "Python" ,
+    "nwo": "ProjectDrawdown/solutions" ,
+    "pr": 474 ,
+    "ma": "2021-09-29T00:25:16Z" ,
+    "oa": "2021-09-29T00:25:05Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "PHP" ,
+    "nwo": "JudicialCouncilOfCalifornia/trialcourt" ,
+    "pr": 2208 ,
+    "ma": "2021-09-29T00:29:40Z" ,
+    "oa": "2021-09-29T00:27:50Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "PHP" ,
+    "nwo": "JudicialCouncilOfCalifornia/trialcourt" ,
+    "pr": 2209 ,
+    "ma": "2021-09-29T00:31:20Z" ,
+    "oa": "2021-09-29T00:28:41Z"
+  } ,
+  {
+    "uml": "Los Angeles" ,
+    "gm": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "uol": "Los Angeles" ,
+    "gop": {
+      "lat": 34.0544 ,
+      "lon": -118.2439
+    } ,
+    "l": "Go" ,
+    "nwo": "ipfs/go-graphsync" ,
+    "pr": 228 ,
+    "ma": "2021-09-29T00:46:12Z" ,
+    "oa": "2021-09-29T00:28:50Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "PHP" ,
+    "nwo": "JudicialCouncilOfCalifornia/trialcourt" ,
+    "pr": 2210 ,
+    "ma": "2021-09-29T01:03:19Z" ,
+    "oa": "2021-09-29T00:30:33Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "C" ,
+    "nwo": "emscripten-core/emscripten" ,
+    "pr": 15166 ,
+    "ma": "2021-09-29T00:47:04Z" ,
+    "oa": "2021-09-29T00:30:36Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "shogo82148/actions-upload-release-asset" ,
+    "pr": 389 ,
+    "ma": "2021-09-29T00:39:39Z" ,
+    "oa": "2021-09-29T00:32:24Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "Perl" ,
+    "nwo": "shogo82148/actions-setup-perl" ,
+    "pr": 864 ,
+    "ma": "2021-09-29T00:37:10Z" ,
+    "oa": "2021-09-29T00:34:11Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "Perl" ,
+    "nwo": "shogo82148/actions-setup-perl" ,
+    "pr": 865 ,
+    "ma": "2021-09-29T00:44:11Z" ,
+    "oa": "2021-09-29T00:39:21Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 508 ,
+    "ma": "2021-09-29T00:41:43Z" ,
+    "oa": "2021-09-29T00:41:32Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "Julia" ,
+    "nwo": "domluna/JuliaFormatter.jl" ,
+    "pr": 482 ,
+    "ma": "2021-09-29T01:50:53Z" ,
+    "oa": "2021-09-29T00:51:07Z"
+  } ,
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "C++" ,
+    "nwo": "brave/brave-core" ,
+    "pr": 10306 ,
+    "ma": "2021-09-29T04:42:42Z" ,
+    "oa": "2021-09-29T00:51:08Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "worktile/ngx-planet" ,
+    "pr": 209 ,
+    "ma": "2021-09-29T00:54:41Z" ,
+    "oa": "2021-09-29T00:52:58Z"
+  } ,
+  {
+    "uml": "Montreal" ,
+    "gm": {
+      "lat": 45.497216 ,
+      "lon": -73.610364
+    } ,
+    "uol": "Montreal" ,
+    "gop": {
+      "lat": 45.497216 ,
+      "lon": -73.610364
+    } ,
+    "l": "Twig" ,
+    "nwo": "hotdoy/grav-theme-wheat" ,
+    "pr": 189 ,
+    "ma": "2021-09-29T00:57:46Z" ,
+    "oa": "2021-09-29T00:57:38Z"
+  } ,
+  {
+    "uml": "Shanghai" ,
+    "gm": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "uol": "Shanghai" ,
+    "gop": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "l": "Python" ,
+    "nwo": "alibaba/flink-ai-extended" ,
+    "pr": 609 ,
+    "ma": "2021-09-29T02:30:49Z" ,
+    "oa": "2021-09-29T00:58:47Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "People's Republic of China" ,
+    "gop": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "l": "Java" ,
+    "nwo": "wgzhao/Addax" ,
+    "pr": 376 ,
+    "ma": "2021-09-29T01:13:51Z" ,
+    "oa": "2021-09-29T01:07:53Z"
+  } ,
+  {
+    "uml": "Xiamen" ,
+    "gm": {
+      "lat": 24.673941 ,
+      "lon": 118.063851
+    } ,
+    "uol": "Xiamen" ,
+    "gop": {
+      "lat": 24.673941 ,
+      "lon": 118.063851
+    } ,
+    "l": "C++" ,
+    "nwo": "cocos-creator/engine-native" ,
+    "pr": 3936 ,
+    "ma": "2021-09-29T01:47:53Z" ,
+    "oa": "2021-09-29T01:11:21Z"
+  } ,
+  {
+    "uml": "United States" ,
+    "gm": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "uol": "United States" ,
+    "gop": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "l": "Python" ,
+    "nwo": "PySimpleGUI/PySimpleGUI" ,
+    "pr": 4756 ,
+    "ma": "2021-09-29T01:13:08Z" ,
+    "oa": "2021-09-29T01:13:00Z"
+  } ,
+  {
+    "uml": "People's Republic of China" ,
+    "gm": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "uol": "People's Republic of China" ,
+    "gop": {
+      "lat": 35.4867029846329 ,
+      "lon": 101.901875103385
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "TuSimple/naive-ui" ,
+    "pr": 1261 ,
+    "ma": "2021-09-29T01:20:01Z" ,
+    "oa": "2021-09-29T01:13:36Z"
+  } ,
+  {
+    "uml": "Brazil" ,
+    "gm": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "uol": "Brazil" ,
+    "gop": {
+      "lat": -9.58890301712257 ,
+      "lon": -51.6197890205486
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "pythonprobr/pythonpro-website" ,
+    "pr": 4093 ,
+    "ma": "2021-09-29T01:25:55Z" ,
+    "oa": "2021-09-29T01:15:51Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "Go" ,
+    "nwo": "sacloud/libsacloud" ,
+    "pr": 811 ,
+    "ma": "2021-09-29T01:27:22Z" ,
+    "oa": "2021-09-29T01:20:39Z"
+  } ,
+  {
+    "uml": "Atlanta" ,
+    "gm": {
+      "lat": 33.7491 ,
+      "lon": -84.3902
+    } ,
+    "uol": "Atlanta" ,
+    "gop": {
+      "lat": 33.7491 ,
+      "lon": -84.3902
+    } ,
+    "l": "Shell" ,
+    "nwo": "Qubinode/qubinode-installer" ,
+    "pr": 397 ,
+    "ma": "2021-09-29T01:20:49Z" ,
+    "oa": "2021-09-29T01:20:44Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "Go" ,
+    "nwo": "buildkite/agent" ,
+    "pr": 1518 ,
+    "ma": "2021-09-29T01:45:43Z" ,
+    "oa": "2021-09-29T01:25:24Z"
+  } ,
+  {
+    "uml": "Seoul" ,
+    "gm": {
+      "lat": 37.58333 ,
+      "lon": 127
+    } ,
+    "uol": "Seoul" ,
+    "gop": {
+      "lat": 37.58333 ,
+      "lon": 127
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "bosagora/stoa" ,
+    "pr": 457 ,
+    "ma": "2021-09-29T01:39:06Z" ,
+    "oa": "2021-09-29T01:29:52Z"
+  } ,
+  {
+    "uml": "Louisiana" ,
+    "gm": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "uol": "Louisiana" ,
+    "gop": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "redwoodjs/redwood" ,
+    "pr": 3441 ,
+    "ma": "2021-09-29T01:50:20Z" ,
+    "oa": "2021-09-29T01:32:06Z"
+  } ,
+  {
+    "uml": "Toronto" ,
+    "gm": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "uol": "Toronto" ,
+    "gop": {
+      "lat": 43.653482 ,
+      "lon": -79.383935
+    } ,
+    "l": "Java" ,
+    "nwo": "networknt/light-scheduler" ,
+    "pr": 32 ,
+    "ma": "2021-09-29T01:34:31Z" ,
+    "oa": "2021-09-29T01:34:26Z"
+  } ,
+  {
+    "uml": "Singapore" ,
+    "gm": {
+      "lat": 1.3516161224392 ,
+      "lon": 103.808052586332
+    } ,
+    "uol": "Singapore" ,
+    "gop": {
+      "lat": 1.3516161224392 ,
+      "lon": 103.808052586332
+    } ,
+    "l": "Python" ,
+    "nwo": "PaddlePaddle/PaddleSeg" ,
+    "pr": 1406 ,
+    "ma": "2021-09-29T01:47:12Z" ,
+    "oa": "2021-09-29T01:46:48Z"
+  } ,
+  {
+    "uml": "Mexico" ,
+    "gm": {
+      "lat": 23.9504642310912 ,
+      "lon": -102.532867448126
+    } ,
+    "uol": "Mexico" ,
+    "gop": {
+      "lat": 23.9504642310912 ,
+      "lon": -102.532867448126
+    } ,
+    "l": "C" ,
+    "nwo": "lvgl/lvgl_esp32_drivers" ,
+    "pr": 119 ,
+    "ma": "2021-09-29T01:52:39Z" ,
+    "oa": "2021-09-29T01:52:04Z"
+  } ,
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "yceffort/yceffort-blog-v2" ,
+    "pr": 426 ,
+    "ma": "2021-09-29T02:13:45Z" ,
+    "oa": "2021-09-29T01:54:51Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 509 ,
+    "ma": "2021-09-29T02:01:03Z" ,
+    "oa": "2021-09-29T02:00:57Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 510 ,
+    "ma": "2021-09-29T02:01:42Z" ,
+    "oa": "2021-09-29T02:01:28Z"
+  } ,
+  {
+    "uml": "Peru" ,
+    "gm": {
+      "lat": -10.1510925136244 ,
+      "lon": -75.3111319559783
+    } ,
+    "uol": "Peru" ,
+    "gop": {
+      "lat": -10.1510925136244 ,
+      "lon": -75.3111319559783
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "taskforcesh/bullmq" ,
+    "pr": 771 ,
+    "ma": "2021-09-29T03:14:21Z" ,
+    "oa": "2021-09-29T02:04:18Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DavidWells/analytics" ,
+    "pr": 219 ,
+    "ma": "2021-09-29T04:48:12Z" ,
+    "oa": "2021-09-29T02:07:22Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "Go" ,
+    "nwo": "buildkite/agent" ,
+    "pr": 1519 ,
+    "ma": "2021-09-29T02:42:18Z" ,
+    "oa": "2021-09-29T02:08:44Z"
+  } ,
+  {
+    "uml": "Shanghai" ,
+    "gm": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "uol": "Shanghai" ,
+    "gop": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "milvus-io/milvus-docs" ,
+    "pr": 711 ,
+    "ma": "2021-09-29T02:09:18Z" ,
+    "oa": "2021-09-29T02:09:12Z"
+  } ,
+  {
+    "uml": "Shanghai" ,
+    "gm": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "uol": "Shanghai" ,
+    "gop": {
+      "lat": 31.16667 ,
+      "lon": 121.46667
+    } ,
+    "l": "Java" ,
+    "nwo": "microsoft/azure-tools-for-java" ,
+    "pr": 5878 ,
+    "ma": "2021-09-29T02:20:18Z" ,
+    "oa": "2021-09-29T02:10:56Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "rocicorp/replicache" ,
+    "pr": 594 ,
+    "ma": "2021-09-29T02:19:09Z" ,
+    "oa": "2021-09-29T02:11:42Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 511 ,
+    "ma": "2021-09-29T02:14:43Z" ,
+    "oa": "2021-09-29T02:14:38Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "DataSeer/dataseer-web" ,
+    "pr": 512 ,
+    "ma": "2021-09-29T02:15:08Z" ,
+    "oa": "2021-09-29T02:14:55Z"
+  } ,
+  {
+    "uml": "France" ,
+    "gm": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "uol": "France" ,
+    "gop": {
+      "lat": 47.8249046208979 ,
+      "lon": 2.61878695312962
+    } ,
+    "l": "Vue" ,
+    "nwo": "GreatWizard/lan-play-status" ,
+    "pr": 185 ,
+    "ma": "2021-09-29T02:27:07Z" ,
+    "oa": "2021-09-29T02:26:16Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "prickathon/prismdb" ,
+    "pr": 397 ,
+    "ma": "2021-09-29T02:51:35Z" ,
+    "oa": "2021-09-29T02:27:17Z"
+  } ,
+  {
+    "uml": "Shenzhen" ,
+    "gm": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "uol": "Taiwan" ,
+    "gop": {
+      "lat": 23.7779779950014 ,
+      "lon": 120.930229378541
+    } ,
+    "l": "Go" ,
+    "nwo": "harvester/harvester" ,
+    "pr": 1315 ,
+    "ma": "2021-09-29T03:21:03Z" ,
+    "oa": "2021-09-29T02:29:20Z"
+  } ,
+  {
+    "uml": "Canberra" ,
+    "gm": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "uol": "Canberra" ,
+    "gop": {
+      "lat": -35.2819 ,
+      "lon": 149.1289
+    } ,
+    "l": "Java" ,
+    "nwo": "AtlasOfLivingAustralia/biocache-service" ,
+    "pr": 700 ,
+    "ma": "2021-09-29T03:04:56Z" ,
+    "oa": "2021-09-29T02:31:37Z"
+  } ,
+  {
+    "uml": "Atlanta" ,
+    "gm": {
+      "lat": 33.7491 ,
+      "lon": -84.3902
+    } ,
+    "uol": "Atlanta" ,
+    "gop": {
+      "lat": 33.7491 ,
+      "lon": -84.3902
+    } ,
+    "l": "Shell" ,
+    "nwo": "Qubinode/qubinode-installer" ,
+    "pr": 398 ,
+    "ma": "2021-09-29T02:32:12Z" ,
+    "oa": "2021-09-29T02:31:43Z"
+  } ,
+  {
+    "uml": "Japan" ,
+    "gm": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "uol": "Japan" ,
+    "gop": {
+      "lat": 36.3864928218528 ,
+      "lon": 138.592229549504
+    } ,
+    "l": "C++" ,
+    "nwo": "SMRT-AIST/interactive_slam" ,
+    "pr": 53 ,
+    "ma": "2021-09-29T02:49:00Z" ,
+    "oa": "2021-09-29T02:32:23Z"
+  } ,
+  {
+    "uml": "Louisiana" ,
+    "gm": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "uol": "Louisiana" ,
+    "gop": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "redwoodjs/redwood" ,
+    "pr": 3443 ,
+    "ma": "2021-09-29T03:04:05Z" ,
+    "oa": "2021-09-29T02:37:17Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Python" ,
+    "nwo": "mozilla-releng/scriptworker-scripts" ,
+    "pr": 410 ,
+    "ma": "2021-09-29T02:41:29Z" ,
+    "oa": "2021-09-29T02:40:38Z"
+  } ,
+  {
+    "uml": "Vancouver" ,
+    "gm": {
+      "lat": 49.260872 ,
+      "lon": -123.113953
+    } ,
+    "uol": "Vancouver" ,
+    "gop": {
+      "lat": 49.260872 ,
+      "lon": -123.113953
+    } ,
+    "l": "Python" ,
+    "nwo": "saulpw/visidata" ,
+    "pr": 1127 ,
+    "ma": "2021-09-29T05:13:31Z" ,
+    "oa": "2021-09-29T02:44:09Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "Python" ,
+    "nwo": "PaddlePaddle/PaddleOCR" ,
+    "pr": 4218 ,
+    "ma": "2021-09-29T03:57:23Z" ,
+    "oa": "2021-09-29T02:53:09Z"
+  } ,
+  {
+    "uml": "Indonesia" ,
+    "gm": {
+      "lat": -2.352 ,
+      "lon": 116.348
+    } ,
+    "uol": "Indonesia" ,
+    "gop": {
+      "lat": -2.352 ,
+      "lon": 116.348
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "kartoza/django-bims" ,
+    "pr": 2802 ,
+    "ma": "2021-09-29T03:00:16Z" ,
+    "oa": "2021-09-29T02:59:09Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "Python" ,
+    "nwo": "PaddlePaddle/PaddleClas" ,
+    "pr": 1273 ,
+    "ma": "2021-09-29T03:34:06Z" ,
+    "oa": "2021-09-29T03:00:05Z"
+  } ,
+  {
+    "uml": "Shenzhen" ,
+    "gm": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "uol": "Shenzhen" ,
+    "gop": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "l": "C++" ,
+    "nwo": "Tencent/Hippy" ,
+    "pr": 992 ,
+    "ma": "2021-09-29T03:13:57Z" ,
+    "oa": "2021-09-29T03:04:06Z"
+  } ,
+  {
+    "uml": "Taipei" ,
+    "gm": {
+      "lat": 25.03333 ,
+      "lon": 121.63333
+    } ,
+    "uol": "Taipei" ,
+    "gop": {
+      "lat": 25.03333 ,
+      "lon": 121.63333
+    } ,
+    "l": "Python" ,
+    "nwo": "InfuseAI/primehub" ,
+    "pr": 545 ,
+    "ma": "2021-09-29T03:47:39Z" ,
+    "oa": "2021-09-29T03:04:56Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Go" ,
+    "nwo": "gabrie30/ghorg" ,
+    "pr": 154 ,
+    "ma": "2021-09-29T03:12:12Z" ,
+    "oa": "2021-09-29T03:08:33Z"
+  } ,
+  {
+    "uml": "Hangzhou" ,
+    "gm": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "uol": "Hangzhou" ,
+    "gop": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "l": "Go" ,
+    "nwo": "oam-dev/kubevela" ,
+    "pr": 2389 ,
+    "ma": "2021-09-29T05:09:57Z" ,
+    "oa": "2021-09-29T03:16:22Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "folio-org/platform-complete" ,
+    "pr": 1534 ,
+    "ma": "2021-09-29T03:30:18Z" ,
+    "oa": "2021-09-29T03:19:48Z"
+  } ,
+  {
+    "uml": "Louisiana" ,
+    "gm": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "uol": "Louisiana" ,
+    "gop": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "redwoodjs/redwood" ,
+    "pr": 3444 ,
+    "ma": "2021-09-29T03:48:18Z" ,
+    "oa": "2021-09-29T03:25:54Z"
+  } ,
+  {
+    "uml": "Redmond" ,
+    "gm": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "uol": "Redmond" ,
+    "gop": {
+      "lat": 47.6694 ,
+      "lon": -122.1239
+    } ,
+    "l": "Python" ,
+    "nwo": "AzureAD/microsoft-authentication-library-for-python" ,
+    "pr": 409 ,
+    "ma": "2021-09-29T03:45:24Z" ,
+    "oa": "2021-09-29T03:32:26Z"
+  } ,
+  {
+    "uml": "United States" ,
+    "gm": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "uol": "United States" ,
+    "gop": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "l": "Python" ,
+    "nwo": "PySimpleGUI/PySimpleGUI" ,
+    "pr": 4757 ,
+    "ma": "2021-09-29T03:32:41Z" ,
+    "oa": "2021-09-29T03:32:34Z"
+  } ,
+  {
+    "uml": "Auckland" ,
+    "gm": {
+      "lat": -36.85 ,
+      "lon": 174.78333
+    } ,
+    "uol": "Auckland" ,
+    "gop": {
+      "lat": -36.85 ,
+      "lon": 174.78333
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "orgapp/orgajs" ,
+    "pr": 165 ,
+    "ma": "2021-09-29T03:46:34Z" ,
+    "oa": "2021-09-29T03:39:08Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "keystonejs/keystone" ,
+    "pr": 6677 ,
+    "ma": "2021-09-29T03:56:22Z" ,
+    "oa": "2021-09-29T03:41:06Z"
+  } ,
+  {
+    "uml": "Seoul" ,
+    "gm": {
+      "lat": 37.58333 ,
+      "lon": 127
+    } ,
+    "uol": "Seoul" ,
+    "gop": {
+      "lat": 37.58333 ,
+      "lon": 127
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "bosagora/stoa" ,
+    "pr": 458 ,
+    "ma": "2021-09-29T03:54:25Z" ,
+    "oa": "2021-09-29T03:42:23Z"
+  } ,
+  {
+    "uml": "Eastern" ,
+    "gm": {
+      "lat": 22.5 ,
+      "lon": 51
+    } ,
+    "uol": "Eastern" ,
+    "gop": {
+      "lat": 22.5 ,
+      "lon": 51
+    } ,
+    "l": "Go" ,
+    "nwo": "microsoft/terraform-provider-azuredevops" ,
+    "pr": 454 ,
+    "ma": "2021-09-29T05:27:06Z" ,
+    "oa": "2021-09-29T03:43:35Z"
+  } ,
+  {
+    "uml": "Shenzhen" ,
+    "gm": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "uol": "Shenzhen" ,
+    "gop": {
+      "lat": 22.535383 ,
+      "lon": 114.05471
+    } ,
+    "l": "C++" ,
+    "nwo": "Tencent/Hippy" ,
+    "pr": 993 ,
+    "ma": "2021-09-29T03:55:33Z" ,
+    "oa": "2021-09-29T03:48:42Z"
+  } ,
+  {
+    "uml": "Jataí" ,
+    "gm": {
+      "lat": -17.8784 ,
+      "lon": -51.7204
+    } ,
+    "uol": "Jataí" ,
+    "gop": {
+      "lat": -17.8784 ,
+      "lon": -51.7204
+    } ,
+    "l": "Python" ,
+    "nwo": "interlegis/sapl" ,
+    "pr": 3453 ,
+    "ma": "2021-09-29T03:51:27Z" ,
+    "oa": "2021-09-29T03:51:09Z"
+  } ,
+  {
+    "uml": "Xiamen" ,
+    "gm": {
+      "lat": 24.673941 ,
+      "lon": 118.063851
+    } ,
+    "uol": "Xiamen" ,
+    "gop": {
+      "lat": 24.673941 ,
+      "lon": 118.063851
+    } ,
+    "l": "C++" ,
+    "nwo": "cocos-creator/engine-native" ,
+    "pr": 3939 ,
+    "ma": "2021-09-29T04:10:48Z" ,
+    "oa": "2021-09-29T03:51:58Z"
+  } ,
+  {
+    "uml": "Pune" ,
+    "gm": {
+      "lat": 18.52361 ,
+      "lon": 73.84778
+    } ,
+    "uol": "Pune" ,
+    "gop": {
+      "lat": 18.52361 ,
+      "lon": 73.84778
+    } ,
+    "l": "Go" ,
+    "nwo": "vmware/terraform-provider-avi" ,
+    "pr": 234 ,
+    "ma": "2021-09-29T05:26:28Z" ,
+    "oa": "2021-09-29T03:52:57Z"
+  } ,
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "Java" ,
+    "nwo": "pinpoint-apm/pinpoint" ,
+    "pr": 8280 ,
+    "ma": "2021-09-29T04:18:20Z" ,
+    "oa": "2021-09-29T03:53:17Z"
+  } ,
+  {
+    "uml": "San Francisco" ,
+    "gm": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "uol": "San Francisco" ,
+    "gop": {
+      "lat": 37.7648 ,
+      "lon": -122.463
+    } ,
+    "l": "Go" ,
+    "nwo": "gabrie30/ghorg" ,
+    "pr": 155 ,
+    "ma": "2021-09-29T03:56:05Z" ,
+    "oa": "2021-09-29T03:53:49Z"
+  } ,
+  {
+    "uml": "Pune" ,
+    "gm": {
+      "lat": 18.52361 ,
+      "lon": 73.84778
+    } ,
+    "uol": "Pune" ,
+    "gop": {
+      "lat": 18.52361 ,
+      "lon": 73.84778
+    } ,
+    "l": "Go" ,
+    "nwo": "vmware/terraform-provider-avi" ,
+    "pr": 235 ,
+    "ma": "2021-09-29T05:21:47Z" ,
+    "oa": "2021-09-29T03:54:05Z"
+  } ,
+  {
+    "uml": "Nashville" ,
+    "gm": {
+      "lat": 36.1622 ,
+      "lon": -86.7744
+    } ,
+    "uol": "Nashville" ,
+    "gop": {
+      "lat": 36.1622 ,
+      "lon": -86.7744
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "VandyHacks/vaken" ,
+    "pr": 858 ,
+    "ma": "2021-09-29T03:57:51Z" ,
+    "oa": "2021-09-29T03:54:37Z"
+  } ,
+  {
+    "uml": "Hangzhou" ,
+    "gm": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "uol": "Hangzhou" ,
+    "gop": {
+      "lat": 30.2741 ,
+      "lon": 120.15507
+    } ,
+    "l": "Go" ,
+    "nwo": "oam-dev/kubevela" ,
+    "pr": 2391 ,
+    "ma": "2021-09-29T05:14:49Z" ,
+    "oa": "2021-09-29T04:08:53Z"
+  } ,
+  {
+    "uml": "Bishkek" ,
+    "gm": {
+      "lat": 42.86667 ,
+      "lon": 74.56667
+    } ,
+    "uol": "Bishkek" ,
+    "gop": {
+      "lat": 42.86667 ,
+      "lon": 74.56667
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "maddevsio/maddevs" ,
+    "pr": 1487 ,
+    "ma": "2021-09-29T04:14:36Z" ,
+    "oa": "2021-09-29T04:13:58Z"
+  } ,
+  {
+    "uml": "Beijing" ,
+    "gm": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "uol": "Beijing" ,
+    "gop": {
+      "lat": 39.905 ,
+      "lon": 116.39139
+    } ,
+    "l": "C" ,
+    "nwo": "greenplum-db/gpdb" ,
+    "pr": 12639 ,
+    "ma": "2021-09-29T04:22:59Z" ,
+    "oa": "2021-09-29T04:18:01Z"
+  } ,
+  {
+    "uml": "Nepal" ,
+    "gm": {
+      "lat": 28.2530072798101 ,
+      "lon": 83.9385480132428
+    } ,
+    "uol": "Nepal" ,
+    "gop": {
+      "lat": 28.2530072798101 ,
+      "lon": 83.9385480132428
+    } ,
+    "l": "Python" ,
+    "nwo": "iterative/dvc" ,
+    "pr": 6705 ,
+    "ma": "2021-09-29T04:54:16Z" ,
+    "oa": "2021-09-29T04:27:33Z"
+  } ,
+  {
+    "uml": "South Korea" ,
+    "gm": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "uol": "South Korea" ,
+    "gop": {
+      "lat": 36.5362364654109 ,
+      "lon": 128.168944342317
+    } ,
+    "l": "Rust" ,
+    "nwo": "swc-project/swc" ,
+    "pr": 2315 ,
+    "ma": "2021-09-29T04:55:32Z" ,
+    "oa": "2021-09-29T04:31:41Z"
+  } ,
+  {
+    "uml": "Australia" ,
+    "gm": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "uol": "Australia" ,
+    "gop": {
+      "lat": -25.7349684916223 ,
+      "lon": 134.489562606981
+    } ,
+    "l": "Haskell" ,
+    "nwo": "input-output-hk/cardano-db-sync" ,
+    "pr": 859 ,
+    "ma": "2021-09-29T05:06:37Z" ,
+    "oa": "2021-09-29T04:35:03Z"
+  } ,
+  {
+    "uml": "Canada" ,
+    "gm": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "uol": "Canada" ,
+    "gop": {
+      "lat": 55.5859012851966 ,
+      "lon": -105.750595856519
+    } ,
+    "l": "CSS" ,
+    "nwo": "DNNCommunity/DNNDocs" ,
+    "pr": 613 ,
+    "ma": "2021-09-29T04:37:19Z" ,
+    "oa": "2021-09-29T04:36:45Z"
+  } ,
+  {
+    "uml": "United States" ,
+    "gm": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "uol": "United States" ,
+    "gop": {
+      "lat": 39.3812661305678 ,
+      "lon": -97.9222112121185
+    } ,
+    "l": "TypeScript" ,
+    "nwo": "hicommonwealth/commonwealth" ,
+    "pr": 1446 ,
+    "ma": "2021-09-29T05:01:52Z" ,
+    "oa": "2021-09-29T04:59:06Z"
+  } ,
+  {
+    "uml": "Louisiana" ,
+    "gm": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "uol": "Louisiana" ,
+    "gop": {
+      "lat": 30.93749930159 ,
+      "lon": -92.305998069584
+    } ,
+    "l": "JavaScript" ,
+    "nwo": "redwoodjs/redwood" ,
+    "pr": 3445 ,
+    "ma": "2021-09-29T05:24:22Z" ,
+    "oa": "2021-09-29T05:05:45Z"
+  } ,
+  {
+    "uml": "San Diego" ,
+    "gm": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "uol": "San Diego" ,
+    "gop": {
+      "lat": 32.7174 ,
+      "lon": -117.1628
+    } ,
+    "l": "C" ,
+    "nwo": "commaai/openpilot" ,
+    "pr": 22374 ,
+    "ma": "2021-09-29T05:26:59Z" ,
+    "oa": "2021-09-29T05:12:41Z"
+  } ,
+  {
+    "uml": "Lille" ,
+    "gm": {
+      "lat": 50.63194 ,
+      "lon": 3.0575
+    } ,
+    "uol": "Lille" ,
+    "gop": {
+      "lat": 50.63194 ,
+      "lon": 3.0575
+    } ,
+    "l": "Ruby" ,
+    "nwo": "Homebrew/linuxbrew-core" ,
+    "pr": 24474 ,
+    "ma": "2021-09-29T05:16:07Z" ,
+    "oa": "2021-09-29T05:16:01Z"
+  }
+]

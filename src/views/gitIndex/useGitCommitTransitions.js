@@ -6,18 +6,21 @@ import { ref } from 'vue'
 import { MeshLine, MeshLineMaterial,MeshLineRaycast } from 'meshline'
 
 export default function useGitCommitTransitions () {
-  const distance2OpalRadiusScale = d3.scaleLinear([0, 1, 15], [5, 8, 12])
+  const distance2OpalRadiusScale = d3.scaleLinear([0,  15], [5,  12])
   const distance2ImpactRadiusScale = d3.scaleLinear([0, 15], [1, 2])
   /**
    * 四件事：获取原始数据-》根据原始数据转换成三个向量点-》根据x坐标排序展示顺序-》生成curve实例及对应曲线点阵并返回
    * @returns {Promise<void>}
    */
   const generateOrderedCommitCurveList = async () => {
-    let commitList = await d3.json('./gitIndex/github-index.json')
+    // let commitList = await d3.json('./gitIndex/github-index.json')
+    // let commitList = await d3.json('./gitIndex/github-index-tester.json')
+    let commitList = await d3.json('./gitIndex/github-index-0929.json')
     //排序，靠近x初始位置的优先动画展示
     return commitList
       .map((d) => {
         let { gm, gop } = d
+        //lon x轴 lat y轴
         let srcCoordinate = [gop.lon, gop.lat], targetCoordinate = [gm.lon, gm.lat]
         let [startVector, endVector] = [_transformCoord2Vec(srcCoordinate), _transformCoord2Vec(targetCoordinate)]
         let centerVector = _generateCenter(startVector, endVector)
@@ -37,19 +40,16 @@ export default function useGitCommitTransitions () {
           color: 'lightGreen',
           lineWidth: .05,
           useAlphaMap: 0,
-          // sizeAttenuation:0,
-          // resolution: new THREE.Vector2(1920, 1080)
         })
         const curveObject = new THREE.Mesh(meshLine, material)
         curveObject.userData=rawData;
         curveObject.raycast=MeshLineRaycast;
-        // curveObject.lookAt.apply(curveObject, centerVector.toArray())
         return [curveObject, curvePoints,rawData]
       })
   }
   /**
-   * 坐标系转换，可以参考csdn这篇文章 https://blog.csdn.net/qihoo_tech/article/details/101443066
-   * @param coordPair
+   * 坐标系转换，可以简单参考csdn这篇文章 https://blog.csdn.net/qihoo_tech/article/details/101443066 (感觉里面有些写的不大对
+   * @param coordPair [lon,lat]
    * @param radius
    * @returns {Vector3}
    * @private
@@ -58,7 +58,8 @@ export default function useGitCommitTransitions () {
     return new THREE.Vector3().setFromSphericalCoords(
       radius,
       THREE.MathUtils.degToRad(90 - coordPair[1]),
-      THREE.MathUtils.degToRad(90 + coordPair[0])
+      //图片像素设置theta 为0时是-180度，即西经180
+      THREE.MathUtils.degToRad(180 + coordPair[0])
     )
   }
   /**
@@ -72,7 +73,18 @@ export default function useGitCommitTransitions () {
   const _generateCenter = (startVec, endVec) => {
     let curveRadius = distance2OpalRadiusScale(startVec.distanceTo(endVec))
     let [startSph, endSph] = [new THREE.Spherical().setFromVector3(startVec), new THREE.Spherical().setFromVector3(endVec)]
-    return new THREE.Vector3().setFromSphericalCoords(curveRadius, (startSph.phi + endSph.phi) / 2, (startSph.theta + endSph.theta) / 2)
+    //大于180度时需要换对称中心点
+    let adjustFlag=Math.abs(startSph.theta-endSph.theta)>Math.PI
+    let endThetaAdjust=endSph.theta
+    if(adjustFlag){
+      if(endThetaAdjust<0)
+        endThetaAdjust=Math.PI*2+endThetaAdjust
+      else
+        endThetaAdjust=Math.PI*-2+endThetaAdjust
+    }
+    return new THREE.Vector3().setFromSphericalCoords(curveRadius,
+      (startSph.phi + endSph.phi) / 2,
+      (startSph.theta + endThetaAdjust) / 2)
   }
   /**
    * 生成一个复合的commit tween list 包括曲线处理、mark处理和impact设置
@@ -89,6 +101,11 @@ export default function useGitCommitTransitions () {
     impactNodeRef.value = uniformImpactNodeList
     return compositeTweenList
   }
+  /**
+   * 生成冲击效果tween,只改变量，效果由shader完成
+   * @param curveList
+   * @returns {[Tween<*>[], *[]]}
+   */
   const generateImpactTweenList = (curveList) => {
     let uniformImpactNodeList = []
     curveList.forEach((d, i) => {
@@ -103,14 +120,14 @@ export default function useGitCommitTransitions () {
         },
         {
           impactPosition: endImpactVec,
-          impactMaxRadius: 5 * THREE.Math.randFloat(0.5, 0.75),
+          impactMaxRadius: distance2ImpactRadiusScale(startImpactVec.distanceTo(endImpactVec)),
           impactRatio: 0
         }
       )
     })
     let impactTweenList = uniformImpactNodeList.map((d, i) => {
       return new TWEEN.Tween(d)
-        .to({ impactRatio: 1 }, THREE.Math.randInt(2500, 5000))
+        .to({ impactRatio: 1 }, THREE.Math.randInt(1000, 1500))
         .onComplete(() => {
           d.impactRatio = 0
         })
@@ -118,7 +135,7 @@ export default function useGitCommitTransitions () {
     return [impactTweenList, uniformImpactNodeList]
   }
   /**
-   *
+   * 生成一个mark动画，这里不仅生成tween，还重新生成mark的mesh
    * @param instance
    * @param rawData 由于这里不适用原来的曲线obj3D，所以需要重新复写一遍userData值,我写的真烂.jpg
    * @param curvePoints 曲线点数组，其实只需要起点
@@ -184,6 +201,16 @@ export default function useGitCommitTransitions () {
     extendTween.chain(elapseTween)
     return extendTween
   }
+  /**
+   * commit线动画生成
+   * @param instance 父实例
+   * @param curveObject curve实例
+   * @param curvePoints curve点
+   * @param startImpactTween 穿插的冲击动效
+   * @param endImpactTween
+   * @returns {Tween<{counter: number}>}
+   * @private
+   */
   const _generateCommitLineTween = (instance, curveObject, curvePoints, startImpactTween, endImpactTween) => {
     instance.add(curveObject)
     let tweenObject = { counter: 0 }

@@ -21,6 +21,19 @@ yarn build
 ```
 ## try demos online(用的vite默认打包配置，不关心兼容问题，学新技术用什么浏览器自己没点逼数吗)
 
+### [github index effect](https://elineeen.github.io/3-trial/#/gitIndex)
+origin:https://github.com/
+impact effect origin:https://codepen.io/prisoner849/pen/MWbeoGj
+```
+A trial on imitate github index canvas animation effect + a little bit shader hack
+I've spent about half a month to do this, a nice experience on combination of lights & composers
+also learn sth about projections from pics to textures & shaders.
+there're still some performance problems in tween rendering part,
+such as the commit line transfrom part should be done in gpu rendering instead of cpu control,
+also the precision problems in raycasting & raycasing pick-up distances control 
+i may take some time, trying to solve these in future time. 
+```
+
 ### [3D editable bill](https://elineeen.github.io/3-trial/#/cbill)
 <font color='#f73131'>warning: the texture picture is fairly large(about 2M) 
 and i'm not interested in compressing the img, so be patient lol</font>

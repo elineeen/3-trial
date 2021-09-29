@@ -9,7 +9,6 @@ export default function usePointGlobePlane () {
   const [globeCanvasWidth, globeCanvasHeight] = [360, 181]
   const geometryFragmentList = []
   const impactNodeList = ref([])
-  let commitList = []//提交数据
   let { generateCommitTweenList } = useGitCommitTransitions()
   const _initImgData = () => {
     return new Promise(resolve => {
@@ -19,9 +18,6 @@ export default function usePointGlobePlane () {
         resolve()
       }
     })
-  }
-  const _initCommitList = async () => {
-    commitList = await d3.json('./gitIndex/github-index.json')
   }
   const _initCommitAnimations = async (instance) => {
     let animationIndex = 0
@@ -35,7 +31,6 @@ export default function usePointGlobePlane () {
 
   const initCompositeGlobePlane = async (instance) => {
     await _initImgData()
-    await _initCommitList()
     let globeCanvas = document.createElement('canvas')
     globeCanvas.width = globeCanvasWidth
     globeCanvas.height = globeCanvasHeight
@@ -114,7 +109,7 @@ export default function usePointGlobePlane () {
           `vec4 diffuseColor = vec4( diffuse, opacity );`,
           `
         if (length(vUv - 0.5) > 0.5) discard; // make points circular
-        vec3 grad = mix(vec3(0, 0, 0), vec3(0, 0, 0), clamp(length(vUv - 0.5) / 0.5, 0., 1.)); // circular gradient
+        vec3 grad = mix(vec3(1, 0.75, 1), vec3(0, 1, 1), clamp(length(vUv - 0.5) / 0.5, 0., 1.)); // circular gradient
         vec3 col = mix(diffuse, grad, vFinalStep); // color on wave
         vec4 diffuseColor = vec4( col , opacity ); 
         `
