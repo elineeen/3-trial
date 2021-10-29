@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import * as d3 from 'd3'
-import { BufferGeometryUtils } from 'three/examples/jsm/utils/BufferGeometryUtils'
+import {mergeBufferGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils'
 import useGitCommitTransitions from './useGitCommitTransitions'
 import { ref } from 'vue'
 
@@ -63,7 +63,7 @@ export default function usePointGlobePlane () {
       }
     }
     await _initCommitAnimations(instance)
-    let compositeGeometries = BufferGeometryUtils.mergeBufferGeometries(geometryFragmentList, true)
+    let compositeGeometries = mergeBufferGeometries(geometryFragmentList, true)
     let material = new THREE.MeshBasicMaterial({
       color: 0x6633aa,
       onBeforeCompile: shader => {

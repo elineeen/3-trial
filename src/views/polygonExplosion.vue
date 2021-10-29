@@ -49,12 +49,11 @@
             const box = this.$refs.box.mesh
             box.position.set(0,0,-200)
             const positionAttribute = box.geometry.getAttribute( 'position' );
-            const colors = [];
-            const color = new THREE.Color();
-            for ( let i = 0, l = positionAttribute.count; i < l; i ++ ) {
-                color.setHSL( 0.01 + 0.1 * ( i / l ), 1.0, 0.5 );
-                color.toArray( colors, i * 3 );
-            }
+          const colors = []
+          const color = new THREE.Color('skyblue')
+          for (let i = 0, l = positionAttribute.count; i < l; i++) {
+            color.toArray(colors, i * 3)
+          }
             box.geometry.setAttribute( 'customColor', new THREE.Float32BufferAttribute( colors, 3 ) );
             renderer.onBeforeRender(() => {
                 box.rotation.x += 0.01
