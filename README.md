@@ -21,6 +21,14 @@ yarn build
 ```
 ## try demos online(用的vite默认打包配置，不关心兼容问题，学新技术用什么浏览器自己没点逼数吗)
 
+### [particleMorph](https://elineeen.github.io/3-trial/#/morph)
+
+```
+A pratice on new three.js morph api usage & shaders, nothing special.
+Effects on transforming different vertice buffer geometries is quite interesting  
+Combined with previou particle explosion shader
+```
+
 ### [github index effect](https://elineeen.github.io/3-trial/#/gitIndex)
 origin:https://github.com/
 impact effect origin:https://codepen.io/prisoner849/pen/MWbeoGj
