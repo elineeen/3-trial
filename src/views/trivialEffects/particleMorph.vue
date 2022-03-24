@@ -25,7 +25,6 @@ export default {
   },
   mounted () {
     const renderer = this.$refs.renderer
-
     let boxGeo = this.initBoxGeo()
     const boxMaterial = new THREE.ShaderMaterial({
       vertexColors:true,

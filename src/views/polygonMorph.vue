@@ -20,7 +20,7 @@
             return {
                 curlNoise2DVertexShader,
                 curlNoiseFragmentShader,
-                curNoiseUniforms:,
+                curNoiseUniforms,
                 config:{
                     noiseValueTransitionScale:this.$d3.scaleLinear([0,1],[0,3])
                 }
