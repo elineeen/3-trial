@@ -50,7 +50,7 @@ export default {
 
         if (intersect.length > 0) {
           let closestNode = intersect[0].object;
-          if(closestNode?.userData?.enableDisplayCommit){
+          if(closestNode?.userData){
             rotateSpeed.value=0;
             toggleCommitInfoPlane(true,closestNode?.userData,pointer.positionV3)
           }
@@ -66,13 +66,14 @@ export default {
       let planeInstance=await initCompositeGlobePlane(parentGroup.value)
       //需要将响应实例加入trois的intersect中
       parentGroup.value?.o3d?.children.forEach(o3d=>{
-        //meshline精度太差了，关了
+
         if(o3d.children.length>0){
-          // renderer.value.three.addIntersectObject(o3d.children[0])
-          // o3d.children.forEach(d=> renderer.value.three.addIntersectObject(d))
+          renderer.value.three.addIntersectObject(o3d.children[0])
+          o3d.children.forEach(d=> renderer.value.three.addIntersectObject(d))
         }
-        else
-          renderer.value.three.addIntersectObject(o3d)
+        //meshline精度太差了，关了
+        // else
+        //   renderer.value.three.addIntersectObject(o3d)
       })
       //remove sphere listener
       renderer.value.three.removeIntersectObject(sphereInstance)

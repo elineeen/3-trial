@@ -38,7 +38,6 @@ export default function useCommitInfoPlane () {
       ctx.fillText( `merged at ${info.ma} in ${info.uml}`,20,120)
       ctx.lineWidth = 5
       canvasTexture.needsUpdate = true
-      console.dir('canvas updated')
     }
   }
   const initCommitInfoPlane=(instance)=>{

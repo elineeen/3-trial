@@ -166,10 +166,10 @@ export default function useGitCommitTransitions () {
     const pointGeo = new THREE.BufferGeometry().setFromPoints([pointDistanceVec])
     const pointMaterial = new THREE.PointsMaterial({ size: .2 })
     const markLineObj = new THREE.Mesh(markLine, lineMaterial)
-    //mesh line 光追精度实在是太低了，把mark的commit关了.jpg
-    // markLineObj.raycast=MeshLineRaycast
+
     markLineObj.userData=rawData
     const markPointObj = new THREE.Points(pointGeo, pointMaterial)
+    markPointObj.userData=rawData
     markGroup.add(markLineObj, markPointObj)
     markGroup.position.set(new THREE.Vector3().setFromSpherical(groupStartSpherical))
     instance.add(markGroup)
