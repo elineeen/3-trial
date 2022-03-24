@@ -43,7 +43,6 @@ export default function useGitCommitTransitions () {
         })
         const curveObject = new THREE.Mesh(meshLine, material)
         curveObject.userData=rawData;
-        curveObject.raycast=MeshLineRaycast;
         return [curveObject, curvePoints,rawData]
       })
   }

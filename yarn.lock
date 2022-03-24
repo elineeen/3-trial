@@ -597,12 +597,10 @@ merge-source-map@^1.1.0:
   dependencies:
     source-map "^0.6.1"
 
-meshline@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.npmmirror.com/meshline/download/meshline-2.0.3.tgz#2652e430cf2ea309a027a9d41bca28a6fa27c69f"
-  integrity sha1-JlLkMM8uowmgJ6nUG8oopvonxp8=
-  dependencies:
-    three "^0.129.0"
+meshline@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.npmmirror.com/meshline/-/meshline-2.0.4.tgz#39c7bcf36b503397642f2312e6211f2a8ecf75c5"
+  integrity sha512-Jh6DJl/zLqA4xsKvGv5950jr2ukyXQE1wgxs8u94cImHrvL6soVIggqjP+2hVHZXGYaKnWszhtjuCbKNeQyYiw==
 
 minimist@^1.2.0:
   version "1.2.5"
@@ -751,11 +749,6 @@ three@0.132:
   version "0.132.2"
   resolved "https://registry.npmmirror.com/three/download/three-0.132.2.tgz#95eb1856147237c03e887cbbe56f964b6fb40b5e"
   integrity sha1-lesYVhRyN8A+iHy75W+WS2+0C14=
-
-three@^0.129.0:
-  version "0.129.0"
-  resolved "https://registry.nlark.com/three/download/three-0.129.0.tgz#f5e530bbc96eac5d5b4749cb5da886ef0d42f554"
-  integrity sha1-9eUwu8lurF1bR0nLXaiG7w1C9VQ=
 
 to-fast-properties@^2.0.0:
   version "2.0.0"
