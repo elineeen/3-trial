@@ -5,3 +5,4 @@ export default defineConfig({
   plugins: [vue()],
   base:'/3-trial/',
 })
+
